@@ -1,0 +1,4 @@
+fragment_program Standard_FP glsl
+{
+	source StandardAssets/Shaders/Standard_FP.glslf
+}

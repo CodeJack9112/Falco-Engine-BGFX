@@ -1,0 +1,4 @@
+vertex_program Standard_VP glsl
+{
+	source StandardAssets/Shaders/Standard_VP.glslv
+}

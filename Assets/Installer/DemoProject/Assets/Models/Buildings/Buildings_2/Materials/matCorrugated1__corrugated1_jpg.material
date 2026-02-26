@@ -1,0 +1,24 @@
+
+material matCorrugated1__corrugated1_jpg
+{
+	technique
+	{
+		pass perlight
+		{
+
+			texture_unit diffuseMap
+			{
+				texture_alias diffuseMap
+				max_anisotropy 8
+			}
+
+			texture_unit normalMap
+			{
+				texture_alias normalMap
+				max_anisotropy 8
+			}
+		}
+
+	}
+
+}

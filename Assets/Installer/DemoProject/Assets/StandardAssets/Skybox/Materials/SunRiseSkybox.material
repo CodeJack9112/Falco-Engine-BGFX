@@ -1,0 +1,32 @@
+
+material SunRiseSkybox
+{
+	technique
+	{
+		pass Skybox
+		{
+			lighting off
+			depth_write off
+
+			vertex_program_ref StandardSkybox_VP
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+			}
+
+			fragment_program_ref StandardSkybox_FP
+			{
+				param_named cubemap int 0
+			}
+
+			texture_unit cubemap
+			{
+				texture_alias cubemap
+				cubemap_ref StandardAssets/Skybox/Cubemaps/SunRise.cubemap
+				max_anisotropy 8
+				tex_address_mode clamp
+			}
+		}
+
+	}
+
+}

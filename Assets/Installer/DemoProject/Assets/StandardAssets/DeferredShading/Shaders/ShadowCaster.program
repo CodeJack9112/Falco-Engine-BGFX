@@ -1,0 +1,27 @@
+// Shadow caster
+
+vertex_program DeferredShading/Shadows/CasterVP glsl
+{
+	source StandardAssets/DeferredShading/Shaders/ShadowCaster_vp.glsl
+	syntax glsl120
+	
+	default_params
+	{
+		param_named_auto texelOffsets texel_offsets
+		param_named_auto cWorldViewProj worldviewproj_matrix
+		param_named_auto cWorldView worldview_matrix
+		param_named lightType int 0
+	}
+}
+
+fragment_program DeferredShading/Shadows/CasterFP glsl
+{
+	source StandardAssets/DeferredShading/Shaders/ShadowCaster_fp.glsl
+	syntax glsl120
+
+	default_params
+	{
+		param_named_auto cFarDistance far_clip_distance
+		param_named lightType int 0
+	}
+}

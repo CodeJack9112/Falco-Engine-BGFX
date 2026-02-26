@@ -1,0 +1,10 @@
+cubemap SunRise.cubemap
+{
+	texture_front StandardAssets/Skybox/Textures/SunRise/sky4_1.jpg
+	texture_back StandardAssets/Skybox/Textures/SunRise/sky4_3.jpg
+	texture_left StandardAssets/Skybox/Textures/SunRise/sky4_4.jpg
+	texture_right StandardAssets/Skybox/Textures/SunRise/sky4_2.jpg
+	texture_up StandardAssets/Skybox/Textures/SunRise/sky4_5.jpg
+	texture_down StandardAssets/Skybox/Textures/SunRise/sky4_6.jpg
+	uv_type separateUV
+}

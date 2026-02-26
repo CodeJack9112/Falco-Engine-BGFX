@@ -1,0 +1,181 @@
+
+// full screen quad with camera-to-pixel ray calculations
+
+vertex_program ssao_vs glsl
+{
+    source StandardAssets/DeferredShading/Shaders/ssao_vs.glsl
+    syntax glsl120
+    default_params
+    {
+        param_named_auto worldViewProj worldviewproj_matrix
+    }
+}
+
+fragment_program ssao_ps glsl
+{
+    source StandardAssets/DeferredShading/Shaders/ssao_ps.glsl
+    // will run on anything with GLSL 1.50 and up
+    syntax glsl120
+	default_params
+	{
+        param_named geomMap int 0
+        param_named randMap int 1
+    }
+}
+
+fragment_program ssaoBlurX_ps glsl
+{
+    source StandardAssets/DeferredShading/Shaders/ssao_blurx_ps.glsl
+    syntax glsl120
+    default_params
+    {
+        param_named_auto invTexSize inverse_texture_size 0
+        param_named map int 0
+        param_named geomMap int 1
+    }
+}
+
+fragment_program ssaoBlurY_ps glsl
+{
+    source StandardAssets/DeferredShading/Shaders/ssao_blury_ps.glsl
+    syntax glsl120
+    default_params
+    {
+        param_named_auto invTexSize inverse_texture_size 0
+        param_named map int 0
+        param_named geomMap int 1
+    }
+}
+
+vertex_program Ogre/BasicVertexPrograms/AmbientOneTexture glsl
+{
+    source StandardAssets/DeferredShading/Shaders/AmbientOneTexture.glsl
+
+    default_params
+    {
+        param_named_auto ambient ambient_light_colour
+        param_named_auto worldViewProj worldviewproj_matrix
+    }
+}
+
+vertex_program Ogre/BasicVertexPrograms/AmbientOneTextureWithUV glsl
+{
+    source StandardAssets/DeferredShading/Shaders/AmbientOneTextureWithUV.glsl
+
+    default_params
+    {
+        param_named_auto worldViewProj worldviewproj_matrix
+        param_named_auto ambient ambient_light_colour
+    }
+}
+
+material ssao
+{
+    technique
+    {
+        pass
+        {
+            vertex_program_ref ssao_vs
+            {
+            }
+
+            fragment_program_ref ssao_ps
+            {
+            }
+
+            texture_unit geomMap
+            {
+                tex_address_mode clamp
+                filtering bilinear
+            }
+
+            texture_unit randMap
+            {
+                texture random.png
+                filtering none
+            }
+        }
+    }
+}
+
+material ssaoBlurX
+{
+    technique
+    {
+        pass
+        {
+
+            vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTextureWithUV
+            {
+            }
+        
+            fragment_program_ref ssaoBlurX_ps
+            {
+            }
+
+            texture_unit map
+            {
+                tex_address_mode clamp
+                filtering bilinear
+            }
+
+            texture_unit geomMap
+            {
+                tex_address_mode clamp
+                filtering bilinear
+            }
+        }
+    }
+}
+
+material ssaoBlurY
+{
+    technique
+    {
+        pass
+        {
+            vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTextureWithUV
+            {
+            }
+
+            fragment_program_ref ssaoBlurY_ps
+            {
+            }
+
+            texture_unit map
+            {
+                tex_address_mode clamp
+                filtering bilinear
+            }
+
+            texture_unit geomMap
+            {
+                tex_address_mode clamp
+                filtering bilinear
+            }
+        }
+    }
+}
+
+material modulate
+{
+    technique
+    {
+        pass
+        {
+            lighting off
+
+            texture_unit
+            {
+                texture white.bmp
+                filtering bilinear
+            }
+
+            texture_unit
+            {
+                texture white.bmp
+                filtering bilinear
+            }
+        }
+    }
+}

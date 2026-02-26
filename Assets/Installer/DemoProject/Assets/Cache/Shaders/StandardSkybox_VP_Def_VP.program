@@ -1,0 +1,4 @@
+vertex_program StandardSkybox_VP glsl
+{
+	source StandardAssets/Shaders/StandardSkybox_VP.glslv
+}

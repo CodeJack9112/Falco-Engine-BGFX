@@ -1,0 +1,26 @@
+
+material matHouseDest__wall_damage2_jpg
+{
+	technique
+	{
+		pass perlight
+		{
+
+			texture_unit diffuseMap
+			{
+				texture_alias diffuseMap
+				texture Models/Buildings/Buildings_2/textures/house_damaged.png
+				max_anisotropy 8
+			}
+
+			texture_unit normalMap
+			{
+				texture_alias normalMap
+				texture Models/Buildings/Buildings_2/textures/house_damaged_n.png
+				max_anisotropy 8
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,26 @@
+
+material QK
+{
+	technique
+	{
+		pass perlight
+		{
+
+			texture_unit diffuseMap
+			{
+				texture_alias diffuseMap
+				texture Models/Weapons/Rifle/QKalbedo.png
+				max_anisotropy 8
+			}
+
+			texture_unit normalMap
+			{
+				texture_alias normalMap
+				texture Models/Weapons/Rifle/Qk_n.png
+				max_anisotropy 8
+			}
+		}
+
+	}
+
+}

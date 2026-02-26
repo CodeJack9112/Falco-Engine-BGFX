@@ -1,0 +1,26 @@
+
+material wheels
+{
+	technique
+	{
+		pass perlight
+		{
+
+			texture_unit diffuseMap
+			{
+				texture_alias diffuseMap
+				texture Models/Props/Car/uaz_wheels_001_uv.jpg
+				max_anisotropy 8
+			}
+
+			texture_unit normalMap
+			{
+				texture_alias normalMap
+				texture Models/Props/Car/uaz_wheels_001_uv_n.png
+				max_anisotropy 8
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,26 @@
+
+material b.001
+{
+	technique
+	{
+		pass perlight
+		{
+
+			texture_unit diffuseMap
+			{
+				texture_alias diffuseMap
+				texture Models/Buildings/Building_1/OB1.png
+				max_anisotropy 8
+			}
+
+			texture_unit normalMap
+			{
+				texture_alias normalMap
+				texture Models/Buildings/Building_1/OB1_NM.png
+				max_anisotropy 8
+			}
+		}
+
+	}
+
+}

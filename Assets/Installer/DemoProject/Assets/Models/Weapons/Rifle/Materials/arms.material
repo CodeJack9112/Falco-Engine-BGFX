@@ -1,0 +1,26 @@
+
+material arms
+{
+	technique
+	{
+		pass perlight
+		{
+
+			texture_unit diffuseMap
+			{
+				texture_alias diffuseMap
+				texture Models/Weapons/Arms/armsoldierAlbedo2.png
+				max_anisotropy 8
+			}
+
+			texture_unit normalMap
+			{
+				texture_alias normalMap
+				texture Models/Weapons/Arms/armNormal.png
+				max_anisotropy 8
+			}
+		}
+
+	}
+
+}

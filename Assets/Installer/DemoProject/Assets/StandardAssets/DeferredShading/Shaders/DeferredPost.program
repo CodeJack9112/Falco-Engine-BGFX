@@ -1,0 +1,73 @@
+// Ambient_ps
+fragment_program DeferredShading/post/Ambient_ps glsl
+{
+	source StandardAssets/DeferredShading/Shaders/Ambient_ps.glsl
+	syntax glsl120
+	
+	default_params
+	{
+		param_named_auto ambientColor ambient_light_colour 0
+		param_named_auto proj projection_matrix
+		param_named_auto farClipDistance far_clip_distance
+        param_named Tex0 int 0
+        param_named Tex1 int 1
+	}
+}
+
+// ShowNormal_ps
+fragment_program DeferredShading/post/ShowNormal_ps glsl
+{
+	source StandardAssets/DeferredShading/Shaders/ShowNormal_ps.glsl
+	syntax glsl120
+	default_params
+	{
+        param_named Tex0 int 0
+        param_named Tex1 int 1
+    }
+}
+
+// ShowDS_ps
+fragment_program DeferredShading/post/ShowDS_ps glsl
+{
+	source StandardAssets/DeferredShading/Shaders/ShowDS_ps.glsl
+	syntax glsl120
+	default_params
+	{
+        param_named Tex0 int 0
+        param_named Tex1 int 1
+    }
+}
+
+// ShowColour_ps
+fragment_program DeferredShading/post/ShowColour_ps glsl
+{
+	source StandardAssets/DeferredShading/Shaders/ShowColour_ps.glsl
+	syntax glsl120
+	default_params
+	{
+        param_named Tex0 int 0
+    }
+}
+
+// Auxiliary lights
+vertex_program DeferredShading/post/LightMaterial_vs glsl
+{
+	source StandardAssets/DeferredShading/Shaders/LightMaterial_vs.glsl
+	syntax glsl120
+	default_params
+	{
+		param_named_auto worldViewProj worldviewproj_matrix
+	}
+}
+
+// Post processors
+vertex_program DeferredShading/post/vs glsl
+{
+	source StandardAssets/DeferredShading/Shaders/vs.glsl
+	syntax glsl120
+	default_params
+	{
+		param_named_auto flip render_target_flipping
+		param_named farCorner float3 1 1 1
+	}
+}

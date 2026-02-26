@@ -1,0 +1,26 @@
+
+material Garage
+{
+	technique
+	{
+		pass perlight
+		{
+
+			texture_unit diffuseMap
+			{
+				texture_alias diffuseMap
+				texture Models/Buildings/Buildings_3/Textures/LP_DefaultMaterial_AlbedoTransparency.png
+				max_anisotropy 8
+			}
+
+			texture_unit normalMap
+			{
+				texture_alias normalMap
+				texture Models/Buildings/Buildings_3/Textures/LP_DefaultMaterial_Normal.png
+				max_anisotropy 8
+			}
+		}
+
+	}
+
+}

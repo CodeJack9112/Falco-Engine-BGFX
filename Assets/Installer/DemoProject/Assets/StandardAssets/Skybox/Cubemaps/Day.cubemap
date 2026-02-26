@@ -1,0 +1,10 @@
+cubemap Day.cubemap
+{
+	texture_front StandardAssets/Skybox/Textures/Day/SkyboxDay_fr.jpg
+	texture_back StandardAssets/Skybox/Textures/Day/SkyboxDay_bk.jpg
+	texture_left StandardAssets/Skybox/Textures/Day/SkyboxDay_lf.jpg
+	texture_right StandardAssets/Skybox/Textures/Day/SkyboxDay_rt.jpg
+	texture_up StandardAssets/Skybox/Textures/Day/SkyboxDay_up.jpg
+	texture_down StandardAssets/Skybox/Textures/Day/SkyboxDay_dn.jpg
+	uv_type separateUV
+}

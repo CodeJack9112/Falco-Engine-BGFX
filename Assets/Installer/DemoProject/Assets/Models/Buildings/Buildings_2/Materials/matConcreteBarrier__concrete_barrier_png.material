@@ -1,0 +1,26 @@
+
+material matConcreteBarrier__concrete_barrier_png
+{
+	technique
+	{
+		pass perlight
+		{
+
+			texture_unit diffuseMap
+			{
+				texture_alias diffuseMap
+				texture Models/Buildings/Buildings_2/textures/concrete1.png
+				max_anisotropy 8
+			}
+
+			texture_unit normalMap
+			{
+				texture_alias normalMap
+				texture Models/Buildings/Buildings_2/textures/concrete1_n.png
+				max_anisotropy 8
+			}
+		}
+
+	}
+
+}

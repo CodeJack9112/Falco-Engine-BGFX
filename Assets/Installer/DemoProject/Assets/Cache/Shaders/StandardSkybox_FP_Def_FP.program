@@ -1,0 +1,4 @@
+fragment_program StandardSkybox_FP glsl
+{
+	source StandardAssets/Shaders/StandardSkybox_FP.glslf
+}

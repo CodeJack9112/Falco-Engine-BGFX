@@ -1,0 +1,25 @@
+
+material 1
+{
+	scheme NoGBuffer
+
+	technique
+	{
+		
+		pass perlight
+		{
+			scene_blend alpha_blend
+			depth_write on
+			depth_check on
+			
+			texture_unit diffuseMap
+			{
+				texture_alias diffuseMap
+				texture Models/Weapons/MuzzleFlash/MuzzleFlash01.psd
+				max_anisotropy 8
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,26 @@
+
+material "Material #163"
+{
+	technique
+	{
+		pass perlight
+		{
+
+			texture_unit diffuseMap
+			{
+				texture_alias diffuseMap
+				texture Models/Props/GarbageHeap/Pl0145_diffuse.png
+				max_anisotropy 8
+			}
+
+			texture_unit normalMap
+			{
+				texture_alias normalMap
+				texture Models/Props/GarbageHeap/Pl0145_normal.png
+				max_anisotropy 8
+			}
+		}
+
+	}
+
+}

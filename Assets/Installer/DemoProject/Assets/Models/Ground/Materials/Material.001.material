@@ -1,0 +1,26 @@
+
+material Material.001
+{
+	technique
+	{
+		pass perlight
+		{
+
+			texture_unit diffuseMap
+			{
+				texture_alias diffuseMap
+				texture Models/Ground/RockyDirt2C_4x4_1K_albedo.jpg
+				max_anisotropy 8
+			}
+
+			texture_unit normalMap
+			{
+				texture_alias normalMap
+				texture Models/Ground/RockyDirt2C_4x4_1K_normal.jpg
+				max_anisotropy 8
+			}
+		}
+
+	}
+
+}

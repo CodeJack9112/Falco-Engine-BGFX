@@ -1,0 +1,23 @@
+
+material "mutant diffuse"
+{
+	technique
+	{
+		pass main
+		{
+			specular 0 0 0 1 0.6
+			
+			texture_unit
+			{
+				texture "Models/Ripper/texture/mutant diffuse gray.tga"
+			}
+
+			texture_unit normalMap
+			{
+				texture "Models/Ripper/texture/mutant normals.tga"
+			}
+		}
+
+	}
+
+}

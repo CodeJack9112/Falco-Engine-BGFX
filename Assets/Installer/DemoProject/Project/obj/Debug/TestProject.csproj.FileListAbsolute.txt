@@ -1,0 +1,2 @@
+D:\Dev\C++\FalcoEngine\TestProject\Project\obj\Debug\TestProject.csprojAssemblyReference.cache
+D:\Dev\C++\FalcoEngine\TestProject\Project\obj\Debug\TestProject.csproj.CoreCompileInputs.cache
