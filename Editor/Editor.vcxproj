@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{7742954d-9a88-4e2e-bed6-098557901143}</ProjectGuid>
+    <RootNamespace>Editor</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <VcpkgManifestInstall>false</VcpkgManifestInstall>
+    <VcpkgAutoLink>false</VcpkgAutoLink>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;_SILENCE_FPOS_SEEKPOS_DEPRECATION_WARNING;_CRT_NONSTDC_NO_DEPRECATE</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../Bgfx/bx/include/compat/msvc;../Bgfx/bx/include;../Bgfx/bimg/include;../Bgfx/bgfx/include;../Bgfx/bgfx/3rdparty;../SDL;../Boost;../Bgfx/bgfx/3rdparty/dear-imgui;../OpenAL/include;../codecs/audio/ogg;../Engine/Navigation/DebugUtils/Include;../Engine/Navigation/Detour/Include;../Engine/Navigation/DetourCrowd/Include;../Engine/Navigation/DetourTileCache/Include;../Engine/Navigation/Recast/Include;../Mono/include;../LibZip/include;../Carve/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>version.lib;Imm32.lib;setupapi.lib;winmm.lib;opengl32.lib;../Boost/lib/libboost_filesystem-vc142-mt-s-x64-1_74.lib;../Boost/lib/libboost_system-vc142-mt-s-x64-1_74.lib;../Boost/lib/libboost_serialization-vc142-mt-s-x64-1_74.lib;../Boost/lib/libboost_regex-vc142-mt-s-x64-1_74.lib;../Boost/lib/libboost_iostreams-vc142-mt-s-x64-1_74.lib;../Boost/lib/libboost_date_time-vc142-mt-s-x64-1_74.lib;../Boost/lib/libboost_thread-vc142-mt-s-x64-1_74.lib;../Boost/lib/libboost_chrono-vc142-mt-s-x64-1_74.lib;../SDL/lib/SDL2.lib;../SDL/lib/SDL2main.lib;../Bgfx/bgfx/.build/win64_vs2019/bin/bgfxRelease.lib;../Bgfx/bgfx/.build/win64_vs2019/bin/bimg_decodeRelease.lib;../Bgfx/bgfx/.build/win64_vs2019/bin/bimgRelease.lib;../Bgfx/bgfx/.build/win64_vs2019/bin/bxRelease.lib;../Bgfx/bgfx/.build/win64_vs2019/bin/fcppRelease.lib;../Bgfx/bgfx/.build/win64_vs2019/bin/glslangRelease.lib;../Bgfx/bgfx/.build/win64_vs2019/bin/glsl-optimizerRelease.lib;../Bgfx/bgfx/.build/win64_vs2019/bin/shadercRelease.lib;../Bgfx/bgfx/.build/win64_vs2019/bin/spirv-crossRelease.lib;../Bgfx/bgfx/.build/win64_vs2019/bin/spirv-optRelease.lib;../Assimp/lib/assimp-vc143-mt.lib;../Assimp/lib/IrrXML.lib;../FreeImage/lib/FreeImageLib.lib;../codecs/textures/bc7enc/lib/bc7enc.lib;../Bullet/lib/BulletCollision.lib;../Bullet/lib/BulletDynamics.lib;../Bullet/lib/BulletInverseDynamics.lib;../Bullet/lib/BulletSoftBody.lib;../Bullet/lib/LinearMath.lib;../OpenAL/lib/x64/OpenAL32.lib;../OpenAL/lib/x64/alut.lib;../OpenAL/lib/x64/ALu.lib;../codecs/audio/ogg/lib/libogg_static.lib;../codecs/audio/ogg/lib/libvorbis_static.lib;../codecs/audio/ogg/lib/libvorbisfile_static.lib;../Mono/lib/mono-2.0-sgen.lib;../FreeType/lib/freetype.lib;../LibZip/lib/zip.lib;../steam/lib/win64/steam_api64.lib;../steam/lib/win64/sdkencryptedappticket64.lib;../codecs/video/ffmpeg/lib/avcodec.lib;../codecs/video/ffmpeg/lib/avdevice.lib;../codecs/video/ffmpeg/lib/avfilter.lib;../codecs/video/ffmpeg/lib/avformat.lib;../codecs/video/ffmpeg/lib/avutil.lib;../codecs/video/ffmpeg/lib/postproc.lib;../codecs/video/ffmpeg/lib/swresample.lib;../codecs/video/ffmpeg/lib/swscale.lib;../Carve/lib/carve.lib;../x64/Release/Engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BuildSystems\BuildSystemWin64.cpp" />
+    <ClCompile Include="BuildSystems\ProjectOptimizer.cpp" />
+    <ClCompile Include="Classes\LightmapBaker.cpp" />
+    <ClCompile Include="Classes\SolutionWorker.cpp" />
+    <ClCompile Include="Classes\Toast.cpp" />
+    <ClCompile Include="Classes\TreeNode.cpp" />
+    <ClCompile Include="Classes\TreeView.cpp" />
+    <ClCompile Include="Classes\Undo.cpp" />
+    <ClCompile Include="Dialogs\DialogAbout.cpp" />
+    <ClCompile Include="Dialogs\DialogAnimationCrop.cpp" />
+    <ClCompile Include="Dialogs\DialogAssetExporter.cpp" />
+    <ClCompile Include="Dialogs\DialogCSGStairBuilder.cpp" />
+    <ClCompile Include="Dialogs\DialogProgress.cpp" />
+    <ClCompile Include="Dialogs\DialogProjectBuild.cpp" />
+    <ClCompile Include="Dialogs\DialogRagdollEditor.cpp" />
+    <ClCompile Include="Dialogs\DialogTextInput.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PropertyEditors\AnimationEditor.cpp" />
+    <ClCompile Include="PropertyEditors\AudioClipEditor.cpp" />
+    <ClCompile Include="PropertyEditors\AudioListenerEditor.cpp" />
+    <ClCompile Include="PropertyEditors\AudioSourceEditor.cpp" />
+    <ClCompile Include="PropertyEditors\BoxColliderEditor.cpp" />
+    <ClCompile Include="PropertyEditors\ButtonEditor.cpp" />
+    <ClCompile Include="PropertyEditors\CameraEditor.cpp" />
+    <ClCompile Include="PropertyEditors\CanvasEditor.cpp" />
+    <ClCompile Include="PropertyEditors\CapsuleColliderEditor.cpp" />
+    <ClCompile Include="PropertyEditors\ConeTwistJointEditor.cpp" />
+    <ClCompile Include="PropertyEditors\CSGBrushEditor.cpp" />
+    <ClCompile Include="PropertyEditors\CSGModelEditor.cpp" />
+    <ClCompile Include="PropertyEditors\CubemapEditor.cpp" />
+    <ClCompile Include="PropertyEditors\DecalRendererEditor.cpp" />
+    <ClCompile Include="PropertyEditors\FreeJointEditor.cpp" />
+    <ClCompile Include="PropertyEditors\ComponentEditor.cpp" />
+    <ClCompile Include="PropertyEditors\FixedJointEditor.cpp" />
+    <ClCompile Include="PropertyEditors\HingeJointEditor.cpp" />
+    <ClCompile Include="PropertyEditors\ImageEditor.cpp" />
+    <ClCompile Include="PropertyEditors\LightEditor.cpp" />
+    <ClCompile Include="PropertyEditors\MaskEditor.cpp" />
+    <ClCompile Include="PropertyEditors\MaterialEditor.cpp" />
+    <ClCompile Include="PropertyEditors\MeshColliderEditor.cpp" />
+    <ClCompile Include="PropertyEditors\MeshRendererEditor.cpp" />
+    <ClCompile Include="PropertyEditors\Model3DEditor.cpp" />
+    <ClCompile Include="PropertyEditors\MonoScriptEditor.cpp" />
+    <ClCompile Include="PropertyEditors\NavMeshAgentEditor.cpp" />
+    <ClCompile Include="PropertyEditors\NavMeshObstacleEditor.cpp" />
+    <ClCompile Include="PropertyEditors\ObjectEditor.cpp" />
+    <ClCompile Include="PropertyEditors\ParticleSystemEditor.cpp" />
+    <ClCompile Include="PropertyEditors\ProjectSettingsEditor.cpp" />
+    <ClCompile Include="PropertyEditors\PropAsset.cpp" />
+    <ClCompile Include="PropertyEditors\PropBool.cpp" />
+    <ClCompile Include="PropertyEditors\PropBool3.cpp" />
+    <ClCompile Include="PropertyEditors\PropButton.cpp" />
+    <ClCompile Include="PropertyEditors\PropButton2.cpp" />
+    <ClCompile Include="PropertyEditors\PropColorPicker.cpp" />
+    <ClCompile Include="PropertyEditors\PropComboBox.cpp" />
+    <ClCompile Include="PropertyEditors\PropCustom.cpp" />
+    <ClCompile Include="PropertyEditors\PropEditorHost.cpp" />
+    <ClCompile Include="PropertyEditors\Property.cpp" />
+    <ClCompile Include="PropertyEditors\PropertyEditor.cpp" />
+    <ClCompile Include="PropertyEditors\PropFloat.cpp" />
+    <ClCompile Include="PropertyEditors\PropGameObject.cpp" />
+    <ClCompile Include="PropertyEditors\PropInfo.cpp" />
+    <ClCompile Include="PropertyEditors\PropInt.cpp" />
+    <ClCompile Include="PropertyEditors\PropMatrix3.cpp" />
+    <ClCompile Include="PropertyEditors\PropMatrix4.cpp" />
+    <ClCompile Include="PropertyEditors\PropSampler.cpp" />
+    <ClCompile Include="PropertyEditors\PropString.cpp" />
+    <ClCompile Include="PropertyEditors\PropVector2.cpp" />
+    <ClCompile Include="PropertyEditors\PropVector3.cpp" />
+    <ClCompile Include="PropertyEditors\PropVector4.cpp" />
+    <ClCompile Include="PropertyEditors\RigidBodyEditor.cpp" />
+    <ClCompile Include="PropertyEditors\SphereColliderEditor.cpp" />
+    <ClCompile Include="PropertyEditors\SplineEditor.cpp" />
+    <ClCompile Include="PropertyEditors\TerrainColliderEditor.cpp" />
+    <ClCompile Include="PropertyEditors\TerrainEditor.cpp" />
+    <ClCompile Include="PropertyEditors\TextEditor.cpp" />
+    <ClCompile Include="PropertyEditors\TextInputEditor.cpp" />
+    <ClCompile Include="PropertyEditors\TextureEditor.cpp" />
+    <ClCompile Include="PropertyEditors\TransformEditor.cpp" />
+    <ClCompile Include="PropertyEditors\UIElementEditor.cpp" />
+    <ClCompile Include="PropertyEditors\VehicleEditor.cpp" />
+    <ClCompile Include="PropertyEditors\VideoClipEditor.cpp" />
+    <ClCompile Include="PropertyEditors\VideoPlayerEditor.cpp" />
+    <ClCompile Include="PropertyEditors\WaterEditor.cpp" />
+    <ClCompile Include="Serialization\EditorSettings.cpp" />
+    <ClCompile Include="Windows\AnimationEditorWindow.cpp" />
+    <ClCompile Include="Windows\AssetsWindow.cpp" />
+    <ClCompile Include="Windows\ConsoleWindow.cpp" />
+    <ClCompile Include="Windows\GameWindow.cpp" />
+    <ClCompile Include="Windows\HierarchyWindow.cpp" />
+    <ClCompile Include="Windows\InspectorWindow.cpp" />
+    <ClCompile Include="Windows\LightingWindow.cpp" />
+    <ClCompile Include="Windows\MainWindow.cpp" />
+    <ClCompile Include="Windows\NavigationWindow.cpp" />
+    <ClCompile Include="Windows\ProjectSelector.cpp" />
+    <ClCompile Include="Windows\SceneWindow.cpp" />
+    <ClCompile Include="Windows\UIEditorWindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BuildSystems\BuildSystemWin64.h" />
+    <ClInclude Include="BuildSystems\ProjectOptimizer.h" />
+    <ClInclude Include="Classes\LightmapBaker.h" />
+    <ClInclude Include="Classes\SolutionWorker.h" />
+    <ClInclude Include="Classes\Toast.h" />
+    <ClInclude Include="Classes\TreeNode.h" />
+    <ClInclude Include="Classes\TreeView.h" />
+    <ClInclude Include="Classes\Undo.h" />
+    <ClInclude Include="Dialogs\DialogAbout.h" />
+    <ClInclude Include="Dialogs\DialogAnimationCrop.h" />
+    <ClInclude Include="Dialogs\DialogAssetExporter.h" />
+    <ClInclude Include="Dialogs\DialogCSGStairBuilder.h" />
+    <ClInclude Include="Dialogs\DialogProgress.h" />
+    <ClInclude Include="Dialogs\DialogProjectBuild.h" />
+    <ClInclude Include="Dialogs\DialogRagdollEditor.h" />
+    <ClInclude Include="Dialogs\DialogTextInput.h" />
+    <ClInclude Include="PropertyEditors\AnimationEditor.h" />
+    <ClInclude Include="PropertyEditors\AudioClipEditor.h" />
+    <ClInclude Include="PropertyEditors\AudioListenerEditor.h" />
+    <ClInclude Include="PropertyEditors\AudioSourceEditor.h" />
+    <ClInclude Include="PropertyEditors\BoxColliderEditor.h" />
+    <ClInclude Include="PropertyEditors\ButtonEditor.h" />
+    <ClInclude Include="PropertyEditors\CameraEditor.h" />
+    <ClInclude Include="PropertyEditors\CanvasEditor.h" />
+    <ClInclude Include="PropertyEditors\CapsuleColliderEditor.h" />
+    <ClInclude Include="PropertyEditors\ConeTwistJointEditor.h" />
+    <ClInclude Include="PropertyEditors\CSGBrushEditor.h" />
+    <ClInclude Include="PropertyEditors\CSGModelEditor.h" />
+    <ClInclude Include="PropertyEditors\CubemapEditor.h" />
+    <ClInclude Include="PropertyEditors\DecalRendererEditor.h" />
+    <ClInclude Include="PropertyEditors\FreeJointEditor.h" />
+    <ClInclude Include="PropertyEditors\ComponentEditor.h" />
+    <ClInclude Include="PropertyEditors\FixedJointEditor.h" />
+    <ClInclude Include="PropertyEditors\HingeJointEditor.h" />
+    <ClInclude Include="PropertyEditors\ImageEditor.h" />
+    <ClInclude Include="PropertyEditors\LightEditor.h" />
+    <ClInclude Include="PropertyEditors\MaskEditor.h" />
+    <ClInclude Include="PropertyEditors\MaterialEditor.h" />
+    <ClInclude Include="PropertyEditors\MeshColliderEditor.h" />
+    <ClInclude Include="PropertyEditors\MeshRendererEditor.h" />
+    <ClInclude Include="PropertyEditors\Model3DEditor.h" />
+    <ClInclude Include="PropertyEditors\MonoScriptEditor.h" />
+    <ClInclude Include="PropertyEditors\NavMeshAgentEditor.h" />
+    <ClInclude Include="PropertyEditors\NavMeshObstacleEditor.h" />
+    <ClInclude Include="PropertyEditors\ObjectEditor.h" />
+    <ClInclude Include="PropertyEditors\ParticleSystemEditor.h" />
+    <ClInclude Include="PropertyEditors\ProjectSettingsEditor.h" />
+    <ClInclude Include="PropertyEditors\PropAsset.h" />
+    <ClInclude Include="PropertyEditors\PropBool.h" />
+    <ClInclude Include="PropertyEditors\PropBool3.h" />
+    <ClInclude Include="PropertyEditors\PropButton.h" />
+    <ClInclude Include="PropertyEditors\PropButton2.h" />
+    <ClInclude Include="PropertyEditors\PropColorPicker.h" />
+    <ClInclude Include="PropertyEditors\PropComboBox.h" />
+    <ClInclude Include="PropertyEditors\PropCustom.h" />
+    <ClInclude Include="PropertyEditors\PropEditorHost.h" />
+    <ClInclude Include="PropertyEditors\Property.h" />
+    <ClInclude Include="PropertyEditors\PropertyEditor.h" />
+    <ClInclude Include="PropertyEditors\PropFloat.h" />
+    <ClInclude Include="PropertyEditors\PropGameObject.h" />
+    <ClInclude Include="PropertyEditors\PropInfo.h" />
+    <ClInclude Include="PropertyEditors\PropInt.h" />
+    <ClInclude Include="PropertyEditors\PropMatrix3.h" />
+    <ClInclude Include="PropertyEditors\PropMatrix4.h" />
+    <ClInclude Include="PropertyEditors\PropSampler.h" />
+    <ClInclude Include="PropertyEditors\PropString.h" />
+    <ClInclude Include="PropertyEditors\PropVector2.h" />
+    <ClInclude Include="PropertyEditors\PropVector3.h" />
+    <ClInclude Include="PropertyEditors\PropVector4.h" />
+    <ClInclude Include="PropertyEditors\RigidBodyEditor.h" />
+    <ClInclude Include="PropertyEditors\SphereColliderEditor.h" />
+    <ClInclude Include="PropertyEditors\SplineEditor.h" />
+    <ClInclude Include="PropertyEditors\TerrainColliderEditor.h" />
+    <ClInclude Include="PropertyEditors\TerrainEditor.h" />
+    <ClInclude Include="PropertyEditors\TextEditor.h" />
+    <ClInclude Include="PropertyEditors\TextInputEditor.h" />
+    <ClInclude Include="PropertyEditors\TextureEditor.h" />
+    <ClInclude Include="PropertyEditors\TransformEditor.h" />
+    <ClInclude Include="PropertyEditors\UIElementEditor.h" />
+    <ClInclude Include="PropertyEditors\VehicleEditor.h" />
+    <ClInclude Include="PropertyEditors\VideoClipEditor.h" />
+    <ClInclude Include="PropertyEditors\VideoPlayerEditor.h" />
+    <ClInclude Include="PropertyEditors\WaterEditor.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Serialization\EditorSettings.h" />
+    <ClInclude Include="Serialization\SProjectData.h" />
+    <ClInclude Include="Windows\AnimationEditorWindow.h" />
+    <ClInclude Include="Windows\AssetsWindow.h" />
+    <ClInclude Include="Windows\ConsoleWindow.h" />
+    <ClInclude Include="Windows\GameWindow.h" />
+    <ClInclude Include="Windows\HierarchyWindow.h" />
+    <ClInclude Include="Windows\InspectorWindow.h" />
+    <ClInclude Include="Windows\LightingWindow.h" />
+    <ClInclude Include="Windows\MainWindow.h" />
+    <ClInclude Include="Windows\NavigationWindow.h" />
+    <ClInclude Include="Windows\ProjectSelector.h" />
+    <ClInclude Include="Windows\SceneWindow.h" />
+    <ClInclude Include="Windows\UIEditorWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Editor.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\x64\Logo\icon.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

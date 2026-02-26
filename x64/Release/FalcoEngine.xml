@@ -1,0 +1,4838 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FalcoEngine</name>
+    </assembly>
+    <members>
+        <member name="P:FalcoEngine.Asset.name">
+            <summary>
+            Get asset name
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Mesh.subMeshCount">
+            <summary>
+            Get sub mesh count
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Mesh.GetSubMesh(System.Int32)">
+            <summary>
+            Get sub mesh by index
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Mesh.AddSubMesh(FalcoEngine.SubMesh)">
+            <summary>
+            Add sub mesh
+            </summary>
+            <param name="subMesh"></param>
+        </member>
+        <member name="M:FalcoEngine.Mesh.RemoveSubMesh(FalcoEngine.SubMesh)">
+            <summary>
+            Remove sub mesh by pointer
+            </summary>
+            <param name="subMesh"></param>
+        </member>
+        <member name="M:FalcoEngine.Mesh.RemoveSubMesh(System.Int32)">
+            <summary>
+            Remove sub mesh by index
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:FalcoEngine.Mesh.RecalculateBounds">
+            <summary>
+            Recalculate mesh bounds
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Mesh.Commit">
+            <summary>
+            Apply changes made in runtime for all sub meshes
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Mesh.Dispose">
+            <summary>
+            Free internal unmanaged resources. Use it for procedurally generated meshes at runtime
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.SubMesh.parent">
+            <summary>
+            Get parent mesh
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.SubMesh.indices">
+            <summary>
+            Indices array
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.SubMesh.vertices">
+            <summary>
+            Vertices array
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.SubMesh.normals">
+            <summary>
+            Normals array
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.SubMesh.tangents">
+            <summary>
+            Tangents array
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.SubMesh.bitangents">
+            <summary>
+            Bitangents array
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.SubMesh.texcoords0">
+            <summary>
+            Texture coords array at channel 0
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.SubMesh.texcoords1">
+            <summary>
+            Texture coords array at channel 1. Used for lightmaps
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.SubMesh.blendWeights">
+            <summary>
+            Bones blend weights array. Used for GPU skinning
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.SubMesh.blendIndices">
+            <summary>
+            Bones blend indices array. Used for GPU skinning
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.SubMesh.colors">
+            <summary>
+            Vertex colors array
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.SubMesh.Commit">
+            <summary>
+            Apply changes made in runtime
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.SubMesh.Dispose">
+            <summary>
+            Free internal unmanaged resources. Use it for procedurally generated meshes at runtime
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.AnimationClipInfo.clip">
+            <summary>
+            Animation clip file
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.AnimationClipInfo.name">
+            <summary>
+            Animation name
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.AnimationClipInfo.speed">
+            <summary>
+            Animation speed
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.AnimationClipInfo.startFrame">
+            <summary>
+            Animation start frame
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.AnimationClipInfo.endFrame">
+            <summary>
+            Animation end frame
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.AnimationClipInfo.loop">
+            <summary>
+            Animation loop
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.ConeTwistJoint.anchor">
+            <summary>
+            Get or set an anchor point relative to this object
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.ConeTwistJoint.connectedAnchor">
+            <summary>
+            Get or set an anchor point relative to connected object
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.ConeTwistJoint.limits">
+            <summary>
+            Get or set the angle limits of this joint
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.ConeTwistJoint.linkedBodiesCollision">
+            <summary>
+            Get or set the linked bodies collision flag
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.ConeTwistJoint.connectedObject">
+            <summary>
+            Get or set the object to connect with
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.ConeTwistJoint.AutoConfigureAnchors">
+            <summary>
+            Auto configure connected anchor point depending on an anchor of this object
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.ConeTwistJoint.Rebuild">
+            <summary>
+            Rebuild this joint
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.FixedJoint.anchor">
+            <summary>
+            Get or set an anchor point relative to this object
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.FixedJoint.connectedAnchor">
+            <summary>
+            Get or set an anchor point relative to connected object
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.FixedJoint.linkedBodiesCollision">
+            <summary>
+            Get or set the linked bodies collision flag
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.FixedJoint.connectedObject">
+            <summary>
+            Get or set the object to connect with
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.FixedJoint.AutoConfigureAnchors">
+            <summary>
+            Auto configure connected anchor point depending on an anchor of this object
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.FixedJoint.Rebuild">
+            <summary>
+            Rebuild this joint
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.FreeJoint.anchor">
+            <summary>
+            Get or set an anchor point relative to this object
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.FreeJoint.connectedAnchor">
+            <summary>
+            Get or set an anchor point relative to connected object
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.FreeJoint.limitMin">
+            <summary>
+            Get or set the lower angle limits of this joint
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.FreeJoint.limitMax">
+            <summary>
+            Get or set the upper angle limits of this joint
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.FreeJoint.linkedBodiesCollision">
+            <summary>
+            Get or set the linked bodies collision flag
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.FreeJoint.connectedObject">
+            <summary>
+            Get or set the object to connect with
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.FreeJoint.AutoConfigureAnchors">
+            <summary>
+            Auto configure connected anchor point depending on an anchor of this object
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.FreeJoint.Rebuild">
+            <summary>
+            Rebuild this joint
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.HingeJoint.anchor">
+            <summary>
+            Get or set an anchor point relative to this object
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.HingeJoint.connectedAnchor">
+            <summary>
+            Get or set an anchor point relative to connected object
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.HingeJoint.axis">
+            <summary>
+            Get or set an axis of what rotation will be applied to
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.HingeJoint.limitMin">
+            <summary>
+            Get or set the lower angle limits of this joint
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.HingeJoint.limitMax">
+            <summary>
+            Get or set the upper angle limits of this joint
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.HingeJoint.linkedBodiesCollision">
+            <summary>
+            Get or set the linked bodies collision flag
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.HingeJoint.connectedObject">
+            <summary>
+            Get or set the object to connect with
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.HingeJoint.AutoConfigureAnchors">
+            <summary>
+            Auto configure connected anchor point depending on an anchor of this object
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.HingeJoint.Rebuild">
+            <summary>
+            Rebuild this joint
+            </summary>
+        </member>
+        <member name="T:FalcoEngine.Light.LightType">
+            <summary>
+            LightType enum
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Light.type">
+            <summary>
+            Get or set the light type. Point, spot or directional
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Light.color">
+            <summary>
+            The color of the light
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Light.intensity">
+            <summary>
+            The Intensity of a light is multiplied with the Light color
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Light.radius">
+            <summary>
+            The range of the light
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Light.innerRadius">
+            <summary>
+            The angle of the light's spotlight inner cone in degrees
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Light.outerRadius">
+            <summary>
+            The angle of the light's spotlight cone in degrees.
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Light.bias">
+            <summary>
+            Shadow mapping constant bias
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Light.castShadows">
+            <summary>
+            Enable or disable casting shadows for this light source
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.MeshRenderer.materialsCount">
+            <summary>
+            Returns number of the unique materials used by the mesh
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.MeshRenderer.sharedMaterialsCount">
+            <summary>
+            Returns number of the shared materials used by the mesh
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.MeshRenderer.mesh">
+            <summary>
+            Get or set the mesh for rendering
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.MeshRenderer.GetMaterial(System.Int32)">
+            <summary>
+            Get unique material by index
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.MeshRenderer.GetSharedMaterial(System.Int32)">
+            <summary>
+            Get shared material by index
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.MeshRenderer.SetSharedMaterial(System.Int32,FalcoEngine.Material)">
+            <summary>
+            Set shared material at certain index
+            </summary>
+            <param name="index"></param>
+            <param name="material"></param>
+        </member>
+        <member name="P:FalcoEngine.Spline.numPoints">
+            <summary>
+            Get number of points in the spline
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Spline.AddPoint(FalcoEngine.Vector3)">
+            <summary>
+            Add point to the spline
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.Spline.RemovePoint(System.Int32)">
+            <summary>
+            Remove point from the spline by index
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:FalcoEngine.Spline.GetPoint(System.Int32)">
+            <summary>
+            Get point by index
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Spline.SetPoint(System.Int32,FalcoEngine.Vector3)">
+            <summary>
+            Set point by index
+            </summary>
+            <param name="index"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.Spline.GetSplinePoint(System.Single)">
+            <summary>
+            Get interpolated point on the spline at described position (0...1)
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Spline.GetSplineDirection(System.Single)">
+            <summary>
+            Get direction on the spline at described position (0...1)
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="P:FalcoEngine.Vehicle.numWheels">
+            <summary>
+            Gets the number of wheels attached to this vehicle
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vehicle.speedKMH">
+            <summary>
+            Gets the current vehicle speed in kilometers per hour
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Vehicle.SetSteering(System.Single,System.Int32)">
+            <summary>
+            Set the wheel steering angle in degrees
+            </summary>
+            <param name="angle"></param>
+            <param name="wheelIndex"></param>
+        </member>
+        <member name="M:FalcoEngine.Vehicle.GetSteering(System.Int32)">
+            <summary>
+            Get the wheel steering angle in degrees
+            </summary>
+            <param name="wheelIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Vehicle.SetBreak(System.Single,System.Int32)">
+            <summary>
+            Set wheel's braking ratio
+            </summary>
+            <param name="value"></param>
+            <param name="wheelIndex"></param>
+        </member>
+        <member name="M:FalcoEngine.Vehicle.ApplyEngineForce(System.Single,System.Int32)">
+            <summary>
+            Apply engine force to the wheel
+            </summary>
+            <param name="value"></param>
+            <param name="wheelIndex"></param>
+        </member>
+        <member name="P:FalcoEngine.BoxCollider.size">
+            <summary>
+            Get or set the size of the box
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.CapsuleCollider.radius">
+            <summary>
+            Get or set the radiuse of the capsule
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.CapsuleCollider.height">
+            <summary>
+            Get or set the height of the capsule
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Collider.offset">
+            <summary>
+            Get or set the offset position from center of the game object
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Collider.rotation">
+            <summary>
+            Get or set the offset rotation
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.MeshCollider.convex">
+            <summary>
+            Enable or disable convex decomposition of the mesh collider
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.SphereCollider.radius">
+            <summary>
+            Get or set the radius of the sphere
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Material.#ctor(System.String)">
+            <summary>
+            Create a new material and set its name
+            </summary>
+            <param name="name">Name for the new material</param>
+        </member>
+        <member name="M:FalcoEngine.Material.Load(System.String)">
+            <summary>
+            Load existing material
+            </summary>
+            <param name="name">Name of the existing material</param>
+            <returns>Loaded material</returns>
+        </member>
+        <member name="P:FalcoEngine.Material.shader">
+            <summary>
+            Get or set a shader for this material
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Material.GetParameter(System.String,FalcoEngine.Matrix3@)">
+            <summary>
+            Get value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="matrix">Matrix3 value</param>
+        </member>
+        <member name="M:FalcoEngine.Material.GetParameter(System.String,FalcoEngine.Matrix4@)">
+            <summary>
+            Get value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="matrix">Matrix4 value</param>
+        </member>
+        <member name="M:FalcoEngine.Material.GetParameter(System.String,FalcoEngine.Vector2@)">
+            <summary>
+            Get value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="vector2">Vector2 value</param>
+        </member>
+        <member name="M:FalcoEngine.Material.GetParameter(System.String,FalcoEngine.Vector3@)">
+            <summary>
+            Get value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="vector3">Vector3 value</param>
+        </member>
+        <member name="M:FalcoEngine.Material.GetParameter(System.String,FalcoEngine.Vector4@)">
+            <summary>
+            Get value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="vector4">Vector4 value</param>
+        </member>
+        <member name="M:FalcoEngine.Material.GetParameter(System.String,System.Single@)">
+            <summary>
+            Get value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="flt">Float value</param>
+        </member>
+        <member name="M:FalcoEngine.Material.GetParameter(System.String,System.Int32@)">
+            <summary>
+            Get value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="val">Int value</param>
+        </member>
+        <member name="M:FalcoEngine.Material.GetParameter(System.String,System.Boolean@)">
+            <summary>
+            Get value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="val">Boolean value</param>
+        </member>
+        <member name="M:FalcoEngine.Material.GetParameter(System.String,FalcoEngine.Color@)">
+            <summary>
+            Get value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="color">Color value</param>
+        </member>
+        <member name="M:FalcoEngine.Material.GetParameter(System.String,FalcoEngine.Texture@)">
+            <summary>
+            Get value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="texture">Texture value</param>
+        </member>
+        <member name="M:FalcoEngine.Material.GetParameter``1(System.String)">
+            <summary>
+            Get value of the parameter
+            </summary>
+            <typeparam name="T">Parameter type</typeparam>
+            <param name="name">Parameter name</param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Material.SetParameter(System.String,FalcoEngine.Matrix3)">
+            <summary>
+            Set value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="matrix">Matrix3 value</param>
+        </member>
+        <member name="M:FalcoEngine.Material.SetParameter(System.String,FalcoEngine.Matrix4)">
+            <summary>
+            Set value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="matrix">Matrix4 value</param>
+        </member>
+        <member name="M:FalcoEngine.Material.SetParameter(System.String,FalcoEngine.Vector2)">
+            <summary>
+            Set value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="vector2">Vector2 value</param>
+        </member>
+        <member name="M:FalcoEngine.Material.SetParameter(System.String,FalcoEngine.Vector3)">
+            <summary>
+            Set value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="vector3">Vector3 value</param>
+        </member>
+        <member name="M:FalcoEngine.Material.SetParameter(System.String,FalcoEngine.Vector4)">
+            <summary>
+            Set value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="vector4">Vector4 value</param>
+        </member>
+        <member name="M:FalcoEngine.Material.SetParameter(System.String,System.Single)">
+            <summary>
+            Set value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="flt">Float value</param>
+        </member>
+        <member name="M:FalcoEngine.Material.SetParameter(System.String,System.Int32)">
+            <summary>
+            Set value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="val">Int value</param>
+        </member>
+        <member name="M:FalcoEngine.Material.SetParameter(System.String,System.Boolean)">
+            <summary>
+            Set value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="val">Boolean value</param>
+        </member>
+        <member name="M:FalcoEngine.Material.SetParameter(System.String,FalcoEngine.Color)">
+            <summary>
+            Set value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="color">Color value</param>
+        </member>
+        <member name="M:FalcoEngine.Material.SetParameter(System.String,FalcoEngine.Texture)">
+            <summary>
+            Set value of the parameter
+            </summary>
+            <param name="name">Parameter name</param>
+            <param name="texture">Texture value</param>
+        </member>
+        <member name="M:FalcoEngine.Shader.Load(System.String)">
+            <summary>
+            Load existing shader
+            </summary>
+            <param name="name">Name of the existing shader</param>
+            <returns>Loaded shader</returns>
+        </member>
+        <member name="P:FalcoEngine.Animation.isPlaying">
+            <summary>
+            Returns if any of animation clips attached to this component is playing
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Animation.numAnimationClips">
+            <summary>
+            Get animation clips count
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Animation.Play(System.String)">
+            <summary>
+            Play animation clip by name
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:FalcoEngine.Animation.CrossFade(System.String,System.Single)">
+            <summary>
+            Play animation clip by name with smooth transition between this and previous clips
+            </summary>
+            <param name="name"></param>
+            <param name="duration"></param>
+        </member>
+        <member name="M:FalcoEngine.Animation.Stop">
+            <summary>
+            Stop playing
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Animation.SetLoop(System.String,System.Boolean)">
+            <summary>
+            Set animation clip is looping by name
+            </summary>
+            <param name="name"></param>
+            <param name="loop"></param>
+        </member>
+        <member name="M:FalcoEngine.Animation.GetLoop(System.String)">
+            <summary>
+            Get animation clip is looping by name
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Animation.IsPlaying(System.String)">
+            <summary>
+            Returns if the animation clip is playing
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Animation.GetAnimationClipInfo(System.Int32)">
+            <summary>
+            Returns animation clip info by its name
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:FalcoEngine.AudioListener.volume">
+            <summary>
+            Get or set the master volume
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.AudioListener.paused">
+            <summary>
+            Pause or resume the audio system
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.AudioSource.isPlaying">
+            <summary>
+            Returns if this audio source is playing
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.AudioSource.isPaused">
+            <summary>
+            Returns if this audio source is paused
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.AudioSource.loop">
+            <summary>
+            Return or set whether the audio clip replays after it finishes or not
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.AudioSource.playOnStart">
+            <summary>
+            Returns or sets if audio source should start playing after scene is loaded
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.AudioSource.pitch">
+            <summary>
+            The pitch of the audio source
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.AudioSource.volume">
+            <summary>
+            The volume of the audio source (0.0 to 1.0)
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.AudioSource.minDistance">
+            <summary>
+            Within the min distance the audio source will cease to grow louder in volume
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.AudioSource.maxDistance">
+            <summary>
+            Max distance is the distance where the sound is completely inaudible
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.AudioSource.is2D">
+            <summary>
+            Is this audio source 2D or 3D?
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.AudioSource.audioClip">
+            <summary>
+            Get or set the audio clip for this audio source
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.AudioSource.Play">
+            <summary>
+            Play current audio clip
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.AudioSource.Pause">
+            <summary>
+            Pause playing
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.AudioSource.Resume">
+            <summary>
+            Resume playing
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.AudioSource.Stop">
+            <summary>
+            Stop playing
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.AudioSource.GetTotalLength">
+            <summary>
+            Get total length in seconds
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.AudioSource.GetPlaybackPosition">
+            <summary>
+            Get current playback position in seconds
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.AudioSource.SetPlaybackPosition(System.Int32)">
+            <summary>
+            Set current playback position in seconds
+            </summary>
+            <param name="seconds"></param>
+        </member>
+        <member name="P:FalcoEngine.Component.enabled">
+            <summary>
+            Enable or disable this component
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Component.gameObject">
+            <summary>
+            Get game object at which this component is attached
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Component.isUiComponent">
+            <summary>
+            Returns if this component is derived from UIElement (or this is a canvas) or not
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.VideoPlayer.videoClip">
+            <summary>
+            Get or set the video clip for this video player
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.VideoPlayer.isPlaying">
+            <summary>
+            Returns if this video player is playing
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.VideoPlayer.isPaused">
+            <summary>
+            Returns if this video player is paused
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.VideoPlayer.loop">
+            <summary>
+            Return or set whether the video player replays after it finishes or not
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.VideoPlayer.playOnStart">
+            <summary>
+            Returns or sets if video player should start playing after scene is loaded
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.VideoPlayer.texture">
+            <summary>
+            Returns current frame as a texture
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.VideoPlayer.Play">
+            <summary>
+            Play current audio clip
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.VideoPlayer.Pause">
+            <summary>
+            Pause playing
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.VideoPlayer.Resume">
+            <summary>
+            Resume playing
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.VideoPlayer.Stop">
+            <summary>
+            Stop playing
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.VideoPlayer.GetTotalLength">
+            <summary>
+            Get total length in seconds
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.VideoPlayer.GetPlaybackPosition">
+            <summary>
+            Get current playback position in seconds
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.VideoPlayer.SetPlaybackPosition(System.Int32)">
+            <summary>
+            Set current playback position in seconds
+            </summary>
+            <param name="seconds"></param>
+        </member>
+        <member name="T:FalcoEngine.ParticleEmitter">
+            <summary>
+            Particle emitter
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.ParticleEmitter.Play">
+            <summary>
+            Start emitting
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.ParticleEmitter.Stop">
+            <summary>
+            Stop emitting
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.ParticleEmitter.GetIsPlaying">
+            <summary>
+            Is emitting enabled
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.ParticleEmitter.GetPlaybackTime">
+            <summary>
+            Get emitter playback time
+            </summary>
+        </member>
+        <member name="T:FalcoEngine.ParticleSystem">
+            <summary>
+            Particle system
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.ParticleSystem.emittersCount">
+            <summary>
+            Returns number of emitters
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.ParticleSystem.GetEmitter(System.Int32)">
+            <summary>
+            Get emitter by index
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Application.Quit">
+            <summary>
+            Quit the application
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Application.assetsPath">
+            <summary>
+            Returns path to the assets location
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.Collision.other">
+            <summary>
+            The other rigidbody that this object collided with
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.Collision.point">
+            <summary>
+            Collision point in world space
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.Collision.normal">
+            <summary>
+            Collision normal in world space
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Debug.Log(System.String)">
+            <summary>
+            Print message to the editor's console
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:FalcoEngine.GameObject.#ctor">
+            <summary>
+            Create new empty game object
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.GameObject.name">
+            <summary>
+            Return game object name
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.GameObject.uniqueName">
+            <summary>
+            Return game object unique name (UID)
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.GameObject.enabled">
+            <summary>
+            Get or set game object enabled state
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.GameObject.active">
+            <summary>
+            Return true if game object enabled self and all of it's parents are enabled too
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.GameObject.tag">
+            <summary>
+            Get or set game object tag
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.GameObject.layer">
+            <summary>
+            Get or set game object layer
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.GameObject.transform">
+            <summary>
+            Transform component
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.GameObject.rigidbody">
+            <summary>
+            RigidBody component
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.GameObject.animation">
+            <summary>
+            Animation component
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.GameObject.audioSource">
+            <summary>
+            AudioSource component
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.GameObject.navMeshAgent">
+            <summary>
+            NavMeshAgent component
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.GameObject.components">
+            <summary>
+            Return an array of all game object's components
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.GameObject.GetComponent``1">
+            <summary>
+            Return component by type
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.GameObject.AddComponent``1">
+            <summary>
+            Create new component of type T and attach it to this game object
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.GameObject.Clone">
+            <summary>
+            Create a copy of this game object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.GameObject.Find(System.String)">
+            <summary>
+            Find game object by name. If scene has multiple game objects with the same name, the first will be returned
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.GameObject.GetByUniqueName(System.String)">
+            <summary>
+            Return game object by it's unique name (UID)
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="P:FalcoEngine.LayerMask.All">
+            <summary>
+            Return layer mask with all layers selected
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.LayerMask.LayerToName(System.Int32)">
+            <summary>
+            Return name of the layer
+            </summary>
+            <param name="layer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.LayerMask.NameToLayer(System.String)">
+            <summary>
+            Return layer by it's name
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.LayerMask.Set(System.Int32,System.Boolean)">
+            <summary>
+            Enable or disable layer
+            </summary>
+            <param name="layer"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.LayerMask.Get(System.Int32)">
+            <summary>
+            Get state of the layer
+            </summary>
+            <param name="layer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.LayerMask.ToULong">
+            <summary>
+            Convert this layer mask to ulong
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.LayerMask.FromULong(System.UInt64)">
+            <summary>
+            Restore layers from ulong
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.PlayerPrefs.SetInt(System.String,System.Int32)">
+            <summary>
+              <para>Sets the value of the preference identified by key.</para>
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.PlayerPrefs.GetInt(System.String,System.Int32)">
+            <summary>
+              <para>Returns the value corresponding to key in the preference file if it exists.</para>
+            </summary>
+            <param name="key"></param>
+            <param name="defaultValue"></param>
+        </member>
+        <member name="M:FalcoEngine.PlayerPrefs.GetInt(System.String)">
+            <summary>
+              <para>Returns the value corresponding to key in the preference file if it exists.</para>
+            </summary>
+            <param name="key"></param>
+            <param name="defaultValue"></param>
+        </member>
+        <member name="M:FalcoEngine.PlayerPrefs.SetFloat(System.String,System.Single)">
+            <summary>
+              <para>Sets the value of the preference identified by key.</para>
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.PlayerPrefs.GetFloat(System.String,System.Single)">
+            <summary>
+              <para>Returns the value corresponding to key in the preference file if it exists.</para>
+            </summary>
+            <param name="key"></param>
+            <param name="defaultValue"></param>
+        </member>
+        <member name="M:FalcoEngine.PlayerPrefs.GetFloat(System.String)">
+            <summary>
+              <para>Returns the value corresponding to key in the preference file if it exists.</para>
+            </summary>
+            <param name="key"></param>
+            <param name="defaultValue"></param>
+        </member>
+        <member name="M:FalcoEngine.PlayerPrefs.SetString(System.String,System.String)">
+            <summary>
+              <para>Sets the value of the preference identified by key.</para>
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.PlayerPrefs.GetString(System.String,System.String)">
+            <summary>
+              <para>Returns the value corresponding to key in the preference file if it exists.</para>
+            </summary>
+            <param name="key"></param>
+            <param name="defaultValue"></param>
+        </member>
+        <member name="M:FalcoEngine.PlayerPrefs.GetString(System.String)">
+            <summary>
+              <para>Returns the value corresponding to key in the preference file if it exists.</para>
+            </summary>
+            <param name="key"></param>
+            <param name="defaultValue"></param>
+        </member>
+        <member name="M:FalcoEngine.PlayerPrefs.HasKey(System.String)">
+            <summary>
+              <para>Returns true if key exists in the preferences.</para>
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:FalcoEngine.PlayerPrefs.DeleteKey(System.String)">
+            <summary>
+              <para>Removes key and its corresponding value from the preferences.</para>
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:FalcoEngine.PlayerPrefs.DeleteAll">
+            <summary>
+              <para>Removes all keys and values from the preferences. Use with caution.</para>
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.PlayerPrefs.Save">
+            <summary>
+              <para>Writes all modified preferences to disk.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Bounds.center">
+            <summary>
+              <para>The center of the bounding box.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Bounds.size">
+            <summary>
+              <para>The total size of the box. This is always twice as large as the extents.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Bounds.extents">
+            <summary>
+              <para>The extents of the Bounding Box. This is always half of the size of the Bounds.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Bounds.min">
+            <summary>
+              <para>The minimal point of the box. This is always equal to center-extents.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Bounds.max">
+            <summary>
+              <para>The maximal point of the box. This is always equal to center+extents.</para>
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Bounds.#ctor(FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+              <para>Creates a new Bounds.</para>
+            </summary>
+            <param name="center">The location of the origin of the Bounds.</param>
+            <param name="size">The dimensions of the Bounds.</param>
+        </member>
+        <member name="M:FalcoEngine.Bounds.SetMinMax(FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+              <para>Sets the bounds to the min and max value of the box.</para>
+            </summary>
+            <param name="min"></param>
+            <param name="max"></param>
+        </member>
+        <member name="M:FalcoEngine.Bounds.Encapsulate(FalcoEngine.Vector3)">
+            <summary>
+              <para>Grows the Bounds to include the point.</para>
+            </summary>
+            <param name="point"></param>
+        </member>
+        <member name="M:FalcoEngine.Bounds.Encapsulate(FalcoEngine.Bounds)">
+            <summary>
+              <para>Grow the bounds to encapsulate the bounds.</para>
+            </summary>
+            <param name="bounds"></param>
+        </member>
+        <member name="M:FalcoEngine.Bounds.Expand(System.Single)">
+            <summary>
+              <para>Expand the bounds by increasing its size by amount along each side.</para>
+            </summary>
+            <param name="amount"></param>
+        </member>
+        <member name="M:FalcoEngine.Bounds.Expand(FalcoEngine.Vector3)">
+            <summary>
+              <para>Expand the bounds by increasing its size by amount along each side.</para>
+            </summary>
+            <param name="amount"></param>
+        </member>
+        <member name="M:FalcoEngine.Bounds.Intersects(FalcoEngine.Bounds)">
+            <summary>
+              <para>Does another bounding box intersect with this bounding box?</para>
+            </summary>
+            <param name="bounds"></param>
+        </member>
+        <member name="M:FalcoEngine.Bounds.ToString">
+            <summary>
+              <para>Returns a nicely formatted string for the bounds.</para>
+            </summary>
+            <param name="format"></param>
+        </member>
+        <member name="M:FalcoEngine.Bounds.ToString(System.String)">
+            <summary>
+              <para>Returns a nicely formatted string for the bounds.</para>
+            </summary>
+            <param name="format"></param>
+        </member>
+        <member name="F:FalcoEngine.Matrix3.zeroMatrix">
+            <summary>
+              <para>Returns a matrix with all elements set to zero (Read Only).</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.Matrix3.identityMatrix">
+            <summary>
+              <para>Returns the identity matrix (Read Only).</para>
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Matrix3.GetColumn(System.Int32)">
+            <summary>
+              <para>Get a column of the matrix.</para>
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix3.GetRow(System.Int32)">
+            <summary>
+              <para>Returns a row of the matrix.</para>
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix3.SetColumn(System.Int32,FalcoEngine.Vector3)">
+            <summary>
+              <para>Sets a column of the matrix.</para>
+            </summary>
+            <param name="index"></param>
+            <param name="column"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix3.SetRow(System.Int32,FalcoEngine.Vector3)">
+            <summary>
+              <para>Sets a row of the matrix.</para>
+            </summary>
+            <param name="index"></param>
+            <param name="row"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix3.MultiplyVector(FalcoEngine.Vector3)">
+            <summary>
+              <para>Transforms a direction by this matrix.</para>
+            </summary>
+            <param name="vector"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix3.Scale(FalcoEngine.Vector3)">
+            <summary>
+              <para>Creates a scaling matrix.</para>
+            </summary>
+            <param name="vector"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix3.Rotate(FalcoEngine.Quaternion)">
+            <summary>
+              <para>Creates a rotation matrix.</para>
+            </summary>
+            <param name="q"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix3.ToString">
+            <summary>
+              <para>Returns a nicely formatted string for this matrix.</para>
+            </summary>
+            <param name="format"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix3.ToString(System.String)">
+            <summary>
+              <para>Returns a nicely formatted string for this matrix.</para>
+            </summary>
+            <param name="format"></param>
+        </member>
+        <member name="T:FalcoEngine.Camera.GBufferTexture">
+            <summary>
+            GBufferTexture enum
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Camera.renderTarget">
+            <summary>
+            Get or set the render texture as a render target
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Camera.WorldToScreenPoint(FalcoEngine.Vector3)">
+            <summary>
+            Convert world to screen point
+            </summary>
+            <param name="world"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Camera.ScreenToWorldPoint(FalcoEngine.Vector3)">
+            <summary>
+            Convert screen to world point
+            </summary>
+            <param name="screen"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Camera.GetViewMatrix(System.Boolean)">
+            <summary>
+            Returns a view matrix of this camera
+            </summary>
+            <param name="ownFrustumOnly"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Camera.GetProjectionMatrix">
+            <summary>
+            Returns a projection matrix of this camera
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Camera.IsObjectVisible(FalcoEngine.GameObject)">
+            <summary>
+            Checks if the game object is in field of view of this camera
+            </summary>
+            <param name="object"></param>
+            <returns></returns>
+        </member>
+        <member name="P:FalcoEngine.Camera.nearClipDistance">
+            <summary>
+            The distance of the near clipping plane from the camera, in world units
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Camera.farClipDistance">
+            <summary>
+            The distance of the far clipping plane from the camera, in world units
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Camera.fov">
+            <summary>
+            Camera FOV angle (in degrees)
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Camera.GetGBufferTexture(FalcoEngine.Camera.GBufferTexture)">
+            <summary>
+            Get GBuffer texture from channel pointed by textureType
+            </summary>
+            <param name="textureType"></param>
+            <returns></returns>
+        </member>
+        <member name="P:FalcoEngine.SceneManager.loadedScene">
+            <summary>
+            Gets the currently loaded scene name
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.SceneManager.LoadScene(System.String)">
+            <summary>
+            Loads the scene by its name
+            </summary>
+            <param name="fileName"></param>
+        </member>
+        <member name="P:FalcoEngine.Time.frameRate">
+            <summary>
+            The current frames per second value (FPS)
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Time.deltaTime">
+            <summary>
+            The interval in seconds from the last frame to the current one
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Time.timeScale">
+            <summary>
+            The scale at which time passes
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Time.timeSinceGameStart">
+            <summary>
+            The real time in seconds since the game started
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Time.timeSinceGameStartScaled">
+            <summary>
+            The time in seconds scaled by timeScale since the game started
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Time.timeSinceLevelStart">
+            <summary>
+            The time in seconds since the last scene has finished loading
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Time.timeSinceLevelStartScaled">
+            <summary>
+            The time in seconds scaled by timeScale since the last scene has finished loading
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rect.zero">
+            <summary>
+              <para>Shorthand for writing new Rect(0,0,0,0).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rect.x">
+            <summary>
+              <para>The X coordinate of the rectangle.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rect.y">
+            <summary>
+              <para>The Y coordinate of the rectangle.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rect.position">
+            <summary>
+              <para>The X and Y position of the rectangle.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rect.center">
+            <summary>
+              <para>The position of the center of the rectangle.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rect.min">
+            <summary>
+              <para>The position of the minimum corner of the rectangle.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rect.max">
+            <summary>
+              <para>The position of the maximum corner of the rectangle.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rect.width">
+            <summary>
+              <para>The width of the rectangle, measured from the X position.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rect.height">
+            <summary>
+              <para>The height of the rectangle, measured from the Y position.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rect.size">
+            <summary>
+              <para>The width and height of the rectangle.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rect.xMin">
+            <summary>
+              <para>The minimum X coordinate of the rectangle.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rect.yMin">
+            <summary>
+              <para>The minimum Y coordinate of the rectangle.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rect.xMax">
+            <summary>
+              <para>The maximum X coordinate of the rectangle.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rect.yMax">
+            <summary>
+              <para>The maximum Y coordinate of the rectangle.</para>
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Rect.#ctor(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Creates a new rectangle.</para>
+            </summary>
+            <param name="x">The X value the rect is measured from.</param>
+            <param name="y">The Y value the rect is measured from.</param>
+            <param name="width">The width of the rectangle.</param>
+            <param name="height">The height of the rectangle.</param>
+        </member>
+        <member name="M:FalcoEngine.Rect.#ctor(FalcoEngine.Vector2,FalcoEngine.Vector2)">
+            <summary>
+              <para>Creates a rectangle given a size and position.</para>
+            </summary>
+            <param name="position">The position of the minimum corner of the rect.</param>
+            <param name="size">The width and height of the rect.</param>
+        </member>
+        <member name="M:FalcoEngine.Rect.#ctor(FalcoEngine.Rect)">
+            <summary>
+              <para></para>
+            </summary>
+            <param name="source"></param>
+        </member>
+        <member name="M:FalcoEngine.Rect.MinMaxRect(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Creates a rectangle from min/max coordinate values.</para>
+            </summary>
+            <param name="xmin">The minimum X coordinate.</param>
+            <param name="ymin">The minimum Y coordinate.</param>
+            <param name="xmax">The maximum X coordinate.</param>
+            <param name="ymax">The maximum Y coordinate.</param>
+            <returns>
+              <para>A rectangle matching the specified coordinates.</para>
+            </returns>
+        </member>
+        <member name="M:FalcoEngine.Rect.Set(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Set components of an existing Rect.</para>
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:FalcoEngine.Rect.Contains(FalcoEngine.Vector2)">
+            <summary>
+              <para>Returns true if the x and y components of point is a point inside this rectangle. If allowInverse is present and true, the width and height of the Rect are allowed to take negative values (ie, the min value is greater than the max), and the test will still work.</para>
+            </summary>
+            <param name="point">Point to test.</param>
+            <param name="allowInverse">Does the test allow the Rect's width and height to be negative?</param>
+            <returns>
+              <para>True if the point lies within the specified rectangle.</para>
+            </returns>
+        </member>
+        <member name="M:FalcoEngine.Rect.Contains(FalcoEngine.Vector3)">
+            <summary>
+              <para>Returns true if the x and y components of point is a point inside this rectangle. If allowInverse is present and true, the width and height of the Rect are allowed to take negative values (ie, the min value is greater than the max), and the test will still work.</para>
+            </summary>
+            <param name="point">Point to test.</param>
+            <param name="allowInverse">Does the test allow the Rect's width and height to be negative?</param>
+            <returns>
+              <para>True if the point lies within the specified rectangle.</para>
+            </returns>
+        </member>
+        <member name="M:FalcoEngine.Rect.Contains(FalcoEngine.Vector3,System.Boolean)">
+            <summary>
+              <para>Returns true if the x and y components of point is a point inside this rectangle. If allowInverse is present and true, the width and height of the Rect are allowed to take negative values (ie, the min value is greater than the max), and the test will still work.</para>
+            </summary>
+            <param name="point">Point to test.</param>
+            <param name="allowInverse">Does the test allow the Rect's width and height to be negative?</param>
+            <returns>
+              <para>True if the point lies within the specified rectangle.</para>
+            </returns>
+        </member>
+        <member name="M:FalcoEngine.Rect.Overlaps(FalcoEngine.Rect)">
+            <summary>
+              <para>Returns true if the other rectangle overlaps this one. If allowInverse is present and true, the widths and heights of the Rects are allowed to take negative values (ie, the min value is greater than the max), and the test will still work.</para>
+            </summary>
+            <param name="other">Other rectangle to test overlapping with.</param>
+            <param name="allowInverse">Does the test allow the widths and heights of the Rects to be negative?</param>
+        </member>
+        <member name="M:FalcoEngine.Rect.Overlaps(FalcoEngine.Rect,System.Boolean)">
+            <summary>
+              <para>Returns true if the other rectangle overlaps this one. If allowInverse is present and true, the widths and heights of the Rects are allowed to take negative values (ie, the min value is greater than the max), and the test will still work.</para>
+            </summary>
+            <param name="other">Other rectangle to test overlapping with.</param>
+            <param name="allowInverse">Does the test allow the widths and heights of the Rects to be negative?</param>
+        </member>
+        <member name="M:FalcoEngine.Rect.NormalizedToPoint(FalcoEngine.Rect,FalcoEngine.Vector2)">
+            <summary>
+              <para>Returns a point inside a rectangle, given normalized coordinates.</para>
+            </summary>
+            <param name="rectangle">Rectangle to get a point inside.</param>
+            <param name="normalizedRectCoordinates">Normalized coordinates to get a point for.</param>
+        </member>
+        <member name="M:FalcoEngine.Rect.PointToNormalized(FalcoEngine.Rect,FalcoEngine.Vector2)">
+            <summary>
+              <para>Returns the normalized coordinates cooresponding the the point.</para>
+            </summary>
+            <param name="rectangle">Rectangle to get normalized coordinates inside.</param>
+            <param name="point">A point inside the rectangle to get normalized coordinates for.</param>
+        </member>
+        <member name="M:FalcoEngine.Rect.ToString">
+            <summary>
+              <para>Returns a nicely formatted string for this Rect.</para>
+            </summary>
+            <param name="format"></param>
+        </member>
+        <member name="M:FalcoEngine.Rect.ToString(System.String)">
+            <summary>
+              <para>Returns a nicely formatted string for this Rect.</para>
+            </summary>
+            <param name="format"></param>
+        </member>
+        <member name="T:FalcoEngine.QualitySettings.ShadowsQualityLevel">
+            <summary>
+            Shadows quality level enum
+            </summary>
+        </member>
+        <member name="T:FalcoEngine.QualitySettings.ShadowsCascadesCount">
+            <summary>
+            Shadows cascades count enum
+            </summary>
+        </member>
+        <member name="T:FalcoEngine.QualitySettings.ShadowsSoftenessLevel">
+            <summary>
+            Shadows softeness level enum
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.SetWindowSize(System.Int32,System.Int32)">
+            <summary>
+            Set window size
+            </summary>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.GetWindowWidth">
+            <summary>
+            Return window width
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.GetWindowHeight">
+            <summary>
+            Return window height
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.SetFullScreen(System.Boolean)">
+            <summary>
+            Set window fullscreen
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.GetFullScreen">
+            <summary>
+            Return true if window is in fullscreen
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.SetExclusiveMode(System.Boolean)">
+            <summary>
+            Set window should run in exclusive mode and switch display resolution if needed
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.GetExclusiveMode">
+            <summary>
+            Return true if window is running in exclusive mode
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.SetVSync(System.Boolean)">
+            <summary>
+            Set V-Sync enabled or not
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.GetVSync">
+            <summary>
+            Return true if V-Sync is enabled
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.SetFXAA(System.Boolean)">
+            <summary>
+            Set use FXAA anti aliasing
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.GetFXAA">
+            <summary>
+            Return true if FXAA anti aliasing is enabled
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.SetDynamicResolution(System.Boolean)">
+            <summary>
+            Set use back buffer dynamic resolution
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.GetDynamicResolution">
+            <summary>
+            Returns if back buffer dynamic resolution is using
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.SetDynamicResolutionValue(System.Single)">
+            <summary>
+            Set back buffer resolution ratio (from 0.5 to 1)
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.GetDynamicResolutionValue">
+            <summary>
+            Return back buffer resolution ratio
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.SetAutoDynamicResolution(System.Boolean)">
+            <summary>
+            Set use auto back buffer dynamic resolution
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.GetAutoDynamicResolution">
+            <summary>
+            Returns if auto back buffer dynamic resolution is using
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.SetAutoDynamicResolutionTargetFPS(System.Int32)">
+            <summary>
+            Set target frames per second for auto dynamic resolution
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.GetAutoDynamicResolutionTargetFPS">
+            <summary>
+            Return target frames per second for auto dynamic resolution
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.SetDirectionalShadowsQuality(FalcoEngine.QualitySettings.ShadowsQualityLevel)">
+            <summary>
+            Set directional shadows quality
+            </summary>
+            <param name="qualityLevel"></param>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.GetDirectionalShadowsQuality">
+            <summary>
+            Return directional shadows quality
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.SetPointShadowsQuality(FalcoEngine.QualitySettings.ShadowsQualityLevel)">
+            <summary>
+            Set point shadows quality
+            </summary>
+            <param name="qualityLevel"></param>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.GetPointShadowsQuality">
+            <summary>
+            Return point shadows quality
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.SetSpotShadowsQuality(FalcoEngine.QualitySettings.ShadowsQualityLevel)">
+            <summary>
+            Set spot shadows quality
+            </summary>
+            <param name="qualityLevel"></param>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.GetSpotShadowsQuality">
+            <summary>
+            Return spot shadows quality
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.SetShadowsCascadesCount(FalcoEngine.QualitySettings.ShadowsCascadesCount)">
+            <summary>
+            Set shadows cascades count (for directional lights only)
+            </summary>
+            <param name="cascadesCount"></param>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.GetShadowsCascadesCount">
+            <summary>
+            Return shadows cascades count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.SetShadowsSofteness(FalcoEngine.QualitySettings.ShadowsSoftenessLevel)">
+            <summary>
+            Set shadows softeness
+            </summary>
+            <param name="shadowsSofteness"></param>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.GetShadowsSofteness">
+            <summary>
+            Return shadows softeness
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.SetShadowsDistance(System.Single)">
+            <summary>
+            Set distance in which shadows will be visible
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.GetShadowsDistance">
+            <summary>
+            Return shadows distance
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.SetShadowsEnabled(System.Boolean)">
+            <summary>
+            Enable/disable shadows
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.QualitySettings.GetShadowsEnabled">
+            <summary>
+            Returns if shadows are enabled
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Graphics.Blit(FalcoEngine.Material,FalcoEngine.RenderTexture,System.Boolean)">
+            <summary>
+            Render quad to the render target using material
+            </summary>
+            <param name="material">Material</param>
+            <param name="target">Render target</param>
+            <param name="copyToBackBuffer">Render to screen or to render target only</param>
+        </member>
+        <member name="P:FalcoEngine.RenderSettings.ambientColor">
+            <summary>
+            Get or set scene ambient color
+            </summary>
+        </member>
+        <member name="T:FalcoEngine.RenderTexture.TextureType">
+            <summary>
+            Render texture type
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.RenderTexture.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Create new render texture
+            </summary>
+            <param name="w">Width</param>
+            <param name="h">Height</param>
+        </member>
+        <member name="M:FalcoEngine.RenderTexture.#ctor(System.Int32,System.Int32,FalcoEngine.RenderTexture.TextureType)">
+            <summary>
+            Create new render texture
+            </summary>
+            <param name="w">Width</param>
+            <param name="h">Height</param>
+            <param name="textureType">Texture type</param>
+        </member>
+        <member name="M:FalcoEngine.RenderTexture.Reset(System.Int32,System.Int32)">
+            <summary>
+            Recreate this render texture with new width and height
+            </summary>
+            <param name="w">New width</param>
+            <param name="h">New height</param>
+        </member>
+        <member name="P:FalcoEngine.RenderTexture.colorTexture">
+            <summary>
+            Get texture containing a color data
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.RenderTexture.depthTexture">
+            <summary>
+            Get texture containing a depth data
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.RenderTexture.width">
+            <summary>
+            Get width of this render texture
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.RenderTexture.height">
+            <summary>
+            Get height of this render texture
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.RenderTexture.Dispose">
+            <summary>
+            Delete unmanaged resources for this render texture used by engine
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Button.normalStateTexture">
+            <summary>
+            Returns the texture in the normal state
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Button.hoverStateTexture">
+            <summary>
+            Returns the texture in the hover state (when the mouse cursor is above this button)
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Button.activeStateTexture">
+            <summary>
+            Returns the texture in the active state (when the mouse is clicked and held down on this button)
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Button.disabledStateTexture">
+            <summary>
+            Returns the texture in the disabled state
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Button.hoverStateColor">
+            <summary>
+            Returns the button color in the hover state (when the mouse cursor is above this button)
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Button.activeStateColor">
+            <summary>
+            Returns the button color in the active state (when the mouse is clicked and held down on this button)
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Button.disabledStateColor">
+            <summary>
+            Returns the button color in the disabled state
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Button.interactable">
+            <summary>
+            Gets or sets the button interactability (i.e. disable or enable this button or get its state)
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Canvas.scale">
+            <summary>
+            Gets scale of the canvas
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.red">
+            <summary>
+              <para>Solid red. RGBA is (1, 0, 0, 1).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.green">
+            <summary>
+              <para>Solid green. RGBA is (0, 1, 0, 1).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.blue">
+            <summary>
+              <para>Solid blue. RGBA is (0, 0, 1, 1).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.white">
+            <summary>
+              <para>Solid white. RGBA is (1, 1, 1, 1).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.black">
+            <summary>
+              <para>Solid black. RGBA is (0, 0, 0, 1).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.yellow">
+            <summary>
+              <para>Yellow. RGBA is (1, 0.92, 0.016, 1), but the color is nice to look at!</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.cyan">
+            <summary>
+              <para>Cyan. RGBA is (0, 1, 1, 1).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.magenta">
+            <summary>
+              <para>Magenta. RGBA is (1, 0, 1, 1).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.gray">
+            <summary>
+              <para>Gray. RGBA is (0.5, 0.5, 0.5, 1).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.grey">
+            <summary>
+              <para>English spelling for gray. RGBA is the same (0.5, 0.5, 0.5, 1).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.clear">
+            <summary>
+              <para>Completely transparent. RGBA is (0, 0, 0, 0).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.aqua">
+            <summary>
+              <para>Aqua</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.cream">
+            <summary>
+              <para>Cream</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.fuchsia">
+            <summary>
+              <para>Fuchsia</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.darkGreen">
+            <summary>
+              <para>Dark green</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.maroon">
+            <summary>
+              <para>Maroon</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.darkBlue">
+            <summary>
+              <para>Dark blue</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.darkRed">
+            <summary>
+              <para>Dark red</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.olive">
+            <summary>
+              <para>Olive</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.silver">
+            <summary>
+              <para>Silver</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.teal">
+            <summary>
+              <para>Teal</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Color.grayscale">
+            <summary>
+              <para>The grayscale value of the color. (Read Only)</para>
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Color.#ctor(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Constructs a new Color with given r,g,b,a components.</para>
+            </summary>
+            <param name="r">Red component.</param>
+            <param name="g">Green component.</param>
+            <param name="b">Blue component.</param>
+            <param name="a">Alpha component.</param>
+        </member>
+        <member name="M:FalcoEngine.Color.#ctor(System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Constructs a new Color with given r,g,b components and sets a to 1.</para>
+            </summary>
+            <param name="r">Red component.</param>
+            <param name="g">Green component.</param>
+            <param name="b">Blue component.</param>
+        </member>
+        <member name="M:FalcoEngine.Color.ToString">
+            <summary>
+              <para>Returns a nicely formatted string of this color.</para>
+            </summary>
+            <param name="format"></param>
+        </member>
+        <member name="M:FalcoEngine.Color.ToString(System.String)">
+            <summary>
+              <para>Returns a nicely formatted string of this color.</para>
+            </summary>
+            <param name="format"></param>
+        </member>
+        <member name="M:FalcoEngine.Color.Lerp(FalcoEngine.Color,FalcoEngine.Color,System.Single)">
+            <summary>
+              <para>Linearly interpolates between colors a and b by t.</para>
+            </summary>
+            <param name="a">Color a.</param>
+            <param name="b">Color b.</param>
+            <param name="t">Float for combining a and b.</param>
+        </member>
+        <member name="M:FalcoEngine.Color.LerpUnclamped(FalcoEngine.Color,FalcoEngine.Color,System.Single)">
+            <summary>
+              <para>Linearly interpolates between colors a and b by t.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="t"></param>
+        </member>
+        <member name="M:FalcoEngine.Color.HSVToRGB(System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Creates an RGB colour from HSV input.</para>
+            </summary>
+            <param name="H">Hue [0..1].</param>
+            <param name="S">Saturation [0..1].</param>
+            <param name="V">Brightness value [0..1].</param>
+            <param name="hdr">Output HDR colours. If true, the returned colour will not be clamped to [0..1].</param>
+            <returns>
+              <para>An opaque colour with HSV matching the input.</para>
+            </returns>
+        </member>
+        <member name="M:FalcoEngine.Color.HSVToRGB(System.Single,System.Single,System.Single,System.Boolean)">
+            <summary>
+              <para>Creates an RGB colour from HSV input.</para>
+            </summary>
+            <param name="H">Hue [0..1].</param>
+            <param name="S">Saturation [0..1].</param>
+            <param name="V">Brightness value [0..1].</param>
+            <param name="hdr">Output HDR colours. If true, the returned colour will not be clamped to [0..1].</param>
+            <returns>
+              <para>An opaque colour with HSV matching the input.</para>
+            </returns>
+        </member>
+        <member name="P:FalcoEngine.Cursor.visible">
+            <summary>
+            Get or set a visibility of the mouse cursor
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Cursor.locked">
+            <summary>
+            Get or set a lock state of the mouse cursor
+            </summary>
+        </member>
+        <member name="T:FalcoEngine.GUI.ImageType">
+            <summary>
+            ImageType enum
+            </summary>
+        </member>
+        <member name="T:FalcoEngine.GUI.TextHorizontalAlignment">
+            <summary>
+            TextHorizontalAlignment enum
+            </summary>
+        </member>
+        <member name="T:FalcoEngine.GUI.TextVerticalAlignment">
+            <summary>
+            TextVerticalAlignment enum
+            </summary>
+        </member>
+        <member name="T:FalcoEngine.GUI.TextWordWrap">
+            <summary>
+            TextWordWrap enum
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.GUI.Text(System.String,FalcoEngine.Rect)">
+            <summary>
+            Draw text
+            </summary>
+            <param name="text">Text to draw</param>
+            <param name="rect">Rect on the screen</param>
+        </member>
+        <member name="M:FalcoEngine.GUI.Text(System.String,FalcoEngine.Rect,FalcoEngine.Font)">
+            <summary>
+            Draw text with font
+            </summary>
+            <param name="text">Text to draw</param>
+            <param name="rect">Rect on the screen</param>
+            <param name="font">Font</param>
+        </member>
+        <member name="M:FalcoEngine.GUI.Text(System.String,FalcoEngine.Rect,FalcoEngine.Font,System.Single)">
+            <summary>
+            Draw text with font and font size
+            </summary>
+            <param name="text">Text to draw</param>
+            <param name="rect">Rect on the screen</param>
+            <param name="font">Font</param>
+            <param name="fontSize">Font size</param>
+        </member>
+        <member name="M:FalcoEngine.GUI.Text(System.String,FalcoEngine.Rect,FalcoEngine.Font,System.Single,System.Single)">
+            <summary>
+            Draw text with font, font size and font resolution
+            </summary>
+            <param name="text">Text to draw</param>
+            <param name="rect">Rect on the screen</param>
+            <param name="font">Font</param>
+            <param name="fontSize">Font size</param>
+            <param name="fontResolution">Font resolution</param>
+        </member>
+        <member name="M:FalcoEngine.GUI.Text(System.String,FalcoEngine.Rect,FalcoEngine.Font,System.Single,System.Single,System.Single)">
+            <summary>
+            Draw text with font, font size, font resolution and line spacing
+            </summary>
+            <param name="text">Text to draw</param>
+            <param name="rect">Rect on the screen</param>
+            <param name="font">Font</param>
+            <param name="fontSize">Font size</param>
+            <param name="fontResolution">Font resolution</param>
+            <param name="lineSpacing">Line spacing</param>
+        </member>
+        <member name="M:FalcoEngine.GUI.Text(System.String,FalcoEngine.Rect,FalcoEngine.Font,System.Single,System.Single,System.Single,FalcoEngine.GUI.TextWordWrap)">
+            <summary>
+            Draw text with font, font size, font resolution, line spacing and word wrap
+            </summary>
+            <param name="text">Text to draw</param>
+            <param name="rect">Rect on the screen</param>
+            <param name="font">Font</param>
+            <param name="fontSize">Font size</param>
+            <param name="fontResolution">Font resolution</param>
+            <param name="lineSpacing">Line spacing</param>
+            <param name="wordWrap">Word wrap</param>
+        </member>
+        <member name="M:FalcoEngine.GUI.Text(System.String,FalcoEngine.Rect,FalcoEngine.Font,System.Single,System.Single,System.Single,FalcoEngine.GUI.TextWordWrap,FalcoEngine.GUI.TextHorizontalAlignment,FalcoEngine.GUI.TextVerticalAlignment)">
+            <summary>
+            Draw text with font, font size, font resolution, line spacing, word wrap, horizontal alignment and vertical alignment
+            </summary>
+            <param name="text">Text to draw</param>
+            <param name="rect">Rect on the screen</param>
+            <param name="font">Font</param>
+            <param name="fontSize">Font size</param>
+            <param name="fontResolution">Font resolution</param>
+            <param name="lineSpacing">Line spacing</param>
+            <param name="wordWrap">Word wrap</param>
+            <param name="horizontalAlignment">Horizontal alignment</param>
+            <param name="verticalAlignment">Vertical alignment</param>
+        </member>
+        <member name="M:FalcoEngine.GUI.Text(System.String,FalcoEngine.Rect,FalcoEngine.Font,System.Single,System.Single,System.Single,FalcoEngine.GUI.TextWordWrap,FalcoEngine.GUI.TextHorizontalAlignment,FalcoEngine.GUI.TextVerticalAlignment,FalcoEngine.Color)">
+            <summary>
+            Draw text with font, font size, font resolution, line spacing, word wrap, horizontal alignment, vertical alignment and text color
+            </summary>
+            <param name="text">Text to draw</param>
+            <param name="rect">Rect on the screen</param>
+            <param name="font">Font</param>
+            <param name="fontSize">Font size</param>
+            <param name="fontResolution">Font resolution</param>
+            <param name="lineSpacing">Line spacing</param>
+            <param name="wordWrap">Word wrap</param>
+            <param name="horizontalAlignment">Horizontal alignment</param>
+            <param name="verticalAlignment">Vertical alignment</param>
+            <param name="color">Text color</param>
+        </member>
+        <member name="M:FalcoEngine.GUI.Text(System.String,FalcoEngine.Rect,System.Single,FalcoEngine.Color)">
+            <summary>
+            Draw text with font size and text color
+            </summary>
+            <param name="text">Text to draw</param>
+            <param name="rect">Rect on the screen</param>
+            <param name="fontSize">Font size</param>
+            <param name="color">Text color</param>
+        </member>
+        <member name="M:FalcoEngine.GUI.Text(System.String,FalcoEngine.Rect,FalcoEngine.Font,System.Single,FalcoEngine.Color)">
+            <summary>
+            Draw text with font, font size and text color
+            </summary>
+            <param name="text">Text to draw</param>
+            <param name="rect">Rect on the screen</param>
+            <param name="font">Font</param>
+            <param name="fontSize">Font size</param>
+            <param name="color">Text color</param>
+        </member>
+        <member name="M:FalcoEngine.GUI.Text(System.String,FalcoEngine.Rect,FalcoEngine.Font,System.Single,System.Single,FalcoEngine.Color)">
+            <summary>
+            Draw text with font, font size, font resolution and text color
+            </summary>
+            <param name="text">Text to draw</param>
+            <param name="rect">Rect on the screen</param>
+            <param name="font">Font</param>
+            <param name="fontSize">Font size</param>
+            <param name="fontResolution">Font resolution</param>
+            <param name="color">Text color</param>
+        </member>
+        <member name="M:FalcoEngine.GUI.Image(FalcoEngine.Texture,FalcoEngine.Rect)">
+            <summary>
+            Draw image
+            </summary>
+            <param name="texture">Texture to draw</param>
+            <param name="rect">Rect on the screen</param>
+        </member>
+        <member name="M:FalcoEngine.GUI.Image(FalcoEngine.Texture,FalcoEngine.Rect,FalcoEngine.Color)">
+            <summary>
+            Draw image with color tint
+            </summary>
+            <param name="texture">Texture to draw</param>
+            <param name="rect">Rect on the screen</param>
+            <param name="color">Color tint</param>
+        </member>
+        <member name="M:FalcoEngine.GUI.Image(FalcoEngine.Texture,FalcoEngine.Rect,FalcoEngine.Color,FalcoEngine.GUI.ImageType)">
+            <summary>
+            Draw image with color tint and image type
+            </summary>
+            <param name="texture">Texture to draw</param>
+            <param name="rect">Rect on the screen</param>
+            <param name="color">Color tint</param>
+            <param name="imageType">Image type</param>
+        </member>
+        <member name="M:FalcoEngine.GUI.Button(System.Int32,FalcoEngine.Rect,System.Boolean)">
+            <summary>
+            Draw enabled or disabled button
+            </summary>
+            <param name="id">Button id</param>
+            <param name="rect">Rect on the screen</param>
+            <param name="interactable">Button interactability</param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.GUI.Button(System.Int32,FalcoEngine.Rect,FalcoEngine.Color,FalcoEngine.Color,FalcoEngine.Color,FalcoEngine.Color,System.Boolean)">
+            <summary>
+            Draw enabled or disabled button with tint colors
+            </summary>
+            <param name="id">Button id</param>
+            <param name="rect">Rect on the screen</param>
+            <param name="normalColor">Normal color</param>
+            <param name="hoverColor">Hover color</param>
+            <param name="activeColor">Active color</param>
+            <param name="disabledColor">Disabled color</param>
+            <param name="interactable">Button interactability</param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.GUI.Button(System.Int32,FalcoEngine.Rect,FalcoEngine.Color,FalcoEngine.Color,FalcoEngine.Color,FalcoEngine.Color,FalcoEngine.Texture,FalcoEngine.Texture,FalcoEngine.Texture,FalcoEngine.Texture,FalcoEngine.GUI.ImageType,System.Boolean)">
+            <summary>
+            Draw enabled or disabled button with textures and tint colors
+            </summary>
+            <param name="id">Button id</param>
+            <param name="rect">Rect on the screen</param>
+            <param name="normalColor">Normal color</param>
+            <param name="hoverColor">Hover color</param>
+            <param name="activeColor">Active color</param>
+            <param name="disabledColor">Disabled color</param>
+            <param name="normalTexture">Normal texture</param>
+            <param name="hoverTexture">Hover texture</param>
+            <param name="activeTexture">Active texture</param>
+            <param name="disabledTexture">Disabled texture</param>
+            <param name="imageType">Image type</param>
+            <param name="interactable">Button interactability</param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.GUI.Button(System.Int32,FalcoEngine.Rect,FalcoEngine.Texture,FalcoEngine.Texture,FalcoEngine.Texture,FalcoEngine.Texture,FalcoEngine.GUI.ImageType,System.Boolean)">
+            <summary>
+            Draw enabled or disabled button with textures
+            </summary>
+            <param name="id">Button id</param>
+            <param name="rect">Rect on the screen</param>
+            <param name="normalTexture">Normal texture</param>
+            <param name="hoverTexture">Hover texture</param>
+            <param name="activeTexture">Active texture</param>
+            <param name="disabledTexture">Disabled texture</param>
+            <param name="imageType">Image type</param>
+            <param name="interactable">Button interactability</param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.GUI.Button(System.Int32,FalcoEngine.Rect,FalcoEngine.Color,FalcoEngine.Color,FalcoEngine.Color,FalcoEngine.Color,FalcoEngine.Texture,FalcoEngine.GUI.ImageType,System.Boolean)">
+            <summary>
+            Draw enabled or disabled button with one texture and tint colors
+            </summary>
+            <param name="id">Button id</param>
+            <param name="rect">Rect on the screen</param>
+            <param name="normalColor">Normal color</param>
+            <param name="hoverColor">Hover color</param>
+            <param name="activeColor">Active color</param>
+            <param name="disabledColor">Disabled color</param>
+            <param name="texture">Texture</param>
+            <param name="imageType">Image type</param>
+            <param name="interactable">Button interactability</param>
+            <returns></returns>
+        </member>
+        <member name="P:FalcoEngine.Screen.width">
+            <summary>
+            The current width of the screen window in pixels
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Screen.height">
+            <summary>
+            The current height of the screen window in pixels
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Image.texture">
+            <summary>
+            Get or set texture for this image
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.TextInput.normalStateTexture">
+            <summary>
+            Returns the texture in the normal state
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.TextInput.hoverStateTexture">
+            <summary>
+            Returns the texture in the hover state (when the mouse cursor is above this text input)
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.TextInput.activeStateTexture">
+            <summary>
+            Returns the texture in the active state (when the mouse is clicked and held down on this text input)
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.TextInput.disabledStateTexture">
+            <summary>
+            Returns the texture in the disabled state
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.TextInput.hoverStateColor">
+            <summary>
+            Returns the color in the hover state (when the mouse cursor is above this text input)
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.TextInput.activeStateColor">
+            <summary>
+            Returns the color in the active state (when the mouse is clicked and held down on this text input)
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.TextInput.disabledStateColor">
+            <summary>
+            Returns the color in the disabled state
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.TextInput.interactable">
+            <summary>
+            Gets or sets the text input interactability (i.e. disable or enable this text input or get its state)
+            </summary>
+        </member>
+        <member name="T:FalcoEngine.TextInput.TextHorizontalAlignment">
+            <summary>
+            TextHorizontalAlignment enum
+            </summary>
+        </member>
+        <member name="T:FalcoEngine.TextInput.TextVerticalAlignment">
+            <summary>
+            TextVerticalAlignment enum
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.TextInput.text">
+            <summary>
+            Get or set the text
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.TextInput.font">
+            <summary>
+            Get or set the font
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.TextInput.fontSize">
+            <summary>
+            Get or set the font size
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.TextInput.textHorizontalAlignment">
+            <summary>
+            Get or set text horizontal alignment
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.TextInput.textVerticalAlignment">
+            <summary>
+            Get or set text vertical alignment
+            </summary>
+        </member>
+        <member name="T:FalcoEngine.Text.TextHorizontalAlignment">
+            <summary>
+            TextHorizontalAlignment enum
+            </summary>
+        </member>
+        <member name="T:FalcoEngine.Text.TextVerticalAlignment">
+            <summary>
+            TextVerticalAlignment enum
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Text.text">
+            <summary>
+            Get or set the text
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Text.font">
+            <summary>
+            Get or set the font
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Text.fontSize">
+            <summary>
+            Get or set the font size
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Text.textHorizontalAlignment">
+            <summary>
+            Get or set text horizontal alignment
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Text.textVerticalAlignment">
+            <summary>
+            Get or set text vertical alignment
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Texture.width">
+            <summary>
+            Get texture width
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Texture.height">
+            <summary>
+            Get texture height
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Texture.Load(System.String)">
+            <summary>
+            Load existing texture
+            </summary>
+            <param name="name">Name of the existing texture</param>
+            <returns>Loaded texture</returns>
+        </member>
+        <member name="M:FalcoEngine.Texture.FromBytesRGBA8(System.SByte[],System.Int32,System.Int32)">
+            <summary>
+            Create texture from bytes containing RGBA data
+            </summary>
+            <param name="data">Byte array</param>
+            <param name="width">Texture width</param>
+            <param name="height">Texture height</param>
+            <returns></returns>
+        </member>
+        <member name="T:FalcoEngine.UIElement.CanvasHorizontalAlignment">
+            <summary>
+            CanvasHorizontalAlignment enum
+            </summary>
+        </member>
+        <member name="T:FalcoEngine.UIElement.CanvasVerticalAlignment">
+            <summary>
+            CanvasVerticalAlignment enum
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.UIElement.horizontalAlignment">
+            <summary>
+            Get or set horizontal alignment of this element
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.UIElement.verticalAlignment">
+            <summary>
+            Get or set vertical alignment of this element
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.UIElement.color">
+            <summary>
+            Get or set the main color of this element
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.UIElement.anchor">
+            <summary>
+            Get or set the anchor of this element (pivot point)
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.UIElement.size">
+            <summary>
+            Get or set the size of this element (width and height)
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.UIElement.hovered">
+            <summary>
+            Returns if this element is hovered by mouse cursor
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.UIElement.canvas">
+            <summary>
+            Returns a canvas of this element
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.UIElement.userData">
+            <summary>
+            Get or set the user data
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Input.cursorDirection">
+            <summary>
+            Get mouse cursor direction (delta position)
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Input.cursorPosition">
+            <summary>
+            Get mouse cursor global position (from top left of the screen)
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Input.cursorRelativePosition">
+            <summary>
+            Get mouse cursor position relative to window (from top left of the window)
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Input.GetKey(FalcoEngine.ScanCode)">
+            <summary>
+            Returns true while the user holds down the key identified by the key ScanCode enum parameter
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Input.GetKeyDown(FalcoEngine.ScanCode)">
+            <summary>
+            Returns true during the frame the user starts pressing down the key identified by the key ScanCode enum parameter
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Input.GetKeyUp(FalcoEngine.ScanCode)">
+            <summary>
+            Returns true during the frame the user releases the key identified by the key ScanCode enum parameter
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Input.GetMouseButton(System.Int32)">
+            <summary>
+            Returns whether the given mouse button is held down
+            </summary>
+            <param name="button"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Input.GetMouseButtonDown(System.Int32)">
+            <summary>
+            Returns true during the frame the user pressed the given mouse button
+            </summary>
+            <param name="button"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Input.GetMouseButtonUp(System.Int32)">
+            <summary>
+            Returns true during the frame the user releases the given mouse button
+            </summary>
+            <param name="button"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Input.GetMouseWheel">
+            <summary>
+            Returns direction in which the mouse wheel was scrolled
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FalcoEngine.NavMeshAgent.targetPosition">
+            <summary>
+            Gets or attempts to set the destination of the agent in world-space units
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.NavMeshAgent.radius">
+            <summary>
+            The avoidance radius for the agent
+            This is the agent's space within which obstacles and other agents should not pass
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.NavMeshAgent.height">
+            <summary>
+            The height of the agent for purposes of passing under obstacles, etc.
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.NavMeshAgent.speed">
+            <summary>
+            Maximum movement speed when following a path
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.NavMeshAgent.acceleration">
+            <summary>
+            The maximum acceleration of an agent as it follows a path
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Prefab.Instantiate">
+            <summary>
+            Create game object from this prefab
+            </summary>
+            <returns>Created game object</returns>
+        </member>
+        <member name="M:FalcoEngine.Prefab.Instantiate(FalcoEngine.Vector3)">
+            <summary>
+            Create game object from this prefab
+            </summary>
+            <param name="position">Set position</param>
+            <returns>Created game object</returns>
+        </member>
+        <member name="M:FalcoEngine.Prefab.Instantiate(FalcoEngine.Vector3,FalcoEngine.Quaternion)">
+            <summary>
+            Create game object from this prefab
+            </summary>
+            <param name="position">Set position</param>
+            <param name="rotation">Set rotation</param>
+            <returns>Created game object</returns>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.None">
+            <summary>
+              <para>Not assigned (never returned as the result of a keystroke).</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Backspace">
+            <summary>
+              <para>The backspace key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Delete">
+            <summary>
+              <para>The forward delete key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Tab">
+            <summary>
+              <para>The tab key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Clear">
+            <summary>
+              <para>The Clear key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Return">
+            <summary>
+              <para>Return key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Pause">
+            <summary>
+              <para>Pause on PC machines.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Escape">
+            <summary>
+              <para>Escape key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Space">
+            <summary>
+              <para>Space key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Keypad0">
+            <summary>
+              <para>Numeric keypad 0.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Keypad1">
+            <summary>
+              <para>Numeric keypad 1.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Keypad2">
+            <summary>
+              <para>Numeric keypad 2.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Keypad3">
+            <summary>
+              <para>Numeric keypad 3.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Keypad4">
+            <summary>
+              <para>Numeric keypad 4.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Keypad5">
+            <summary>
+              <para>Numeric keypad 5.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Keypad6">
+            <summary>
+              <para>Numeric keypad 6.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Keypad7">
+            <summary>
+              <para>Numeric keypad 7.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Keypad8">
+            <summary>
+              <para>Numeric keypad 8.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Keypad9">
+            <summary>
+              <para>Numeric keypad 9.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.KeypadPeriod">
+            <summary>
+              <para>Numeric keypad '.'.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.KeypadDivide">
+            <summary>
+              <para>Numeric keypad '/'.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.KeypadMultiply">
+            <summary>
+              <para>Numeric keypad '*'.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.KeypadMinus">
+            <summary>
+              <para>Numeric keypad '-'.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.KeypadPlus">
+            <summary>
+              <para>Numeric keypad '+'.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.KeypadEnter">
+            <summary>
+              <para>Numeric keypad enter.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.KeypadEquals">
+            <summary>
+              <para>Numeric keypad '='.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.UpArrow">
+            <summary>
+              <para>Up arrow key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.DownArrow">
+            <summary>
+              <para>Down arrow key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.RightArrow">
+            <summary>
+              <para>Right arrow key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.LeftArrow">
+            <summary>
+              <para>Left arrow key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Insert">
+            <summary>
+              <para>Insert key key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Home">
+            <summary>
+              <para>Home key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.End">
+            <summary>
+              <para>End key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.PageUp">
+            <summary>
+              <para>Page up.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.PageDown">
+            <summary>
+              <para>Page down.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.F1">
+            <summary>
+              <para>F1 function key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.F2">
+            <summary>
+              <para>F2 function key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.F3">
+            <summary>
+              <para>F3 function key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.F4">
+            <summary>
+              <para>F4 function key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.F5">
+            <summary>
+              <para>F5 function key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.F6">
+            <summary>
+              <para>F6 function key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.F7">
+            <summary>
+              <para>F7 function key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.F8">
+            <summary>
+              <para>F8 function key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.F9">
+            <summary>
+              <para>F9 function key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.F10">
+            <summary>
+              <para>F10 function key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.F11">
+            <summary>
+              <para>F11 function key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.F12">
+            <summary>
+              <para>F12 function key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.F13">
+            <summary>
+              <para>F13 function key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.F14">
+            <summary>
+              <para>F14 function key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.F15">
+            <summary>
+              <para>F15 function key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Alpha0">
+            <summary>
+              <para>The '0' key on the top of the alphanumeric keyboard.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Alpha1">
+            <summary>
+              <para>The '1' key on the top of the alphanumeric keyboard.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Alpha2">
+            <summary>
+              <para>The '2' key on the top of the alphanumeric keyboard.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Alpha3">
+            <summary>
+              <para>The '3' key on the top of the alphanumeric keyboard.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Alpha4">
+            <summary>
+              <para>The '4' key on the top of the alphanumeric keyboard.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Alpha5">
+            <summary>
+              <para>The '5' key on the top of the alphanumeric keyboard.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Alpha6">
+            <summary>
+              <para>The '6' key on the top of the alphanumeric keyboard.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Alpha7">
+            <summary>
+              <para>The '7' key on the top of the alphanumeric keyboard.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Alpha8">
+            <summary>
+              <para>The '8' key on the top of the alphanumeric keyboard.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Alpha9">
+            <summary>
+              <para>The '9' key on the top of the alphanumeric keyboard.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Exclaim">
+            <summary>
+              <para>Exclamation mark key '!'.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Hash">
+            <summary>
+              <para>Hash key '#'.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Dollar">
+            <summary>
+              <para>Dollar sign key '$'.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Ampersand">
+            <summary>
+              <para>Ampersand key '&amp;'.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.LeftParen">
+            <summary>
+              <para>Left Parenthesis key '('.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.RightParen">
+            <summary>
+              <para>Right Parenthesis key ')'.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Asterisk">
+            <summary>
+              <para>Asterisk key '*'.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Plus">
+            <summary>
+              <para>Plus key '+'.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Comma">
+            <summary>
+              <para>Comma ',' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Minus">
+            <summary>
+              <para>Minus '-' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Period">
+            <summary>
+              <para>Period '.' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Slash">
+            <summary>
+              <para>Slash '/' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Colon">
+            <summary>
+              <para>Colon ':' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Semicolon">
+            <summary>
+              <para>Semicolon ';' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Less">
+            <summary>
+              <para>Less than '&lt;' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Equals">
+            <summary>
+              <para>Equals '=' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Greater">
+            <summary>
+              <para>Greater than '&gt;' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.At">
+            <summary>
+              <para>At key '@'.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.LeftBracket">
+            <summary>
+              <para>Left square bracket key '['.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Backslash">
+            <summary>
+              <para>Backslash key '\'.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.RightBracket">
+            <summary>
+              <para>Right square bracket key ']'.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.A">
+            <summary>
+              <para>'a' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.B">
+            <summary>
+              <para>'b' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.C">
+            <summary>
+              <para>'c' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.D">
+            <summary>
+              <para>'d' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.E">
+            <summary>
+              <para>'e' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.F">
+            <summary>
+              <para>'f' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.G">
+            <summary>
+              <para>'g' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.H">
+            <summary>
+              <para>'h' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.I">
+            <summary>
+              <para>'i' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.J">
+            <summary>
+              <para>'j' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.K">
+            <summary>
+              <para>'k' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.L">
+            <summary>
+              <para>'l' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.M">
+            <summary>
+              <para>'m' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.N">
+            <summary>
+              <para>'n' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.O">
+            <summary>
+              <para>'o' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.P">
+            <summary>
+              <para>'p' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Q">
+            <summary>
+              <para>'q' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.R">
+            <summary>
+              <para>'r' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.S">
+            <summary>
+              <para>'s' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.T">
+            <summary>
+              <para>'t' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.U">
+            <summary>
+              <para>'u' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.V">
+            <summary>
+              <para>'v' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.W">
+            <summary>
+              <para>'w' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.X">
+            <summary>
+              <para>'x' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Y">
+            <summary>
+              <para>'y' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Z">
+            <summary>
+              <para>'z' key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Numlock">
+            <summary>
+              <para>Numlock key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.CapsLock">
+            <summary>
+              <para>Capslock key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.ScrollLock">
+            <summary>
+              <para>Scroll lock key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.RightShift">
+            <summary>
+              <para>Right shift key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.LeftShift">
+            <summary>
+              <para>Left shift key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.RightControl">
+            <summary>
+              <para>Right Control key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.LeftControl">
+            <summary>
+              <para>Left Control key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.RightAlt">
+            <summary>
+              <para>Right Alt key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.LeftAlt">
+            <summary>
+              <para>Left Alt key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.LeftCommand">
+            <summary>
+              <para>Left Command key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.LeftApple">
+            <summary>
+              <para>Left Command key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.LeftWindows">
+            <summary>
+              <para>Left Windows key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.RightCommand">
+            <summary>
+              <para>Right Command key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.RightApple">
+            <summary>
+              <para>Right Command key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.RightWindows">
+            <summary>
+              <para>Right Windows key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.AltGr">
+            <summary>
+              <para>Alt Gr key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Help">
+            <summary>
+              <para>Help key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Print">
+            <summary>
+              <para>Print key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.SysReq">
+            <summary>
+              <para>Sys Req key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.ScanCode.Menu">
+            <summary>
+              <para>Menu key.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.Mathf.PI">
+            <summary>
+              <para>The infamous 3.14159265358979... value (Read Only).</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.Mathf.Infinity">
+            <summary>
+              <para>A representation of positive infinity (Read Only).</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.Mathf.NegativeInfinity">
+            <summary>
+              <para>A representation of negative infinity (Read Only).</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.Mathf.Deg2Rad">
+            <summary>
+              <para>Degrees-to-radians conversion constant (Read Only).</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.Mathf.Rad2Deg">
+            <summary>
+              <para>Radians-to-degrees conversion constant (Read Only).</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.Mathf.Epsilon">
+            <summary>
+              <para>A tiny floating point value (Read Only).</para>
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Sin(System.Single)">
+            <summary>
+              <para>Returns the sine of angle f.</para>
+            </summary>
+            <param name="f">The input angle, in radians.</param>
+            <returns>
+              <para>The return value between -1 and +1.</para>
+            </returns>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Cos(System.Single)">
+            <summary>
+              <para>Returns the cosine of angle f.</para>
+            </summary>
+            <param name="f">The input angle, in radians.</param>
+            <returns>
+              <para>The return value between -1 and 1.</para>
+            </returns>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Tan(System.Single)">
+            <summary>
+              <para>Returns the tangent of angle f in radians.</para>
+            </summary>
+            <param name="f"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Asin(System.Single)">
+            <summary>
+              <para>Returns the arc-sine of f - the angle in radians whose sine is f.</para>
+            </summary>
+            <param name="f"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Acos(System.Single)">
+            <summary>
+              <para>Returns the arc-cosine of f - the angle in radians whose cosine is f.</para>
+            </summary>
+            <param name="f"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Atan(System.Single)">
+            <summary>
+              <para>Returns the arc-tangent of f - the angle in radians whose tangent is f.</para>
+            </summary>
+            <param name="f"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Atan2(System.Single,System.Single)">
+            <summary>
+              <para>Returns the angle in radians whose Tan is y/x.</para>
+            </summary>
+            <param name="y"></param>
+            <param name="x"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Sqrt(System.Single)">
+            <summary>
+              <para>Returns square root of f.</para>
+            </summary>
+            <param name="f"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Abs(System.Single)">
+            <summary>
+              <para>Returns the absolute value of f.</para>
+            </summary>
+            <param name="f"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Abs(System.Int32)">
+            <summary>
+              <para>Returns the absolute value of value.</para>
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Min(System.Single,System.Single)">
+            <summary>
+              <para>Returns the smallest of two or more values.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="values"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Min(System.Single[])">
+            <summary>
+              <para>Returns the smallest of two or more values.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="values"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Min(System.Int32,System.Int32)">
+            <summary>
+              <para>Returns the smallest of two or more values.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="values"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Min(System.Int32[])">
+            <summary>
+              <para>Returns the smallest of two or more values.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="values"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Max(System.Single,System.Single)">
+            <summary>
+              <para>Returns largest of two or more values.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="values"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Max(System.Single[])">
+            <summary>
+              <para>Returns largest of two or more values.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="values"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Max(System.Int32,System.Int32)">
+            <summary>
+              <para>Returns the largest of two or more values.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="values"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Max(System.Int32[])">
+            <summary>
+              <para>Returns the largest of two or more values.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="values"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Pow(System.Single,System.Single)">
+            <summary>
+              <para>Returns f raised to power p.</para>
+            </summary>
+            <param name="f"></param>
+            <param name="p"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Exp(System.Single)">
+            <summary>
+              <para>Returns e raised to the specified power.</para>
+            </summary>
+            <param name="power"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Log(System.Single,System.Single)">
+            <summary>
+              <para>Returns the logarithm of a specified number in a specified base.</para>
+            </summary>
+            <param name="f"></param>
+            <param name="p"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Log(System.Single)">
+            <summary>
+              <para>Returns the natural (base e) logarithm of a specified number.</para>
+            </summary>
+            <param name="f"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Log10(System.Single)">
+            <summary>
+              <para>Returns the base 10 logarithm of a specified number.</para>
+            </summary>
+            <param name="f"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Ceil(System.Single)">
+            <summary>
+              <para>Returns the smallest integer greater to or equal to f.</para>
+            </summary>
+            <param name="f"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Floor(System.Single)">
+            <summary>
+              <para>Returns the largest integer smaller than or equal to f.</para>
+            </summary>
+            <param name="f"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Round(System.Single)">
+            <summary>
+              <para>Returns f rounded to the nearest integer.</para>
+            </summary>
+            <param name="f"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.CeilToInt(System.Single)">
+            <summary>
+              <para>Returns the smallest integer greater to or equal to f.</para>
+            </summary>
+            <param name="f"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.FloorToInt(System.Single)">
+            <summary>
+              <para>Returns the largest integer smaller to or equal to f.</para>
+            </summary>
+            <param name="f"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.RoundToInt(System.Single)">
+            <summary>
+              <para>Returns f rounded to the nearest integer.</para>
+            </summary>
+            <param name="f"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Sign(System.Single)">
+            <summary>
+              <para>Returns the sign of f.</para>
+            </summary>
+            <param name="f"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Clamp(System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Clamps a value between a minimum float and maximum float value.</para>
+            </summary>
+            <param name="value"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Clamp(System.Int32,System.Int32,System.Int32)">
+            <summary>
+              <para>Clamps value between min and max and returns value.</para>
+            </summary>
+            <param name="value"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Clamp01(System.Single)">
+            <summary>
+              <para>Clamps value between 0 and 1 and returns value.</para>
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Lerp(System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Linearly interpolates between a and b by t.</para>
+            </summary>
+            <param name="a">The start value.</param>
+            <param name="b">The end value.</param>
+            <param name="t">The interpolation value between the two floats.</param>
+            <returns>
+              <para>The interpolated float result between the two float values.</para>
+            </returns>
+        </member>
+        <member name="M:FalcoEngine.Mathf.LerpUnclamped(System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Linearly interpolates between a and b by t with no limit to t.</para>
+            </summary>
+            <param name="a">The start value.</param>
+            <param name="b">The end value.</param>
+            <param name="t">The interpolation between the two floats.</param>
+            <returns>
+              <para>The float value as a result from the linear interpolation.</para>
+            </returns>
+        </member>
+        <member name="M:FalcoEngine.Mathf.LerpAngle(System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Same as Lerp but makes sure the values interpolate correctly when they wrap around 360 degrees.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="t"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.MoveTowards(System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Moves a value current towards target.</para>
+            </summary>
+            <param name="current">The current value.</param>
+            <param name="target">The value to move towards.</param>
+            <param name="maxDelta">The maximum change that should be applied to the value.</param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.MoveTowardsAngle(System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Same as MoveTowards but makes sure the values interpolate correctly when they wrap around 360 degrees.</para>
+            </summary>
+            <param name="current"></param>
+            <param name="target"></param>
+            <param name="maxDelta"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.SmoothStep(System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Interpolates between min and max with smoothing at the limits.</para>
+            </summary>
+            <param name="from"></param>
+            <param name="to"></param>
+            <param name="t"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.Repeat(System.Single,System.Single)">
+            <summary>
+              <para>Loops the value t, so that it is never larger than length and never smaller than 0.</para>
+            </summary>
+            <param name="t"></param>
+            <param name="length"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.PingPong(System.Single,System.Single)">
+            <summary>
+              <para>PingPongs the value t, so that it is never larger than length and never smaller than 0.</para>
+            </summary>
+            <param name="t"></param>
+            <param name="length"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.InverseLerp(System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Calculates the linear parameter t that produces the interpolant value within the range [a, b].</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.Mathf.DeltaAngle(System.Single,System.Single)">
+            <summary>
+              <para>Calculates the shortest difference between two given angles given in degrees.</para>
+            </summary>
+            <param name="current"></param>
+            <param name="target"></param>
+        </member>
+        <member name="P:FalcoEngine.MonoBehaviour.name">
+            <summary>
+            Game object's name
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.MonoBehaviour.uniqueName">
+            <summary>
+            Game object's unique name (UID)
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.MonoBehaviour.transform">
+            <summary>
+            Transform component
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.MonoBehaviour.rigidbody">
+            <summary>
+            Rigidbody component
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.MonoBehaviour.animation">
+            <summary>
+            Animation component
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.MonoBehaviour.audioSource">
+            <summary>
+            AudioSource component
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.MonoBehaviour.navMeshAgent">
+            <summary>
+            NavMeshAgent component
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.MonoBehaviour.components">
+            <summary>
+            Return an array of all game object's components
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.MonoBehaviour.GetComponent``1">
+            <summary>
+            Return component by type
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.MonoBehaviour.FindObjectOfType``1(System.Boolean)">
+            <summary>
+            Find object of type
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.MonoBehaviour.FindObjectsOfType``1(System.Boolean)">
+            <summary>
+            Find objects of type
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.MonoBehaviour.Destroy(FalcoEngine.GameObject)">
+            <summary>
+            Destroy game object
+            </summary>
+            <param name="gameObject"></param>
+        </member>
+        <member name="M:FalcoEngine.MonoBehaviour.Destroy(FalcoEngine.Component)">
+            <summary>
+            Destroy component
+            </summary>
+            <param name="component"></param>
+        </member>
+        <member name="M:FalcoEngine.Physics.Raycast(FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+            Check a ray intersection
+            </summary>
+            <param name="from"></param>
+            <param name="to"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Physics.Raycast(FalcoEngine.Vector3,FalcoEngine.Vector3,FalcoEngine.LayerMask)">
+            <summary>
+            Check a ray intersection by layer mask
+            </summary>
+            <param name="from"></param>
+            <param name="to"></param>
+            <param name="layerMask"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Physics.OverlapSphere(FalcoEngine.Vector3,System.Single)">
+            <summary>
+            Return an array of colliders which are overlapped by a sphere
+            </summary>
+            <param name="center"></param>
+            <param name="radius"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Physics.OverlapSphere(FalcoEngine.Vector3,System.Single,FalcoEngine.LayerMask)">
+            <summary>
+            Return an array of colliders which are overlapped by a sphere with layer mask
+            </summary>
+            <param name="center"></param>
+            <param name="radius"></param>
+            <param name="layerMask"></param>
+            <returns></returns>
+        </member>
+        <member name="F:FalcoEngine.Matrix4.zeroMatrix">
+            <summary>
+              <para>Returns a matrix with all elements set to zero (Read Only).</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.Matrix4.identityMatrix">
+            <summary>
+              <para>Returns the identity matrix (Read Only).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Matrix4.inverse">
+            <summary>
+              <para>The inverse of this matrix (Read Only).</para>
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Matrix4.Inverse(FalcoEngine.Matrix4)">
+            <summary>
+              <para>Returns the transpose of this matrix (Read Only).</para>
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Matrix4.GetColumn(System.Int32)">
+            <summary>
+              <para>Get a column of the matrix.</para>
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix4.GetRow(System.Int32)">
+            <summary>
+              <para>Returns a row of the matrix.</para>
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix4.SetColumn(System.Int32,FalcoEngine.Vector4)">
+            <summary>
+              <para>Sets a column of the matrix.</para>
+            </summary>
+            <param name="index"></param>
+            <param name="column"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix4.SetRow(System.Int32,FalcoEngine.Vector4)">
+            <summary>
+              <para>Sets a row of the matrix.</para>
+            </summary>
+            <param name="index"></param>
+            <param name="row"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix4.MultiplyPoint(FalcoEngine.Vector3)">
+            <summary>
+              <para>Transforms a position by this matrix (generic).</para>
+            </summary>
+            <param name="point"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix4.MultiplyPoint3x4(FalcoEngine.Vector3)">
+            <summary>
+              <para>Transforms a position by this matrix (fast).</para>
+            </summary>
+            <param name="point"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix4.MultiplyVector(FalcoEngine.Vector3)">
+            <summary>
+              <para>Transforms a direction by this matrix.</para>
+            </summary>
+            <param name="vector"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix4.TransformPlane(FalcoEngine.Plane)">
+            <summary>
+              <para>Returns a plane that is transformed in space.</para>
+            </summary>
+            <param name="plane"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix4.Scale(FalcoEngine.Vector3)">
+            <summary>
+              <para>Creates a scaling matrix.</para>
+            </summary>
+            <param name="vector"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix4.Translate(FalcoEngine.Vector3)">
+            <summary>
+              <para>Creates a translation matrix.</para>
+            </summary>
+            <param name="vector"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix4.Rotate(FalcoEngine.Quaternion)">
+            <summary>
+              <para>Creates a rotation matrix.</para>
+            </summary>
+            <param name="q"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix4.ToString">
+            <summary>
+              <para>Returns a nicely formatted string for this matrix.</para>
+            </summary>
+            <param name="format"></param>
+        </member>
+        <member name="M:FalcoEngine.Matrix4.ToString(System.String)">
+            <summary>
+              <para>Returns a nicely formatted string for this matrix.</para>
+            </summary>
+            <param name="format"></param>
+        </member>
+        <member name="P:FalcoEngine.Plane.normal">
+            <summary>
+              <para>Normal vector of the plane.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Plane.distance">
+            <summary>
+              <para>Distance from the origin to the plane.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Plane.flipped">
+            <summary>
+              <para>Returns a copy of the plane that faces in the opposite direction.</para>
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Plane.#ctor(FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+              <para>Creates a plane.</para>
+            </summary>
+            <param name="inNormal"></param>
+            <param name="inPoint"></param>
+        </member>
+        <member name="M:FalcoEngine.Plane.#ctor(FalcoEngine.Vector3,System.Single)">
+            <summary>
+              <para>Creates a plane.</para>
+            </summary>
+            <param name="inNormal"></param>
+            <param name="d"></param>
+        </member>
+        <member name="M:FalcoEngine.Plane.#ctor(FalcoEngine.Vector3,FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+              <para>Creates a plane.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="c"></param>
+        </member>
+        <member name="M:FalcoEngine.Plane.SetNormalAndPosition(FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+              <para>Sets a plane using a point that lies within it along with a normal to orient it.</para>
+            </summary>
+            <param name="inNormal">The plane's normal vector.</param>
+            <param name="inPoint">A point that lies on the plane.</param>
+        </member>
+        <member name="M:FalcoEngine.Plane.Set3Points(FalcoEngine.Vector3,FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+              <para>Sets a plane using three points that lie within it.  The points go around clockwise as you look down on the top surface of the plane.</para>
+            </summary>
+            <param name="a">First point in clockwise order.</param>
+            <param name="b">Second point in clockwise order.</param>
+            <param name="c">Third point in clockwise order.</param>
+        </member>
+        <member name="M:FalcoEngine.Plane.Flip">
+            <summary>
+              <para>Makes the plane face in the opposite direction.</para>
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Plane.Translate(FalcoEngine.Vector3)">
+            <summary>
+              <para>Moves the plane in space by the translation vector.</para>
+            </summary>
+            <param name="translation">The offset in space to move the plane with.</param>
+        </member>
+        <member name="M:FalcoEngine.Plane.Translate(FalcoEngine.Plane,FalcoEngine.Vector3)">
+            <summary>
+              <para>Returns a copy of the given plane that is moved in space by the given translation.</para>
+            </summary>
+            <param name="plane">The plane to move in space.</param>
+            <param name="translation">The offset in space to move the plane with.</param>
+            <returns>
+              <para>The translated plane.</para>
+            </returns>
+        </member>
+        <member name="M:FalcoEngine.Plane.ClosestPointOnPlane(FalcoEngine.Vector3)">
+            <summary>
+              <para>For a given point returns the closest point on the plane.</para>
+            </summary>
+            <param name="point">The point to project onto the plane.</param>
+            <returns>
+              <para>A point on the plane that is closest to point.</para>
+            </returns>
+        </member>
+        <member name="M:FalcoEngine.Plane.GetDistanceToPoint(FalcoEngine.Vector3)">
+            <summary>
+              <para>Returns a signed distance from plane to point.</para>
+            </summary>
+            <param name="point"></param>
+        </member>
+        <member name="M:FalcoEngine.Plane.GetSide(FalcoEngine.Vector3)">
+            <summary>
+              <para>Is a point on the positive side of the plane?</para>
+            </summary>
+            <param name="point"></param>
+        </member>
+        <member name="M:FalcoEngine.Plane.SameSide(FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+              <para>Are two points on the same side of the plane?</para>
+            </summary>
+            <param name="inPt0"></param>
+            <param name="inPt1"></param>
+        </member>
+        <member name="F:FalcoEngine.RaycastHit.hasHit">
+            <summary>
+            Is the ray has any intersection with geometry or not
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.RaycastHit.rigidbody">
+            <summary>
+            The rigidbody that was hit
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.RaycastHit.hitPoint">
+            <summary>
+            The impact point in world space where the ray hit the collider
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.RaycastHit.worldNormal">
+            <summary>
+            The normal of the surface the ray hit
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rigidbody.position">
+            <summary>
+            The position of the rigidbody
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rigidbody.rotation">
+            <summary>
+            The rotation of the rigidbody
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rigidbody.linearVelocity">
+            <summary>
+            The velocity vector of the rigidbody
+            It represents the rate of change of rigidbody position
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rigidbody.angularVelocity">
+            <summary>
+            The angular velocity vector of the rigidbody measured in radians per second
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rigidbody.friction">
+            <summary>
+            The friction of an object
+            Usually a value from 0 to 1. A value of zero feels like ice, a value of 1 will make it very hard to get the object moving
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rigidbody.bounciness">
+            <summary>
+            How bouncy is the surface?
+            A value of 0 will not bounce
+            A value of 1 will bounce without any loss of energy, certain approximations are to be expected though that might add small amounts of energy to the simulation
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rigidbody.linearDamping">
+            <summary>
+            The drag of the object
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rigidbody.angularDamping">
+            <summary>
+            The angular drag of the object
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rigidbody.isKinematic">
+            <summary>
+            Controls whether physics affects the rigidbody
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rigidbody.isStatic">
+            <summary>
+            Static objects behave like a wall or a floor which can only affect the other objects and not moving
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rigidbody.isTrigger">
+            <summary>
+            Is the collider a trigger?
+            A trigger doesn't register a collision with an incoming rigidbody
+            Instead, it sends OnTriggerEnter, OnTriggerExit and OnTriggerStay message when a rigidbody enters or exits the trigger volume.
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Rigidbody.mass">
+            <summary>
+            The mass of the rigidbody
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Rigidbody.AddForce(FalcoEngine.Vector3)">
+            <summary>
+            Adds a force to the rigidbody
+            </summary>
+            <param name="force"></param>
+        </member>
+        <member name="M:FalcoEngine.Rigidbody.AddForce(FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+            Adds a force to the rigidbody relative to its coordinate system
+            </summary>
+            <param name="force"></param>
+            <param name="rel_pos"></param>
+        </member>
+        <member name="M:FalcoEngine.Rigidbody.AddTorque(FalcoEngine.Vector3)">
+            <summary>
+            Adds a torque to the rigidbody
+            </summary>
+            <param name="torque"></param>
+        </member>
+        <member name="M:FalcoEngine.Rigidbody.SetFreezePosition(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Controls whether physics will change the position of the object
+            </summary>
+            <param name="freezeX"></param>
+            <param name="freezeY"></param>
+            <param name="freezeZ"></param>
+        </member>
+        <member name="M:FalcoEngine.Rigidbody.SetFreezeRotation(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Controls whether physics will change the rotation of the object
+            </summary>
+            <param name="freezeX"></param>
+            <param name="freezeY"></param>
+            <param name="freezeZ"></param>
+        </member>
+        <member name="P:FalcoEngine.Transform.position">
+            <summary>
+            The world space position of the transform
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Transform.rotation">
+            <summary>
+            A Quaternion that stores the rotation of the transform in world space
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Transform.scale">
+            <summary>
+            The global scale of the object
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Transform.localPosition">
+            <summary>
+            Position of the transform relative to the parent transform.
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Transform.localRotation">
+            <summary>
+            The rotation of the transform relative to the transform rotation of the parent
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Transform.localScale">
+            <summary>
+            The scale of the transform relative to the GameObjects parent.
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Transform.forward">
+            <summary>
+            Returns a normalized vector representing the blue axis of the transform in world space
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Transform.up">
+            <summary>
+            The green axis of the transform in world space
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Transform.left">
+            <summary>
+            The negative red axis of the transform in world space
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Transform.right">
+            <summary>
+            The red axis of the transform in world space
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Transform.childCount">
+            <summary>
+            The number of children the transform has
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Transform.parent">
+            <summary>
+            The parent of the transform
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Transform.GetChild(System.Int32)">
+            <summary>
+            Returns a transform child by index
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Transform.FindChild(System.String)">
+            <summary>
+            Finds a child by name and returns it
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FalcoEngine.Transform.TransformDirection(FalcoEngine.Vector3)">
+            <summary>
+              <para>Transforms direction from local space to world space.</para>
+            </summary>
+            <param name="direction"></param>
+        </member>
+        <member name="M:FalcoEngine.Transform.TransformDirection(System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Transforms direction x, y, z from local space to world space.</para>
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="z"></param>
+        </member>
+        <member name="M:FalcoEngine.Transform.InverseTransformDirection(FalcoEngine.Vector3)">
+            <summary>
+              <para>Transforms a direction from world space to local space. The opposite of Transform.TransformDirection.</para>
+            </summary>
+            <param name="direction"></param>
+        </member>
+        <member name="M:FalcoEngine.Transform.InverseTransformDirection(System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Transforms the direction x, y, z from world space to local space. The opposite of Transform.TransformDirection.</para>
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="z"></param>
+        </member>
+        <member name="M:FalcoEngine.Transform.TransformPoint(FalcoEngine.Vector3)">
+            <summary>
+              <para>Transforms position from local space to world space.</para>
+            </summary>
+            <param name="position"></param>
+        </member>
+        <member name="M:FalcoEngine.Transform.TransformPoint(System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Transforms the position x, y, z from local space to world space.</para>
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="z"></param>
+        </member>
+        <member name="M:FalcoEngine.Transform.InverseTransformPoint(FalcoEngine.Vector3)">
+            <summary>
+              <para>Transforms position from world space to local space.</para>
+            </summary>
+            <param name="position"></param>
+        </member>
+        <member name="M:FalcoEngine.Transform.InverseTransformPoint(System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Transforms the position x, y, z from world space to local space. The opposite of Transform.TransformPoint.</para>
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="z"></param>
+        </member>
+        <member name="P:FalcoEngine.Ray.origin">
+            <summary>
+              <para>The origin point of the ray.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Ray.direction">
+            <summary>
+              <para>The direction of the ray.</para>
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Ray.#ctor(FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+              <para>Creates a ray starting at origin along direction.</para>
+            </summary>
+            <param name="origin"></param>
+            <param name="direction"></param>
+        </member>
+        <member name="M:FalcoEngine.Ray.GetPoint(System.Single)">
+            <summary>
+              <para>Returns a point at distance units along the ray.</para>
+            </summary>
+            <param name="distance"></param>
+        </member>
+        <member name="M:FalcoEngine.Ray.ToString">
+            <summary>
+              <para>Returns a nicely formatted string for this ray.</para>
+            </summary>
+            <param name="format"></param>
+        </member>
+        <member name="M:FalcoEngine.Ray.ToString(System.String)">
+            <summary>
+              <para>Returns a nicely formatted string for this ray.</para>
+            </summary>
+            <param name="format"></param>
+        </member>
+        <member name="F:FalcoEngine.Vector2.x">
+            <summary>
+              <para>X component of the vector.</para>
+            </summary>
+        </member>
+        <member name="F:FalcoEngine.Vector2.y">
+            <summary>
+              <para>Y component of the vector.</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector2.normalized">
+            <summary>
+              <para>Returns this vector with a magnitude of 1 (Read Only).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector2.magnitude">
+            <summary>
+              <para>Returns the length of this vector (Read Only).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector2.sqrMagnitude">
+            <summary>
+              <para>Returns the squared length of this vector (Read Only).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector2.zero">
+            <summary>
+              <para>Shorthand for writing Vector2(0, 0).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector2.one">
+            <summary>
+              <para>Shorthand for writing Vector2(1, 1).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector2.up">
+            <summary>
+              <para>Shorthand for writing Vector2(0, 1).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector2.down">
+            <summary>
+              <para>Shorthand for writing Vector2(0, -1).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector2.left">
+            <summary>
+              <para>Shorthand for writing Vector2(-1, 0).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector2.right">
+            <summary>
+              <para>Shorthand for writing Vector2(1, 0).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector2.positiveInfinity">
+            <summary>
+              <para>Shorthand for writing Vector2(float.PositiveInfinity, float.PositiveInfinity).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector2.negativeInfinity">
+            <summary>
+              <para>Shorthand for writing Vector2(float.NegativeInfinity, float.NegativeInfinity).</para>
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Vector2.#ctor(System.Single,System.Single)">
+            <summary>
+              <para>Constructs a new vector with given x, y components.</para>
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector2.Set(System.Single,System.Single)">
+            <summary>
+              <para>Set x and y components of an existing Vector2.</para>
+            </summary>
+            <param name="newX"></param>
+            <param name="newY"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector2.Lerp(FalcoEngine.Vector2,FalcoEngine.Vector2,System.Single)">
+            <summary>
+              <para>Linearly interpolates between vectors a and b by t.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="t"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector2.LerpUnclamped(FalcoEngine.Vector2,FalcoEngine.Vector2,System.Single)">
+            <summary>
+              <para>Linearly interpolates between vectors a and b by t.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="t"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector2.MoveTowards(FalcoEngine.Vector2,FalcoEngine.Vector2,System.Single)">
+            <summary>
+              <para>Moves a point current towards target.</para>
+            </summary>
+            <param name="current"></param>
+            <param name="target"></param>
+            <param name="maxDistanceDelta"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector2.Scale(FalcoEngine.Vector2,FalcoEngine.Vector2)">
+            <summary>
+              <para>Multiplies two vectors component-wise.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector2.Scale(FalcoEngine.Vector2)">
+            <summary>
+              <para>Multiplies every component of this vector by the same component of scale.</para>
+            </summary>
+            <param name="scale"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector2.Normalize">
+            <summary>
+              <para>Makes this vector have a magnitude of 1.</para>
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Vector2.ToString">
+            <summary>
+              <para>Returns a nicely formatted string for this vector.</para>
+            </summary>
+            <param name="format"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector2.ToString(System.String)">
+            <summary>
+              <para>Returns a nicely formatted string for this vector.</para>
+            </summary>
+            <param name="format"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector2.Equals(System.Object)">
+            <summary>
+              <para>Returns true if the given vector is exactly equal to this vector.</para>
+            </summary>
+            <param name="other"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector2.Reflect(FalcoEngine.Vector2,FalcoEngine.Vector2)">
+            <summary>
+              <para>Reflects a vector off the vector defined by a normal.</para>
+            </summary>
+            <param name="inDirection"></param>
+            <param name="inNormal"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector2.Perpendicular(FalcoEngine.Vector2)">
+            <summary>
+              <para>Returns the 2D vector perpendicular to this 2D vector. The result is always rotated 90-degrees in a counter-clockwise direction for a 2D coordinate system where the positive Y axis goes up.</para>
+            </summary>
+            <param name="inDirection">The input direction.</param>
+            <returns>
+              <para>The perpendicular direction.</para>
+            </returns>
+        </member>
+        <member name="M:FalcoEngine.Vector2.Dot(FalcoEngine.Vector2,FalcoEngine.Vector2)">
+            <summary>
+              <para>Dot Product of two vectors.</para>
+            </summary>
+            <param name="lhs"></param>
+            <param name="rhs"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector2.Angle(FalcoEngine.Vector2,FalcoEngine.Vector2)">
+            <summary>
+              <para>Returns the unsigned angle in degrees between from and to.</para>
+            </summary>
+            <param name="from">The vector from which the angular difference is measured.</param>
+            <param name="to">The vector to which the angular difference is measured.</param>
+        </member>
+        <member name="M:FalcoEngine.Vector2.SignedAngle(FalcoEngine.Vector2,FalcoEngine.Vector2)">
+            <summary>
+              <para>Returns the signed angle in degrees between from and to.</para>
+            </summary>
+            <param name="from">The vector from which the angular difference is measured.</param>
+            <param name="to">The vector to which the angular difference is measured.</param>
+        </member>
+        <member name="M:FalcoEngine.Vector2.Distance(FalcoEngine.Vector2,FalcoEngine.Vector2)">
+            <summary>
+              <para>Returns the distance between a and b.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector2.ClampMagnitude(FalcoEngine.Vector2,System.Single)">
+            <summary>
+              <para>Returns a copy of vector with its magnitude clamped to maxLength.</para>
+            </summary>
+            <param name="vector"></param>
+            <param name="maxLength"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector2.Min(FalcoEngine.Vector2,FalcoEngine.Vector2)">
+            <summary>
+              <para>Returns a vector that is made from the smallest components of two vectors.</para>
+            </summary>
+            <param name="lhs"></param>
+            <param name="rhs"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector2.Max(FalcoEngine.Vector2,FalcoEngine.Vector2)">
+            <summary>
+              <para>Returns a vector that is made from the largest components of two vectors.</para>
+            </summary>
+            <param name="lhs"></param>
+            <param name="rhs"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector4.#ctor(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Creates a new vector with given x, y, z, w components.</para>
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="z"></param>
+            <param name="w"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector4.#ctor(System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Creates a new vector with given x, y, z components and sets w to zero.</para>
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="z"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector4.#ctor(System.Single,System.Single)">
+            <summary>
+              <para>Creates a new vector with given x, y components and sets z and w to zero.</para>
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="P:FalcoEngine.Vector4.normalized">
+            <summary>
+              <para>Returns this vector with a magnitude of 1 (Read Only).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector4.magnitude">
+            <summary>
+              <para>Returns the length of this vector (Read Only).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector4.sqrMagnitude">
+            <summary>
+              <para>Returns the squared length of this vector (Read Only).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector4.zero">
+            <summary>
+              <para>Shorthand for writing Vector4(0,0,0,0).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector4.one">
+            <summary>
+              <para>Shorthand for writing Vector4(1,1,1,1).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector4.positiveInfinity">
+            <summary>
+              <para>Shorthand for writing Vector4(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector4.negativeInfinity">
+            <summary>
+              <para>Shorthand for writing Vector4(float.NegativeInfinity, float.NegativeInfinity, float.NegativeInfinity, float.NegativeInfinity).</para>
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Vector4.Set(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+              <para>Set x, y, z and w components of an existing Vector4.</para>
+            </summary>
+            <param name="newX"></param>
+            <param name="newY"></param>
+            <param name="newZ"></param>
+            <param name="newW"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector4.Lerp(FalcoEngine.Vector4,FalcoEngine.Vector4,System.Single)">
+            <summary>
+              <para>Linearly interpolates between two vectors.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="t"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector4.LerpUnclamped(FalcoEngine.Vector4,FalcoEngine.Vector4,System.Single)">
+            <summary>
+              <para>Linearly interpolates between two vectors.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="t"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector4.MoveTowards(FalcoEngine.Vector4,FalcoEngine.Vector4,System.Single)">
+            <summary>
+              <para>Moves a point current towards target.</para>
+            </summary>
+            <param name="current"></param>
+            <param name="target"></param>
+            <param name="maxDistanceDelta"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector4.Scale(FalcoEngine.Vector4,FalcoEngine.Vector4)">
+            <summary>
+              <para>Multiplies two vectors component-wise.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector4.Scale(FalcoEngine.Vector4)">
+            <summary>
+              <para>Multiplies every component of this vector by the same component of scale.</para>
+            </summary>
+            <param name="scale"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector4.Equals(System.Object)">
+            <summary>
+              <para>Returns true if the given vector is exactly equal to this vector.</para>
+            </summary>
+            <param name="other"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector4.Normalize(FalcoEngine.Vector4)">
+            <summary>
+              <para></para>
+            </summary>
+            <param name="a"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector4.Normalize">
+            <summary>
+              <para>Makes this vector have a magnitude of 1.</para>
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Vector4.Dot(FalcoEngine.Vector4,FalcoEngine.Vector4)">
+            <summary>
+              <para>Dot Product of two vectors.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector4.Project(FalcoEngine.Vector4,FalcoEngine.Vector4)">
+            <summary>
+              <para>Projects a vector onto another vector.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector4.Distance(FalcoEngine.Vector4,FalcoEngine.Vector4)">
+            <summary>
+              <para>Returns the distance between a and b.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector4.Min(FalcoEngine.Vector4,FalcoEngine.Vector4)">
+            <summary>
+              <para>Returns a vector that is made from the smallest components of two vectors.</para>
+            </summary>
+            <param name="lhs"></param>
+            <param name="rhs"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector4.Max(FalcoEngine.Vector4,FalcoEngine.Vector4)">
+            <summary>
+              <para>Returns a vector that is made from the largest components of two vectors.</para>
+            </summary>
+            <param name="lhs"></param>
+            <param name="rhs"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector4.ToString">
+            <summary>
+              <para>Returns a nicely formatted string for this vector.</para>
+            </summary>
+            <param name="format"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector4.ToString(System.String)">
+            <summary>
+              <para>Returns a nicely formatted string for this vector.</para>
+            </summary>
+            <param name="format"></param>
+        </member>
+        <member name="P:FalcoEngine.Vector3.zero">
+            <summary>
+              <para>Shorthand for writing Vector3(0, 0, 0).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector3.one">
+            <summary>
+              <para>Shorthand for writing Vector3(1, 1, 1).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector3.forward">
+            <summary>
+              <para>Shorthand for writing Vector3(0, 0, 1).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector3.back">
+            <summary>
+              <para>Shorthand for writing Vector3(0, 0, -1).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector3.up">
+            <summary>
+              <para>Shorthand for writing Vector3(0, 1, 0).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector3.down">
+            <summary>
+              <para>Shorthand for writing Vector3(0, -1, 0).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector3.left">
+            <summary>
+              <para>Shorthand for writing Vector3(-1, 0, 0).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector3.right">
+            <summary>
+              <para>Shorthand for writing Vector3(1, 0, 0).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector3.positiveInfinity">
+            <summary>
+              <para>Shorthand for writing Vector3(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector3.negativeInfinity">
+            <summary>
+              <para>Shorthand for writing Vector3(float.NegativeInfinity, float.NegativeInfinity, float.NegativeInfinity).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector3.sqrMagnitude">
+            <summary>
+              <para>Returns the squared length of this vector (Read Only).</para>
+            </summary>
+        </member>
+        <member name="P:FalcoEngine.Vector3.normalized">
+            <summary>
+              <para>Returns this vector with a magnitude of 1 (Read Only).</para>
+            </summary>
+        </member>
+        <member name="M:FalcoEngine.Vector3.Lerp(FalcoEngine.Vector3,FalcoEngine.Vector3,System.Single)">
+            <summary>
+              <para>Linearly interpolates between two vectors.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="t"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector3.LerpUnclamped(FalcoEngine.Vector3,FalcoEngine.Vector3,System.Single)">
+            <summary>
+              <para>Linearly interpolates between two vectors.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="t"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector3.Scale(FalcoEngine.Vector3)">
+            <summary>
+              <para>Multiplies every component of this vector by the same component of scale.</para>
+            </summary>
+            <param name="scale"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector3.Equals(System.Object)">
+            <summary>
+              <para>Returns true if the given vector is exactly equal to this vector.</para>
+            </summary>
+            <param name="other"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector3.Cross(FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+              <para>Cross Product of two vectors.</para>
+            </summary>
+            <param name="lhs"></param>
+            <param name="rhs"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector3.Reflect(FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+              <para>Reflects a vector off the plane defined by a normal.</para>
+            </summary>
+            <param name="inDirection"></param>
+            <param name="inNormal"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector3.Normalize(FalcoEngine.Vector3)">
+            <summary>
+              <para>Makes this vector have a magnitude of 1.</para>
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector3.Dot(FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+              <para>Dot Product of two vectors.</para>
+            </summary>
+            <param name="lhs"></param>
+            <param name="rhs"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector3.Project(FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+              <para>Projects a vector onto another vector.</para>
+            </summary>
+            <param name="vector"></param>
+            <param name="onNormal"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector3.ProjectOnPlane(FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+              <para>Projects a vector onto a plane defined by a normal orthogonal to the plane.</para>
+            </summary>
+            <param name="vector"></param>
+            <param name="planeNormal"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector3.Angle(FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+              <para>Returns the angle in degrees between from and to.</para>
+            </summary>
+            <param name="from">The vector from which the angular difference is measured.</param>
+            <param name="to">The vector to which the angular difference is measured.</param>
+            <returns>
+              <para>The angle in degrees between the two vectors.</para>
+            </returns>
+        </member>
+        <member name="M:FalcoEngine.Vector3.SignedAngle(FalcoEngine.Vector3,FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+              <para>Returns the signed angle in degrees between from and to.</para>
+            </summary>
+            <param name="from">The vector from which the angular difference is measured.</param>
+            <param name="to">The vector to which the angular difference is measured.</param>
+            <param name="axis">A vector around which the other vectors are rotated.</param>
+        </member>
+        <member name="M:FalcoEngine.Vector3.Distance(FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+              <para>Returns the distance between a and b.</para>
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector3.ClampMagnitude(FalcoEngine.Vector3,System.Single)">
+            <summary>
+              <para>Returns a copy of vector with its magnitude clamped to maxLength.</para>
+            </summary>
+            <param name="vector"></param>
+            <param name="maxLength"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector3.Min(FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+              <para>Returns a vector that is made from the smallest components of two vectors.</para>
+            </summary>
+            <param name="lhs"></param>
+            <param name="rhs"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector3.Max(FalcoEngine.Vector3,FalcoEngine.Vector3)">
+            <summary>
+              <para>Returns a vector that is made from the largest components of two vectors.</para>
+            </summary>
+            <param name="lhs"></param>
+            <param name="rhs"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector3.ToString">
+            <summary>
+              <para>Returns a nicely formatted string for this vector.</para>
+            </summary>
+            <param name="format"></param>
+        </member>
+        <member name="M:FalcoEngine.Vector3.ToString(System.String)">
+            <summary>
+              <para>Returns a nicely formatted string for this vector.</para>
+            </summary>
+            <param name="format"></param>
+        </member>
+    </members>
+</doc>

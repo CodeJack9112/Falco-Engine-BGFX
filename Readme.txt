@@ -1,0 +1,18 @@
+- Boost 1.74.0
+- Assimp 5.2.3
+- Bullet 3.2.4
+- FreeImage 3.1.8.0
+- FreeType 2.12.1
+- LibOgg 1.3.5
+- LibVorbis 1.3.7
+- LibZip 1.8.0
+- OpenAL 1.22.0
+- SDL2 2.0
+- FFmpeg 4.4.1
+- Carve 1.4.0
+- Mono 6.8.0.105
+- Zenity (for linux only)
+- XClip for copy render image to clipboard (for linux only)
+- Clang++ compiler (on linux)
+- G++ compiler (on linux)
+- Visual Studio 2022 (on windows)

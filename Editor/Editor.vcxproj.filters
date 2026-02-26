@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Windows">
+      <UniqueIdentifier>{e8f62e0b-74c2-4f0e-a1ec-86065570a582}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Serialization">
+      <UniqueIdentifier>{13818cd3-d51c-4f1b-904f-c979be565062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes">
+      <UniqueIdentifier>{36fe5ca8-3592-41a6-a1b3-6d7da9c75761}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PropertyEditors">
+      <UniqueIdentifier>{ccc46e0f-5d9d-48b2-8b04-27b2b59f4bdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PropertyEditors\Properties">
+      <UniqueIdentifier>{ebd87a2f-9d75-477c-995e-060fb03eaeba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PropertyEditors\Editors">
+      <UniqueIdentifier>{edda58aa-9da8-44f1-b0a6-c13ab4929e21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Dialogs">
+      <UniqueIdentifier>{3dd56fa8-58e0-4fdf-b829-19f1fc9eef59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PropertyEditors\Editors\Components">
+      <UniqueIdentifier>{9a6a7f36-5bcd-4963-9b0e-ed18fb4baca6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PropertyEditors\Editors\Assets">
+      <UniqueIdentifier>{452cd0f9-1017-4f17-ade5-f0d2a27d8a5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PropertyEditors\Editors\Settings">
+      <UniqueIdentifier>{625ccae5-4fc7-4541-a7b2-4a0d67901b35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PropertyEditors\Editors\Components\Physics">
+      <UniqueIdentifier>{89e21c68-773f-4557-9425-6ca5d6a31b7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PropertyEditors\Editors\Components\Audio">
+      <UniqueIdentifier>{ae14109c-2f69-4b80-b282-aac6f08514db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PropertyEditors\Editors\Components\Navigation">
+      <UniqueIdentifier>{7e28d6a3-54de-47d6-9438-d7228481a638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PropertyEditors\Editors\Components\Animation">
+      <UniqueIdentifier>{98325f6c-34aa-4fa8-8fd4-5037b455116b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PropertyEditors\Editors\Components\Rendering">
+      <UniqueIdentifier>{0adb9f1d-1608-4e8d-9ecb-4eaeef30a9ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PropertyEditors\Editors\Components\Base">
+      <UniqueIdentifier>{d057eb91-b409-46d4-b93d-e76e54106c28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PropertyEditors\Editors\Components\UI">
+      <UniqueIdentifier>{6025d83a-ba40-4399-80b9-ff3683b70323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\BuildSystems">
+      <UniqueIdentifier>{392223e6-60c0-482b-83e1-f63a8d95e2ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PropertyEditors\Editors\Base">
+      <UniqueIdentifier>{021490bd-fc34-4e61-a34d-294716590652}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PropertyEditors\Editors\Components\Other">
+      <UniqueIdentifier>{f9a3b393-5699-4998-a9b4-f3e29c323294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PropertyEditors\Editors\Components\CSG">
+      <UniqueIdentifier>{15fec9db-7305-4825-a9eb-941e096bc79c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\AssetsWindow.cpp">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\HierarchyWindow.cpp">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\InspectorWindow.cpp">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\MainWindow.cpp">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\SceneWindow.cpp">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\TreeNode.cpp">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\TreeView.cpp">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropEditorHost.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\Property.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\ProjectSelector.cpp">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\SolutionWorker.cpp">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropBool.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropBool3.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropButton.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropColorPicker.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropComboBox.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropFloat.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropGameObject.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropInt.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropMatrix3.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropMatrix4.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropString.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropVector2.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropVector3.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropVector4.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\ConsoleWindow.cpp">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\LightingWindow.cpp">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\NavigationWindow.cpp">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Toast.cpp">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialogs\DialogProgress.cpp">
+      <Filter>Исходные файлы\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialogs\DialogAbout.cpp">
+      <Filter>Исходные файлы\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialogs\DialogTextInput.cpp">
+      <Filter>Исходные файлы\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\MaterialEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropSampler.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\ProjectSettingsEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropButton2.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\BoxColliderEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\CapsuleColliderEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\FixedJointEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\HingeJointEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\MeshColliderEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\SphereColliderEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\VehicleEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\FreeJointEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\RigidBodyEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialogs\DialogRagdollEditor.cpp">
+      <Filter>Исходные файлы\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\AudioListenerEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\AudioSourceEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\NavMeshAgentEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\NavMeshObstacleEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\AnimationEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\CameraEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\LightEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\MeshRendererEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\ComponentEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\TransformEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\MonoScriptEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\UIEditorWindow.cpp">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\CanvasEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\ImageEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\UIElementEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\ButtonEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\TextEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildSystems\BuildSystemWin64.cpp">
+      <Filter>Исходные файлы\BuildSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialogs\DialogAssetExporter.cpp">
+      <Filter>Исходные файлы\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\TerrainEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropCustom.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\CubemapEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\ParticleSystemEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\TerrainColliderEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\TextureEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialogs\DialogProjectBuild.cpp">
+      <Filter>Исходные файлы\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildSystems\ProjectOptimizer.cpp">
+      <Filter>Исходные файлы\BuildSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropAsset.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\ConeTwistJointEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\WaterEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\Model3DEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\ObjectEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropertyEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\MaskEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\SplineEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Undo.cpp">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\AudioClipEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\AnimationEditorWindow.cpp">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialogs\DialogAnimationCrop.cpp">
+      <Filter>Исходные файлы\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\LightmapBaker.cpp">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Serialization\EditorSettings.cpp">
+      <Filter>Исходные файлы\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\VideoClipEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\VideoPlayerEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\PropInfo.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\CSGBrushEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\CSG</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialogs\DialogCSGStairBuilder.cpp">
+      <Filter>Исходные файлы\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\GameWindow.cpp">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\TextInputEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\CSGModelEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\CSG</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditors\DecalRendererEditor.cpp">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Rendering</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Windows\AssetsWindow.h">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\HierarchyWindow.h">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\InspectorWindow.h">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\MainWindow.h">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\SceneWindow.h">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\TreeNode.h">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\TreeView.h">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropEditorHost.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\Property.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\ProjectSelector.h">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\SolutionWorker.h">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropBool.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropBool3.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropButton.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropColorPicker.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropComboBox.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropFloat.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropGameObject.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropInt.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropMatrix3.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropMatrix4.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropString.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropVector2.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropVector3.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropVector4.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\SProjectData.h">
+      <Filter>Исходные файлы\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\ConsoleWindow.h">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\LightingWindow.h">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\NavigationWindow.h">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Toast.h">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\DialogProgress.h">
+      <Filter>Исходные файлы\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\DialogAbout.h">
+      <Filter>Исходные файлы\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\DialogTextInput.h">
+      <Filter>Исходные файлы\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Файлы ресурсов</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\MaterialEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropSampler.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\ProjectSettingsEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropButton2.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\BoxColliderEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\CapsuleColliderEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\FixedJointEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\HingeJointEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\MeshColliderEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\SphereColliderEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\VehicleEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\FreeJointEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\RigidBodyEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\DialogRagdollEditor.h">
+      <Filter>Исходные файлы\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\AudioListenerEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\AudioSourceEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\NavMeshAgentEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\NavMeshObstacleEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\AnimationEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\CameraEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\LightEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\MeshRendererEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\ComponentEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\TransformEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\MonoScriptEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\UIEditorWindow.h">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\CanvasEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\ImageEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\UIElementEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\ButtonEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\TextEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildSystems\BuildSystemWin64.h">
+      <Filter>Исходные файлы\BuildSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\DialogAssetExporter.h">
+      <Filter>Исходные файлы\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\TerrainEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropCustom.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\CubemapEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\ParticleSystemEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\TerrainColliderEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\TextureEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\DialogProjectBuild.h">
+      <Filter>Исходные файлы\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildSystems\ProjectOptimizer.h">
+      <Filter>Исходные файлы\BuildSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropAsset.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\ConeTwistJointEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\WaterEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\Model3DEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\ObjectEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropertyEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\MaskEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\SplineEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Undo.h">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\AudioClipEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\AnimationEditorWindow.h">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\DialogAnimationCrop.h">
+      <Filter>Исходные файлы\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\LightmapBaker.h">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\EditorSettings.h">
+      <Filter>Исходные файлы\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\VideoClipEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\VideoPlayerEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\PropInfo.h">
+      <Filter>Исходные файлы\PropertyEditors\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\CSGBrushEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\CSG</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs\DialogCSGStairBuilder.h">
+      <Filter>Исходные файлы\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\GameWindow.h">
+      <Filter>Исходные файлы\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\TextInputEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\CSGModelEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\CSG</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditors\DecalRendererEditor.h">
+      <Filter>Исходные файлы\PropertyEditors\Editors\Components\Rendering</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Editor.rc">
+      <Filter>Файлы ресурсов</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\x64\Logo\icon.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

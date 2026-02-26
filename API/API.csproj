@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3788A351-09D9-4FE6-BAF2-05A3AAFEBCAF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FalcoEngine</RootNamespace>
+    <AssemblyName>FalcoEngine</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Release\FalcoEngine.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\AnimationClip.cs" />
+    <Compile Include="Assets\Asset.cs" />
+    <Compile Include="Assets\AudioClip.cs" />
+    <Compile Include="Assets\Cubemap.cs" />
+    <Compile Include="Assets\Mesh.cs" />
+    <Compile Include="Assets\SubMesh.cs" />
+    <Compile Include="Assets\VideoClip.cs" />
+    <Compile Include="Components\Animation\AnimationClipInfo.cs" />
+    <Compile Include="Components\Physics\ConeTwistJoint.cs" />
+    <Compile Include="Components\Physics\FixedJoint.cs" />
+    <Compile Include="Components\Physics\FreeJoint.cs" />
+    <Compile Include="Components\Physics\HingeJoint.cs" />
+    <Compile Include="Components\Rendering\Light.cs" />
+    <Compile Include="Components\Rendering\MeshRenderer.cs" />
+    <Compile Include="Components\Navigation\NavMeshObstacle.cs" />
+    <Compile Include="Components\Other\Spline.cs" />
+    <Compile Include="Components\Physics\Vehicle.cs" />
+    <Compile Include="Components\Physics\BoxCollider.cs" />
+    <Compile Include="Components\Physics\CapsuleCollider.cs" />
+    <Compile Include="Components\Physics\Collider.cs" />
+    <Compile Include="Components\Physics\MeshCollider.cs" />
+    <Compile Include="Components\Physics\SphereCollider.cs" />
+    <Compile Include="Assets\Material.cs" />
+    <Compile Include="Assets\Shader.cs" />
+    <Compile Include="Components\Animation\Animation.cs" />
+    <Compile Include="Components\Audio\AudioListener.cs" />
+    <Compile Include="Components\Audio\AudioSource.cs" />
+    <Compile Include="Components\Base\Component.cs" />
+    <Compile Include="Components\Other\VideoPlayer.cs" />
+    <Compile Include="Components\Rendering\ParticleSystem.cs" />
+    <Compile Include="Core\Application.cs" />
+    <Compile Include="Core\Collision.cs" />
+    <Compile Include="Core\Debug.cs" />
+    <Compile Include="Core\EntryPoint.cs" />
+    <Compile Include="Core\GameObject.cs" />
+    <Compile Include="Core\LayerMask.cs" />
+    <Compile Include="Core\Object.cs" />
+    <Compile Include="Core\PlayerPrefs.cs" />
+    <Compile Include="Math\Bounds.cs" />
+    <Compile Include="Math\Matrix3.cs" />
+    <Compile Include="Math\Random.cs" />
+    <Compile Include="Components\Rendering\Camera.cs" />
+    <Compile Include="Core\SceneManager.cs" />
+    <Compile Include="Core\Time.cs" />
+    <Compile Include="Math\Rect.cs" />
+    <Compile Include="Other\QualitySettings.cs" />
+    <Compile Include="Other\SteamAPI\Friends.cs" />
+    <Compile Include="Other\SteamAPI\Result.cs" />
+    <Compile Include="Other\SteamAPI\UserStats.cs" />
+    <Compile Include="Other\SteamAPI\User.cs" />
+    <Compile Include="Other\SteamAPI\Utils.cs" />
+    <Compile Include="Renderer\Graphics.cs" />
+    <Compile Include="Renderer\RenderSettings.cs" />
+    <Compile Include="Renderer\RenderTexture.cs" />
+    <Compile Include="Components\UI\Button.cs" />
+    <Compile Include="Components\UI\Canvas.cs" />
+    <Compile Include="Components\UI\Color.cs" />
+    <Compile Include="Input\Cursor.cs" />
+    <Compile Include="Assets\Font.cs" />
+    <Compile Include="Components\UI\GUI.cs" />
+    <Compile Include="Core\Screen.cs" />
+    <Compile Include="Components\UI\Image.cs" />
+    <Compile Include="Components\UI\TextInput.cs" />
+    <Compile Include="Components\UI\Mask.cs" />
+    <Compile Include="Components\UI\Text.cs" />
+    <Compile Include="Assets\Texture.cs" />
+    <Compile Include="Components\UI\UIElement.cs" />
+    <Compile Include="Input\Input.cs" />
+    <Compile Include="Components\Navigation\NavMeshAgent.cs" />
+    <Compile Include="Assets\Prefab.cs" />
+    <Compile Include="Input\ScanCode.cs" />
+    <Compile Include="Math\Mathf.cs" />
+    <Compile Include="Components\Base\MonoBehaviour.cs" />
+    <Compile Include="Core\Physics.cs" />
+    <Compile Include="Math\Matrix4.cs" />
+    <Compile Include="Math\Plane.cs" />
+    <Compile Include="Math\Quaternion.cs" />
+    <Compile Include="Core\RaycastHit.cs" />
+    <Compile Include="Components\Physics\Rigidbody.cs" />
+    <Compile Include="Components\Base\Transform.cs" />
+    <Compile Include="Math\Ray.cs" />
+    <Compile Include="Math\Vector2.cs" />
+    <Compile Include="Math\Vector4.cs" />
+    <Compile Include="Math\Vector3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo F|%25windir%25\system32\xcopy "$(TargetPath)" "$(ProjectDir)..\x64\Release\$(TargetFileName)" /y
+echo F|%25windir%25\system32\xcopy "$(TargetDir)$(TargetName).xml" "$(ProjectDir)..\x64\Release\$(TargetName).xml" /y</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

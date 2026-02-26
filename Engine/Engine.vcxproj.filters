@@ -1,0 +1,2903 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes">
+      <UniqueIdentifier>{039f438b-cc0e-464b-99a9-a7696f766dbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\UI">
+      <UniqueIdentifier>{4c7c4091-11b1-44b7-9494-34d00603de3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\UI\ImGui">
+      <UniqueIdentifier>{2e88627a-1b62-4055-9d74-a3821a554277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\UI\ImGui\misc">
+      <UniqueIdentifier>{79a51724-30a4-47f2-b2c1-b8c8e02af6ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\UI\ImGui\widgets">
+      <UniqueIdentifier>{f8c55d0e-cbbb-4486-8c7f-1c177b735265}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Renderer">
+      <UniqueIdentifier>{738eb3e3-6896-4f77-8b8a-22415d92e414}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\UI\ImGui\bgfx_impl">
+      <UniqueIdentifier>{7c394647-2c4d-4b32-aa83-f112260bc9e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\UI\ImGui\main">
+      <UniqueIdentifier>{e95968c9-ef78-46c8-8e66-63fff5199f3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Components">
+      <UniqueIdentifier>{8125d869-9033-491e-877d-9212b1a0819e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Math">
+      <UniqueIdentifier>{97616dbe-afb1-41eb-a0cf-f66b8433219c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Math\glm">
+      <UniqueIdentifier>{8942e88c-baf6-4154-a3de-c429cedf1726}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Math\glm\detail">
+      <UniqueIdentifier>{37147cbc-8000-4672-b216-4732fce56204}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Math\glm\ext">
+      <UniqueIdentifier>{6e1f263e-9bea-4455-8a0b-3984c3a6b2ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Math\glm\gtc">
+      <UniqueIdentifier>{d32b7f8d-0844-487d-9347-22515695caa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Math\glm\gtx">
+      <UniqueIdentifier>{07276e42-7aef-4abb-a452-c134d871c5ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Math\glm\simd">
+      <UniqueIdentifier>{2f7347e6-03d2-440e-afd5-7b1667c4e8e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Assets">
+      <UniqueIdentifier>{c52790aa-6c27-4c45-8d62-2baecccac59a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Serialization">
+      <UniqueIdentifier>{09bf0bc9-217e-4d01-a9af-ae168e1ca5a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Gizmo">
+      <UniqueIdentifier>{24824bb5-6ec0-4fc9-955b-e1d1dbd1933d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Serialization\Assets">
+      <UniqueIdentifier>{cd59abe2-5d9f-410c-af62-42c40090e2eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Serialization\Scene">
+      <UniqueIdentifier>{58e86832-1850-4105-9a84-82bfd86e8926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Serialization\Data">
+      <UniqueIdentifier>{52c0855e-1625-4a19-aabb-00e62f66caae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Serialization\Components">
+      <UniqueIdentifier>{5c878130-78d6-4b37-b87c-680eaa4c70b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Serialization\Settings">
+      <UniqueIdentifier>{072c2909-f844-4bca-81fc-d680fd56e2f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Renderer\SystemShaders">
+      <UniqueIdentifier>{a9db0c42-0a5d-4739-84a5-134fa93f0e82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Components\Physics">
+      <UniqueIdentifier>{d11110e8-d415-41b6-9bf2-d3023075d3bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Components\Rendering">
+      <UniqueIdentifier>{31fff45f-0a18-495f-b5f0-117a9f271b88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Serialization\Components\Physics">
+      <UniqueIdentifier>{1a1864ce-cb0e-4ff2-934a-0cbc91696c6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Components\Audio">
+      <UniqueIdentifier>{031ea68a-75cf-45ae-9275-7710e68e420c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Serialization\Components\Audio">
+      <UniqueIdentifier>{a4393a5f-b4dc-4d78-af94-e8264e74abcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Components\Navigation">
+      <UniqueIdentifier>{3ebeec46-2451-40f7-8079-515302818004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Serialization\Components\Navigation">
+      <UniqueIdentifier>{052bd33f-31a6-48f3-ba93-00245199318d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Navigation">
+      <UniqueIdentifier>{3470b156-877d-49de-a489-f271e7dd964a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Navigation\DebugUtils">
+      <UniqueIdentifier>{99d3503e-e230-4310-9f7a-ccd580b7f62a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Navigation\Detour">
+      <UniqueIdentifier>{358eb07b-6db1-4119-82de-869c5db7d7d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Navigation\DetourCrowd">
+      <UniqueIdentifier>{60ff8d6f-244a-42bc-a58b-671ca7fec87c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Navigation\DetourTileCache">
+      <UniqueIdentifier>{3cf4a81a-5ec3-4d10-806f-a277535d2cc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Navigation\Recast">
+      <UniqueIdentifier>{65fe3b05-009e-447f-9b2c-679b491bea99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Components\Base">
+      <UniqueIdentifier>{3a532259-1fd2-432b-b1b9-4a4260a49cc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\API">
+      <UniqueIdentifier>{4e0e6a61-7685-412b-8896-96d9b2c86bc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\API\Base">
+      <UniqueIdentifier>{21e68124-3a38-40a1-aad1-1fd45ca64b9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\API\Input">
+      <UniqueIdentifier>{f269d55e-81b2-49da-96d3-72707095e4f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\API\Assets">
+      <UniqueIdentifier>{2ef189fe-d7de-4996-987d-f0d7309a12a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\API\Math">
+      <UniqueIdentifier>{86e01083-1955-46dc-8b6a-744092fe5de7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\API\Components">
+      <UniqueIdentifier>{665a4cc1-242b-4aa5-a287-e0397ae7cdef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\API\Components\Audio">
+      <UniqueIdentifier>{32804b51-f761-4800-919f-8a7656c39413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\API\Components\Physics">
+      <UniqueIdentifier>{ad71c792-e081-46c8-ad96-9aaea89f3478}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\API\Components\Rendering">
+      <UniqueIdentifier>{d3fd447e-1269-47e6-9a4e-30288b7a8949}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\API\Components\Animation">
+      <UniqueIdentifier>{44efaa9c-ad7a-40b9-b192-125cbc135a49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\API\Components\Navigation">
+      <UniqueIdentifier>{12afcaca-6d19-40a7-9675-826f7b0fd80c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\API\Components\Base">
+      <UniqueIdentifier>{cdc11526-b9cd-40c3-afba-afd1b3f9e579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Components\Animation">
+      <UniqueIdentifier>{60407868-09e2-472e-83e2-53d0b95f4775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Serialization\Components\Rendering">
+      <UniqueIdentifier>{7a7d85cb-21f2-445b-9944-5caad4e8f59a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Components\UI">
+      <UniqueIdentifier>{2ed23319-5f9f-43bb-97a8-880d675bf630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Serialization\Components\UI">
+      <UniqueIdentifier>{ae5f73ac-90ff-4fad-919d-1e338b31b667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\API\Components\UI">
+      <UniqueIdentifier>{f66bc2a4-094f-493e-90e8-68de5c46dfa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Thirdparty">
+      <UniqueIdentifier>{34b19b3a-f7c5-4109-994b-df80ae900c1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Components\Physics\Colliders">
+      <UniqueIdentifier>{e45d56e5-56b2-4fd0-a75f-56a27aaa4d65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Components\Physics\Joints">
+      <UniqueIdentifier>{8adc0d1f-7cb2-4cc2-94d2-75969da2023f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Serialization\Components\Animation">
+      <UniqueIdentifier>{60343431-0d3f-4df8-9e7a-b03b74cc52cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Serialization\Components\Base">
+      <UniqueIdentifier>{6d1638af-baa4-43df-8d8e-c5b28dbb3c47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\API\Renderer">
+      <UniqueIdentifier>{8ec38757-a80d-4f77-b0b7-64fd255a6037}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Serialization\Meta">
+      <UniqueIdentifier>{b6297dfe-179c-4c77-9183-6ea3a41cc53c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Components\Other">
+      <UniqueIdentifier>{f7ce29ee-d74d-4a37-8e19-1e8b371278c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Serialization\Components\Other">
+      <UniqueIdentifier>{88a2bf19-a4b2-437a-8eb7-687838d61fcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\API\Components\Other">
+      <UniqueIdentifier>{762e7b32-c2df-42ec-98da-aa3466522ace}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\API\Other">
+      <UniqueIdentifier>{6dad558b-14ca-4b83-9272-abb86bda2a33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\OcclusionCulling">
+      <UniqueIdentifier>{63167eec-9320-4ecd-a00d-c33f3aa0ee85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\MeshOptimizer">
+      <UniqueIdentifier>{88b3fee3-8643-4217-a23c-9121c20fd4f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Serialization\Serializers">
+      <UniqueIdentifier>{2ede402c-7f3a-417a-b788-872721fd2c00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Components\CSG">
+      <UniqueIdentifier>{ea9836e6-8228-433a-9cc7-f796e5fde12d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Serialization\Components\CSG">
+      <UniqueIdentifier>{9ec2d139-4271-48e2-b333-483e6912b08e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Core">
+      <UniqueIdentifier>{e152ffff-7170-40d3-8498-779c4a955bb3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="UI\ImGUIWidgets.cpp">
+      <Filter>Исходные файлы\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\IO.cpp">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\dear-imgui\misc\cpp\imgui_stdlib.cpp">
+      <Filter>Исходные файлы\UI\ImGui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Window.cpp">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\imgui_impl_sdl.cpp">
+      <Filter>Исходные файлы\UI\ImGui\bgfx_impl</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\imgui_impl_bgfx.cpp">
+      <Filter>Исходные файлы\UI\ImGui\bgfx_impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\dear-imgui\imgui.cpp">
+      <Filter>Исходные файлы\UI\ImGui\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\dear-imgui\imgui_demo.cpp">
+      <Filter>Исходные файлы\UI\ImGui\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\dear-imgui\imgui_draw.cpp">
+      <Filter>Исходные файлы\UI\ImGui\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\dear-imgui\imgui_widgets.cpp">
+      <Filter>Исходные файлы\UI\ImGui\main</Filter>
+    </ClCompile>
+    <ClCompile Include="glm\detail\glm.cpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Asset.cpp">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Mesh.cpp">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Model3DLoader.cpp">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Material.cpp">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Texture.cpp">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\GUIDGenerator.cpp">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Gizmo\Gizmo.cpp">
+      <Filter>Исходные файлы\Gizmo</Filter>
+    </ClCompile>
+    <ClCompile Include="Gizmo\ImGuizmo.cpp">
+      <Filter>Исходные файлы\Gizmo</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\AxisAlignedBox.cpp">
+      <Filter>Исходные файлы\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Mathf.cpp">
+      <Filter>Исходные файлы\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Color.cpp">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Raycast.cpp">
+      <Filter>Исходные файлы\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Ray.cpp">
+      <Filter>Исходные файлы\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Shader.cpp">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Helpers.cpp">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Scene.cpp">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Serialization\Settings\ProjectSettings.cpp">
+      <Filter>Исходные файлы\Serialization\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Primitives.cpp">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\AnimationClip.cpp">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\RenderTexture.cpp">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Vehicle.cpp">
+      <Filter>Исходные файлы\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\RigidBody.cpp">
+      <Filter>Исходные файлы\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Camera.cpp">
+      <Filter>Исходные файлы\Components\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Light.cpp">
+      <Filter>Исходные файлы\Components\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\MeshRenderer.cpp">
+      <Filter>Исходные файлы\Components\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\AudioListener.cpp">
+      <Filter>Исходные файлы\Components\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\AudioSource.cpp">
+      <Filter>Исходные файлы\Components\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\SoundManager.cpp">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\md5.cpp">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\StringConverter.cpp">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Debug.cpp">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\LayerMask.cpp">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\PhysicsManager.cpp">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\NavigationManager.cpp">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\NavMeshAgent.cpp">
+      <Filter>Исходные файлы\Components\Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\NavMeshObstacle.cpp">
+      <Filter>Исходные файлы\Components\Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\DebugUtils\Source\DebugDraw.cpp">
+      <Filter>Исходные файлы\Navigation\DebugUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\DebugUtils\Source\DetourDebugDraw.cpp">
+      <Filter>Исходные файлы\Navigation\DebugUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\DebugUtils\Source\RecastDebugDraw.cpp">
+      <Filter>Исходные файлы\Navigation\DebugUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\DebugUtils\Source\RecastDump.cpp">
+      <Filter>Исходные файлы\Navigation\DebugUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\Detour\Source\DetourAlloc.cpp">
+      <Filter>Исходные файлы\Navigation\Detour</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\Detour\Source\DetourAssert.cpp">
+      <Filter>Исходные файлы\Navigation\Detour</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\Detour\Source\DetourCommon.cpp">
+      <Filter>Исходные файлы\Navigation\Detour</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\Detour\Source\DetourNavMesh.cpp">
+      <Filter>Исходные файлы\Navigation\Detour</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\Detour\Source\DetourNavMeshBuilder.cpp">
+      <Filter>Исходные файлы\Navigation\Detour</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\Detour\Source\DetourNavMeshQuery.cpp">
+      <Filter>Исходные файлы\Navigation\Detour</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\Detour\Source\DetourNode.cpp">
+      <Filter>Исходные файлы\Navigation\Detour</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\DetourCrowd\Source\DetourCrowd.cpp">
+      <Filter>Исходные файлы\Navigation\DetourCrowd</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\DetourCrowd\Source\DetourLocalBoundary.cpp">
+      <Filter>Исходные файлы\Navigation\DetourCrowd</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\DetourCrowd\Source\DetourObstacleAvoidance.cpp">
+      <Filter>Исходные файлы\Navigation\DetourCrowd</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\DetourCrowd\Source\DetourPathCorridor.cpp">
+      <Filter>Исходные файлы\Navigation\DetourCrowd</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\DetourCrowd\Source\DetourPathQueue.cpp">
+      <Filter>Исходные файлы\Navigation\DetourCrowd</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\DetourCrowd\Source\DetourProximityGrid.cpp">
+      <Filter>Исходные файлы\Navigation\DetourCrowd</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\DetourTileCache\Source\DetourTileCache.cpp">
+      <Filter>Исходные файлы\Navigation\DetourTileCache</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\DetourTileCache\Source\DetourTileCacheBuilder.cpp">
+      <Filter>Исходные файлы\Navigation\DetourTileCache</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\Recast\Source\Recast.cpp">
+      <Filter>Исходные файлы\Navigation\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\Recast\Source\RecastAlloc.cpp">
+      <Filter>Исходные файлы\Navigation\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\Recast\Source\RecastArea.cpp">
+      <Filter>Исходные файлы\Navigation\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\Recast\Source\RecastAssert.cpp">
+      <Filter>Исходные файлы\Navigation\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\Recast\Source\RecastContour.cpp">
+      <Filter>Исходные файлы\Navigation\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\Recast\Source\RecastFilter.cpp">
+      <Filter>Исходные файлы\Navigation\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\Recast\Source\RecastLayers.cpp">
+      <Filter>Исходные файлы\Navigation\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\Recast\Source\RecastMesh.cpp">
+      <Filter>Исходные файлы\Navigation\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\Recast\Source\RecastMeshDetail.cpp">
+      <Filter>Исходные файлы\Navigation\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\Recast\Source\RecastRasterization.cpp">
+      <Filter>Исходные файлы\Navigation\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\Recast\Source\RecastRegion.cpp">
+      <Filter>Исходные файлы\Navigation\Recast</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\ChunkyTriMesh.cpp">
+      <Filter>Исходные файлы\Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\InputGeom.cpp">
+      <Filter>Исходные файлы\Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\MeshLoaderObj.cpp">
+      <Filter>Исходные файлы\Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="Navigation\PerfTimer.cpp">
+      <Filter>Исходные файлы\Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Component.cpp">
+      <Filter>Исходные файлы\Components\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\MonoScript.cpp">
+      <Filter>Исходные файлы\Components\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Transform.cpp">
+      <Filter>Исходные файлы\Components\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\APIManager.cpp">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_AudioListener.cpp">
+      <Filter>Исходные файлы\API\Components\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_AudioSource.cpp">
+      <Filter>Исходные файлы\API\Components\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_BoxCollider.cpp">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_CapsuleCollider.cpp">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Collider.cpp">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_MeshCollider.cpp">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_SphereCollider.cpp">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API.cpp">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Application.cpp">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Debug.cpp">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Cursor.cpp">
+      <Filter>Исходные файлы\API\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Input.cpp">
+      <Filter>Исходные файлы\API\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Asset.cpp">
+      <Filter>Исходные файлы\API\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Material.cpp">
+      <Filter>Исходные файлы\API\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Prefab.cpp">
+      <Filter>Исходные файлы\API\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Shader.cpp">
+      <Filter>Исходные файлы\API\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Vehicle.cpp">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Time.cpp">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Screen.cpp">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_SceneManager.cpp">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_PlayerPrefs.cpp">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_GameObject.cpp">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Random.cpp">
+      <Filter>Исходные файлы\API\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Quaternion.cpp">
+      <Filter>Исходные файлы\API\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_NavMeshAgent.cpp">
+      <Filter>Исходные файлы\API\Components\Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Camera.cpp">
+      <Filter>Исходные файлы\API\Components\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_RigidBody.cpp">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Animation.cpp">
+      <Filter>Исходные файлы\API\Components\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Serialization\Settings\PlayerPrefs.cpp">
+      <Filter>Исходные файлы\Serialization\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_MonoBehaviour.cpp">
+      <Filter>Исходные файлы\API\Components\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Transform.cpp">
+      <Filter>Исходные файлы\API\Components\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Component.cpp">
+      <Filter>Исходные файлы\API\Components\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Animation.cpp">
+      <Filter>Исходные файлы\Components\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\UIElement.cpp">
+      <Filter>Исходные файлы\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Image.cpp">
+      <Filter>Исходные файлы\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Canvas.cpp">
+      <Filter>Исходные файлы\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Button.cpp">
+      <Filter>Исходные файлы\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Text.cpp">
+      <Filter>Исходные файлы\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Font.cpp">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Button.cpp">
+      <Filter>Исходные файлы\API\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Image.cpp">
+      <Filter>Исходные файлы\API\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Text.cpp">
+      <Filter>Исходные файлы\API\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_UIElement.cpp">
+      <Filter>Исходные файлы\API\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Texture.cpp">
+      <Filter>Исходные файлы\API\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Frustum.cpp">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\bc7compressor.cpp">
+      <Filter>Исходные файлы\Classes\Thirdparty</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\fastlz.c">
+      <Filter>Исходные файлы\Classes\Thirdparty</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\brtshaderc.cpp">
+      <Filter>Исходные файлы\Classes\Thirdparty</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Terrain.cpp">
+      <Filter>Исходные файлы\Components\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Renderer.cpp">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Renderable.cpp">
+      <Filter>Исходные файлы\Components\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\VertexLayouts.cpp">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Plane.cpp">
+      <Filter>Исходные файлы\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Cubemap.cpp">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\ParticleSystem.cpp">
+      <Filter>Исходные файлы\Components\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\BoxCollider.cpp">
+      <Filter>Исходные файлы\Components\Physics\Colliders</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\CapsuleCollider.cpp">
+      <Filter>Исходные файлы\Components\Physics\Colliders</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Collider.cpp">
+      <Filter>Исходные файлы\Components\Physics\Colliders</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\MeshCollider.cpp">
+      <Filter>Исходные файлы\Components\Physics\Colliders</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\SphereCollider.cpp">
+      <Filter>Исходные файлы\Components\Physics\Colliders</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\TerrainCollider.cpp">
+      <Filter>Исходные файлы\Components\Physics\Colliders</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\FixedJoint.cpp">
+      <Filter>Исходные файлы\Components\Physics\Joints</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\FreeJoint.cpp">
+      <Filter>Исходные файлы\Components\Physics\Joints</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\HingeJoint.cpp">
+      <Filter>Исходные файлы\Components\Physics\Joints</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\ZipHelper.cpp">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Prefab.cpp">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\AudioClip.cpp">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object.cpp">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_RenderTexture.cpp">
+      <Filter>Исходные файлы\API\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Graphics.cpp">
+      <Filter>Исходные файлы\API\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\ConeTwistJoint.cpp">
+      <Filter>Исходные файлы\Components\Physics\Joints</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Time.cpp">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Water.cpp">
+      <Filter>Исходные файлы\Components\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Serialization\Meta\SModel3DMeta.cpp">
+      <Filter>Исходные файлы\Serialization\Meta</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Mask.cpp">
+      <Filter>Исходные файлы\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Spline.cpp">
+      <Filter>Исходные файлы\Components\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Spline.cpp">
+      <Filter>Исходные файлы\API\Components\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_SteamAPI.cpp">
+      <Filter>Исходные файлы\API\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Canvas.cpp">
+      <Filter>Исходные файлы\API\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Light.cpp">
+      <Filter>Исходные файлы\API\Components\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_RenderSettings.cpp">
+      <Filter>Исходные файлы\API\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\xatlas.cpp">
+      <Filter>Исходные файлы\Classes\Thirdparty</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\InputManager.cpp">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Engine.cpp">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\GameObject.cpp">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_GUI.cpp">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_QualitySettings.cpp">
+      <Filter>Исходные файлы\API\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Physics.cpp">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_LayerMask.cpp">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\dear-imgui\imgui_tables.cpp">
+      <Filter>Исходные файлы\UI\ImGui\main</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_MeshRenderer.cpp">
+      <Filter>Исходные файлы\API\Components\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_Mesh.cpp">
+      <Filter>Исходные файлы\API\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_SubMesh.cpp">
+      <Filter>Исходные файлы\API\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="OcclusionCulling\CullingThreadpool.cpp">
+      <Filter>Исходные файлы\OcclusionCulling</Filter>
+    </ClCompile>
+    <ClCompile Include="OcclusionCulling\FrameRecorder.cpp">
+      <Filter>Исходные файлы\OcclusionCulling</Filter>
+    </ClCompile>
+    <ClCompile Include="OcclusionCulling\MaskedOcclusionCulling.cpp">
+      <Filter>Исходные файлы\OcclusionCulling</Filter>
+    </ClCompile>
+    <ClCompile Include="OcclusionCulling\MaskedOcclusionCullingAVX2.cpp">
+      <Filter>Исходные файлы\OcclusionCulling</Filter>
+    </ClCompile>
+    <ClCompile Include="OcclusionCulling\MaskedOcclusionCullingAVX512.cpp">
+      <Filter>Исходные файлы\OcclusionCulling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\meshoptimizer\src\allocator.cpp">
+      <Filter>Исходные файлы\MeshOptimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\meshoptimizer\src\clusterizer.cpp">
+      <Filter>Исходные файлы\MeshOptimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\meshoptimizer\src\indexcodec.cpp">
+      <Filter>Исходные файлы\MeshOptimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\meshoptimizer\src\indexgenerator.cpp">
+      <Filter>Исходные файлы\MeshOptimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\meshoptimizer\src\overdrawanalyzer.cpp">
+      <Filter>Исходные файлы\MeshOptimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\meshoptimizer\src\overdrawoptimizer.cpp">
+      <Filter>Исходные файлы\MeshOptimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\meshoptimizer\src\simplifier.cpp">
+      <Filter>Исходные файлы\MeshOptimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\meshoptimizer\src\spatialorder.cpp">
+      <Filter>Исходные файлы\MeshOptimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\meshoptimizer\src\stripifier.cpp">
+      <Filter>Исходные файлы\MeshOptimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\meshoptimizer\src\vcacheanalyzer.cpp">
+      <Filter>Исходные файлы\MeshOptimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\meshoptimizer\src\vcacheoptimizer.cpp">
+      <Filter>Исходные файлы\MeshOptimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\meshoptimizer\src\vertexcodec.cpp">
+      <Filter>Исходные файлы\MeshOptimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\meshoptimizer\src\vertexfilter.cpp">
+      <Filter>Исходные файлы\MeshOptimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\meshoptimizer\src\vfetchanalyzer.cpp">
+      <Filter>Исходные файлы\MeshOptimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Bgfx\bgfx\3rdparty\meshoptimizer\src\vfetchoptimizer.cpp">
+      <Filter>Исходные файлы\MeshOptimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\BatchedGeometry.cpp">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Serialization\Scene\SBatchedGeometry.cpp">
+      <Filter>Исходные файлы\Serialization\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Serialization\Serializers\BinarySerializer.cpp">
+      <Filter>Исходные файлы\Serialization\Serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="Serialization\Serializers\Serializer.cpp">
+      <Filter>Исходные файлы\Serialization\Serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\VideoClip.cpp">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_VideoClip.cpp">
+      <Filter>Исходные файлы\API\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_VideoPlayer.cpp">
+      <Filter>Исходные файлы\API\Components\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_AudioClip.cpp">
+      <Filter>Исходные файлы\API\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\VideoPlayer.cpp">
+      <Filter>Исходные файлы\Components\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\wave.cpp">
+      <Filter>Исходные файлы\Classes\Thirdparty</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\CSGBrush.cpp">
+      <Filter>Исходные файлы\Components\CSG</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\CSGGeometry.cpp">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Serialization\Scene\SCSGGeometry.cpp">
+      <Filter>Исходные файлы\Serialization\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\TextInput.cpp">
+      <Filter>Исходные файлы\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_TextInput.cpp">
+      <Filter>Исходные файлы\API\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\CSGModel.cpp">
+      <Filter>Исходные файлы\Components\CSG</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_HingeJoint.cpp">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_ConeTwistJoint.cpp">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_FixedJoint.cpp">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_FreeJoint.cpp">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\DecalRenderer.cpp">
+      <Filter>Исходные файлы\Components\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="API\API_ParticleSystem.cpp">
+      <Filter>Исходные файлы\API\Components\Rendering</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UI\ImGUIWidgets.h">
+      <Filter>Исходные файлы\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Helpers.h">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\IO.h">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bgfx\bgfx\3rdparty\dear-imgui\misc\cpp\imgui_stdlib.h">
+      <Filter>Исходные файлы\UI\ImGui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bgfx\bgfx\3rdparty\dear-imgui\widgets\color_picker.h">
+      <Filter>Исходные файлы\UI\ImGui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bgfx\bgfx\3rdparty\dear-imgui\widgets\color_wheel.h">
+      <Filter>Исходные файлы\UI\ImGui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bgfx\bgfx\3rdparty\dear-imgui\widgets\file_list.h">
+      <Filter>Исходные файлы\UI\ImGui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bgfx\bgfx\3rdparty\dear-imgui\widgets\markdown.h">
+      <Filter>Исходные файлы\UI\ImGui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bgfx\bgfx\3rdparty\dear-imgui\widgets\memory_editor.h">
+      <Filter>Исходные файлы\UI\ImGui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bgfx\bgfx\3rdparty\dear-imgui\widgets\range_slider.h">
+      <Filter>Исходные файлы\UI\ImGui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Window.h">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\fs_ocornut_imgui.bin.h">
+      <Filter>Исходные файлы\UI\ImGui\bgfx_impl</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\vs_ocornut_imgui.bin.h">
+      <Filter>Исходные файлы\UI\ImGui\bgfx_impl</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\imgui_impl_sdl.h">
+      <Filter>Исходные файлы\UI\ImGui\bgfx_impl</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\imgui_impl_bgfx.h">
+      <Filter>Исходные файлы\UI\ImGui\bgfx_impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bgfx\bgfx\3rdparty\dear-imgui\imconfig.h">
+      <Filter>Исходные файлы\UI\ImGui\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bgfx\bgfx\3rdparty\dear-imgui\imgui.h">
+      <Filter>Исходные файлы\UI\ImGui\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bgfx\bgfx\3rdparty\dear-imgui\imgui_internal.h">
+      <Filter>Исходные файлы\UI\ImGui\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bgfx\bgfx\3rdparty\dear-imgui\imgui_user.h">
+      <Filter>Исходные файлы\UI\ImGui\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bgfx\bgfx\3rdparty\dear-imgui\imstb_rectpack.h">
+      <Filter>Исходные файлы\UI\ImGui\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bgfx\bgfx\3rdparty\dear-imgui\imstb_textedit.h">
+      <Filter>Исходные файлы\UI\ImGui\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bgfx\bgfx\3rdparty\dear-imgui\imstb_truetype.h">
+      <Filter>Исходные файлы\UI\ImGui\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bgfx\bgfx\3rdparty\dear-imgui\stb_rect_pack.h">
+      <Filter>Исходные файлы\UI\ImGui\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bgfx\bgfx\3rdparty\dear-imgui\stb_textedit.h">
+      <Filter>Исходные файлы\UI\ImGui\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bgfx\bgfx\3rdparty\dear-imgui\stb_truetype.h">
+      <Filter>Исходные файлы\UI\ImGui\main</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\common.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\exponential.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\fwd.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\geometric.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\glm.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\integer.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\mat2x2.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\mat2x3.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\mat2x4.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\mat3x2.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\mat3x3.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\mat3x4.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\mat4x2.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\mat4x3.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\mat4x4.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\matrix.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\packing.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\trigonometric.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\vec2.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\vec3.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\vec4.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\vector_relational.hpp">
+      <Filter>Исходные файлы\Math\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\_features.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\_fixes.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\_noise.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\_swizzle.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\_swizzle_func.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\_vectorize.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\compute_common.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\compute_vector_relational.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\qualifier.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\setup.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\type_float.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\type_half.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\type_mat2x2.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\type_mat2x3.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\type_mat2x4.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\type_mat3x2.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\type_mat3x3.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\type_mat3x4.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\type_mat4x2.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\type_mat4x3.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\type_mat4x4.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\type_quat.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\type_vec1.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\type_vec2.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\type_vec3.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\detail\type_vec4.hpp">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\bitfield.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\color_space.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\constants.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\epsilon.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\integer.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\matrix_access.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\matrix_integer.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\matrix_inverse.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\matrix_transform.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\noise.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\packing.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\quaternion.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\random.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\reciprocal.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\round.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\type_aligned.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\type_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\type_ptr.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\ulp.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtc\vec1.hpp">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_clip_space.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_common.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_double2x2.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_double2x2_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_double2x3.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_double2x3_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_double2x4.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_double2x4_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_double3x2.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_double3x2_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_double3x3.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_double3x3_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_double3x4.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_double3x4_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_double4x2.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_double4x2_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_double4x3.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_double4x3_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_double4x4.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_double4x4_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_float2x2.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_float2x2_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_float2x3.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_float2x3_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_float2x4.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_float2x4_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_float3x2.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_float3x2_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_float3x3.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_float3x3_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_float3x4.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_float3x4_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_float4x2.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_float4x2_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_float4x3.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_float4x3_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_float4x4.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_float4x4_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_projection.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_relational.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\matrix_transform.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\quaternion_common.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\quaternion_double.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\quaternion_double_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\quaternion_exponential.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\quaternion_float.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\quaternion_float_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\quaternion_geometric.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\quaternion_relational.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\quaternion_transform.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\quaternion_trigonometric.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\scalar_common.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\scalar_constants.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\scalar_int_sized.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\scalar_integer.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\scalar_relational.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\scalar_uint_sized.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\scalar_ulp.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_bool1.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_bool1_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_bool2.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_bool2_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_bool3.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_bool3_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_bool4.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_bool4_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_common.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_double1.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_double1_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_double2.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_double2_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_double3.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_double3_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_double4.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_double4_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_float1.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_float1_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_float2.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_float2_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_float3.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_float3_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_float4.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_float4_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_int1.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_int1_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_int2.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_int2_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_int3.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_int3_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_int4.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_int4_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_integer.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_relational.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_uint1.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_uint1_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_uint2.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_uint2_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_uint3.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_uint3_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_uint4.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_uint4_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\ext\vector_ulp.hpp">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\associated_min_max.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\bit.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\closest_point.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\color_encoding.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\color_space.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\color_space_YCoCg.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\common.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\compatibility.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\component_wise.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\dual_quaternion.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\easing.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\euler_angles.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\extend.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\extended_min_max.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\exterior_product.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\fast_exponential.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\fast_square_root.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\fast_trigonometry.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\functions.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\gradient_paint.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\handed_coordinate_space.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\hash.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\integer.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\intersect.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\io.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\log_base.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\matrix_cross_product.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\matrix_decompose.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\matrix_factorisation.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\matrix_interpolation.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\matrix_major_storage.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\matrix_operation.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\matrix_query.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\matrix_transform_2d.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\mixed_product.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\norm.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\normal.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\normalize_dot.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\number_precision.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\optimum_pow.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\orthonormalize.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\perpendicular.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\polar_coordinates.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\projection.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\quaternion.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\range.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\raw_data.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\rotate_normalized_axis.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\rotate_vector.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\scalar_multiplication.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\scalar_relational.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\spline.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\std_based_type.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\string_cast.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\texture.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\transform.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\transform2.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\type_aligned.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\type_trait.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\vec_swizzle.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\vector_angle.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\vector_query.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\gtx\wrap.hpp">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\simd\common.h">
+      <Filter>Исходные файлы\Math\glm\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\simd\exponential.h">
+      <Filter>Исходные файлы\Math\glm\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\simd\geometric.h">
+      <Filter>Исходные файлы\Math\glm\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\simd\integer.h">
+      <Filter>Исходные файлы\Math\glm\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\simd\matrix.h">
+      <Filter>Исходные файлы\Math\glm\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\simd\neon.h">
+      <Filter>Исходные файлы\Math\glm\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\simd\packing.h">
+      <Filter>Исходные файлы\Math\glm\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\simd\platform.h">
+      <Filter>Исходные файлы\Math\glm\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\simd\trigonometric.h">
+      <Filter>Исходные файлы\Math\glm\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="glm\simd\vector_relational.h">
+      <Filter>Исходные файлы\Math\glm\simd</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Asset.h">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Mesh.h">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Model3DLoader.h">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Material.h">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Texture.h">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\GUIDGenerator.h">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Gizmo\Gizmo.h">
+      <Filter>Исходные файлы\Gizmo</Filter>
+    </ClInclude>
+    <ClInclude Include="Gizmo\ImGuizmo.h">
+      <Filter>Исходные файлы\Gizmo</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\AxisAlignedBox.h">
+      <Filter>Исходные файлы\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Mathf.h">
+      <Filter>Исходные файлы\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Color.h">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Raycast.h">
+      <Filter>Исходные файлы\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Ray.h">
+      <Filter>Исходные файлы\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Shader.h">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Assets\SMaterial.h">
+      <Filter>Исходные файлы\Serialization\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Assets\SMesh.h">
+      <Filter>Исходные файлы\Serialization\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\NullTextureData.h">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Data\SColor.h">
+      <Filter>Исходные файлы\Serialization\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Data\SQuaternion.h">
+      <Filter>Исходные файлы\Serialization\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Data\SVector.h">
+      <Filter>Исходные файлы\Serialization\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Scene\SScene.h">
+      <Filter>Исходные файлы\Serialization\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Scene\SGameObject.h">
+      <Filter>Исходные файлы\Serialization\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Scene.h">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Settings\ProjectSettings.h">
+      <Filter>Исходные файлы\Serialization\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Assets\STexture.h">
+      <Filter>Исходные файлы\Serialization\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\SystemShaders\ShadowCaster.h">
+      <Filter>Исходные файлы\Renderer\SystemShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Primitives.h">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\SystemShaders\DeferredCombine.h">
+      <Filter>Исходные файлы\Renderer\SystemShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Assets\SAnimationClip.h">
+      <Filter>Исходные файлы\Serialization\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\AnimationClip.h">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Data\SMatrix4.h">
+      <Filter>Исходные файлы\Serialization\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\SystemShaders\OutlineShader.h">
+      <Filter>Исходные файлы\Renderer\SystemShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\SystemShaders\OutlineFinalShader.h">
+      <Filter>Исходные файлы\Renderer\SystemShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\SystemShaders\SimpleShader.h">
+      <Filter>Исходные файлы\Renderer\SystemShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\RenderTexture.h">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\SystemShaders\SimpleTextureShader.h">
+      <Filter>Исходные файлы\Renderer\SystemShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Vehicle.h">
+      <Filter>Исходные файлы\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\RigidBody.h">
+      <Filter>Исходные файлы\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Camera.h">
+      <Filter>Исходные файлы\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Light.h">
+      <Filter>Исходные файлы\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\MeshRenderer.h">
+      <Filter>Исходные файлы\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SBoxCollider.h">
+      <Filter>Исходные файлы\Serialization\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SCapsuleCollider.h">
+      <Filter>Исходные файлы\Serialization\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SMeshCollider.h">
+      <Filter>Исходные файлы\Serialization\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SRigidBody.h">
+      <Filter>Исходные файлы\Serialization\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SSphereCollider.h">
+      <Filter>Исходные файлы\Serialization\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SVehicle.h">
+      <Filter>Исходные файлы\Serialization\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SFixedJoint.h">
+      <Filter>Исходные файлы\Serialization\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SFreeJoint.h">
+      <Filter>Исходные файлы\Serialization\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SHingeJoint.h">
+      <Filter>Исходные файлы\Serialization\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\AudioListener.h">
+      <Filter>Исходные файлы\Components\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\AudioSource.h">
+      <Filter>Исходные файлы\Components\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\SoundManager.h">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Debug.h">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Hash.h">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\md5.h">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\StringBuilder.h">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\StringConverter.h">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SAudioListener.h">
+      <Filter>Исходные файлы\Serialization\Components\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SAudioSource.h">
+      <Filter>Исходные файлы\Serialization\Components\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\LayerMask.h">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\PhysicsManager.h">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\NavigationManager.h">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\NavMeshAgent.h">
+      <Filter>Исходные файлы\Components\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\NavMeshObstacle.h">
+      <Filter>Исходные файлы\Components\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SNavMeshAgent.h">
+      <Filter>Исходные файлы\Serialization\Components\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SNavMeshObstacle.h">
+      <Filter>Исходные файлы\Serialization\Components\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Scene\SNavMeshSettings.h">
+      <Filter>Исходные файлы\Serialization\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\DebugUtils\Include\DebugDraw.h">
+      <Filter>Исходные файлы\Navigation\DebugUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\DebugUtils\Include\DetourDebugDraw.h">
+      <Filter>Исходные файлы\Navigation\DebugUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\DebugUtils\Include\RecastDebugDraw.h">
+      <Filter>Исходные файлы\Navigation\DebugUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\DebugUtils\Include\RecastDump.h">
+      <Filter>Исходные файлы\Navigation\DebugUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\Detour\Include\DetourAlloc.h">
+      <Filter>Исходные файлы\Navigation\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\Detour\Include\DetourAssert.h">
+      <Filter>Исходные файлы\Navigation\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\Detour\Include\DetourCommon.h">
+      <Filter>Исходные файлы\Navigation\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\Detour\Include\DetourMath.h">
+      <Filter>Исходные файлы\Navigation\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\Detour\Include\DetourNavMesh.h">
+      <Filter>Исходные файлы\Navigation\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\Detour\Include\DetourNavMeshBuilder.h">
+      <Filter>Исходные файлы\Navigation\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\Detour\Include\DetourNavMeshQuery.h">
+      <Filter>Исходные файлы\Navigation\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\Detour\Include\DetourNode.h">
+      <Filter>Исходные файлы\Navigation\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\Detour\Include\DetourStatus.h">
+      <Filter>Исходные файлы\Navigation\Detour</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\DetourCrowd\Include\DetourCrowd.h">
+      <Filter>Исходные файлы\Navigation\DetourCrowd</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\DetourCrowd\Include\DetourLocalBoundary.h">
+      <Filter>Исходные файлы\Navigation\DetourCrowd</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\DetourCrowd\Include\DetourObstacleAvoidance.h">
+      <Filter>Исходные файлы\Navigation\DetourCrowd</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\DetourCrowd\Include\DetourPathCorridor.h">
+      <Filter>Исходные файлы\Navigation\DetourCrowd</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\DetourCrowd\Include\DetourPathQueue.h">
+      <Filter>Исходные файлы\Navigation\DetourCrowd</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\DetourCrowd\Include\DetourProximityGrid.h">
+      <Filter>Исходные файлы\Navigation\DetourCrowd</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\DetourTileCache\Include\DetourTileCache.h">
+      <Filter>Исходные файлы\Navigation\DetourTileCache</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\DetourTileCache\Include\DetourTileCacheBuilder.h">
+      <Filter>Исходные файлы\Navigation\DetourTileCache</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\Recast\Include\Recast.h">
+      <Filter>Исходные файлы\Navigation\Recast</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\Recast\Include\RecastAlloc.h">
+      <Filter>Исходные файлы\Navigation\Recast</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\Recast\Include\RecastAssert.h">
+      <Filter>Исходные файлы\Navigation\Recast</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\ChunkyTriMesh.h">
+      <Filter>Исходные файлы\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\InputGeom.h">
+      <Filter>Исходные файлы\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\MeshLoaderObj.h">
+      <Filter>Исходные файлы\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Navigation\PerfTimer.h">
+      <Filter>Исходные файлы\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\SystemShaders\TransparentShader.h">
+      <Filter>Исходные файлы\Renderer\SystemShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Component.h">
+      <Filter>Исходные файлы\Components\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\MonoScript.h">
+      <Filter>Исходные файлы\Components\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Transform.h">
+      <Filter>Исходные файлы\Components\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\APIManager.h">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_AudioListener.h">
+      <Filter>Исходные файлы\API\Components\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_AudioSource.h">
+      <Filter>Исходные файлы\API\Components\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_BoxCollider.h">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_CapsuleCollider.h">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Collider.h">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_MeshCollider.h">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_SphereCollider.h">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API.h">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Application.h">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Debug.h">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Cursor.h">
+      <Filter>Исходные файлы\API\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Input.h">
+      <Filter>Исходные файлы\API\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Asset.h">
+      <Filter>Исходные файлы\API\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Material.h">
+      <Filter>Исходные файлы\API\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Prefab.h">
+      <Filter>Исходные файлы\API\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Shader.h">
+      <Filter>Исходные файлы\API\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Vehicle.h">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Time.h">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Screen.h">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_SceneManager.h">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_PlayerPrefs.h">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_GameObject.h">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Random.h">
+      <Filter>Исходные файлы\API\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Quaternion.h">
+      <Filter>Исходные файлы\API\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_NavMeshAgent.h">
+      <Filter>Исходные файлы\API\Components\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Camera.h">
+      <Filter>Исходные файлы\API\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_RigidBody.h">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Animation.h">
+      <Filter>Исходные файлы\API\Components\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Settings\PlayerPrefs.h">
+      <Filter>Исходные файлы\Serialization\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_MonoBehaviour.h">
+      <Filter>Исходные файлы\API\Components\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Transform.h">
+      <Filter>Исходные файлы\API\Components\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Component.h">
+      <Filter>Исходные файлы\API\Components\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Animation.h">
+      <Filter>Исходные файлы\Components\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SMeshRenderer.h">
+      <Filter>Исходные файлы\Serialization\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SCamera.h">
+      <Filter>Исходные файлы\Serialization\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SLight.h">
+      <Filter>Исходные файлы\Serialization\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\UIElement.h">
+      <Filter>Исходные файлы\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Image.h">
+      <Filter>Исходные файлы\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Canvas.h">
+      <Filter>Исходные файлы\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Button.h">
+      <Filter>Исходные файлы\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Text.h">
+      <Filter>Исходные файлы\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Font.h">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SButton.h">
+      <Filter>Исходные файлы\Serialization\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SCanvas.h">
+      <Filter>Исходные файлы\Serialization\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SImage.h">
+      <Filter>Исходные файлы\Serialization\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SText.h">
+      <Filter>Исходные файлы\Serialization\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SUIElement.h">
+      <Filter>Исходные файлы\Serialization\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Button.h">
+      <Filter>Исходные файлы\API\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Image.h">
+      <Filter>Исходные файлы\API\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Text.h">
+      <Filter>Исходные файлы\API\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_UIElement.h">
+      <Filter>Исходные файлы\API\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Texture.h">
+      <Filter>Исходные файлы\API\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\VectorUtils.h">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Frustum.h">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\bc7compressor.h">
+      <Filter>Исходные файлы\Classes\Thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\dirent.h">
+      <Filter>Исходные файлы\Classes\Thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\dr_wav.h">
+      <Filter>Исходные файлы\Classes\Thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\fastlz.h">
+      <Filter>Исходные файлы\Classes\Thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\brtshaderc.h">
+      <Filter>Исходные файлы\Classes\Thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Terrain.h">
+      <Filter>Исходные файлы\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Renderer.h">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Renderable.h">
+      <Filter>Исходные файлы\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\VertexLayouts.h">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\STerrain.h">
+      <Filter>Исходные файлы\Serialization\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Assets\STerrainData.h">
+      <Filter>Исходные файлы\Serialization\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\SystemShaders\TerrainTreeBillboardShader.h">
+      <Filter>Исходные файлы\Renderer\SystemShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Plane.h">
+      <Filter>Исходные файлы\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Cubemap.h">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Assets\SCubemap.h">
+      <Filter>Исходные файлы\Serialization\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\ParticleSystem.h">
+      <Filter>Исходные файлы\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SParticleSystem.h">
+      <Filter>Исходные файлы\Serialization\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\BoxCollider.h">
+      <Filter>Исходные файлы\Components\Physics\Colliders</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\CapsuleCollider.h">
+      <Filter>Исходные файлы\Components\Physics\Colliders</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Collider.h">
+      <Filter>Исходные файлы\Components\Physics\Colliders</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\MeshCollider.h">
+      <Filter>Исходные файлы\Components\Physics\Colliders</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\SphereCollider.h">
+      <Filter>Исходные файлы\Components\Physics\Colliders</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\TerrainCollider.h">
+      <Filter>Исходные файлы\Components\Physics\Colliders</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\FixedJoint.h">
+      <Filter>Исходные файлы\Components\Physics\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\FreeJoint.h">
+      <Filter>Исходные файлы\Components\Physics\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\HingeJoint.h">
+      <Filter>Исходные файлы\Components\Physics\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\STerrainCollider.h">
+      <Filter>Исходные файлы\Serialization\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\ZipHelper.h">
+      <Filter>Исходные файлы\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Prefab.h">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\AudioClip.h">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SAnimation.h">
+      <Filter>Исходные файлы\Serialization\Components\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SComponent.h">
+      <Filter>Исходные файлы\Serialization\Components\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SMonoScript.h">
+      <Filter>Исходные файлы\Serialization\Components\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object.h">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_RenderTexture.h">
+      <Filter>Исходные файлы\API\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Graphics.h">
+      <Filter>Исходные файлы\API\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\ConeTwistJoint.h">
+      <Filter>Исходные файлы\Components\Physics\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SConeTwistJoint.h">
+      <Filter>Исходные файлы\Serialization\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Time.h">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Water.h">
+      <Filter>Исходные файлы\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SWater.h">
+      <Filter>Исходные файлы\Serialization\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\SystemShaders\CameraBackBuffer.h">
+      <Filter>Исходные файлы\Renderer\SystemShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\dr_mp3.h">
+      <Filter>Исходные файлы\Classes\Thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Meta\SModel3DMeta.h">
+      <Filter>Исходные файлы\Serialization\Meta</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\SystemShaders\FXAA.h">
+      <Filter>Исходные файлы\Renderer\SystemShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\SystemShaders\Skybox.h">
+      <Filter>Исходные файлы\Renderer\SystemShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Data\SRect.h">
+      <Filter>Исходные файлы\Serialization\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\SystemShaders\TerrainTreeBillboardLightShader.h">
+      <Filter>Исходные файлы\Renderer\SystemShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Mask.h">
+      <Filter>Исходные файлы\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SMask.h">
+      <Filter>Исходные файлы\Serialization\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Spline.h">
+      <Filter>Исходные файлы\Components\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SSpline.h">
+      <Filter>Исходные файлы\Serialization\Components\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Spline.h">
+      <Filter>Исходные файлы\API\Components\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_SteamAPI.h">
+      <Filter>Исходные файлы\API\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Canvas.h">
+      <Filter>Исходные файлы\API\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Light.h">
+      <Filter>Исходные файлы\API\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_RenderSettings.h">
+      <Filter>Исходные файлы\API\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\xatlas.h">
+      <Filter>Исходные файлы\Classes\Thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\SystemShaders\DefaultShader.h">
+      <Filter>Исходные файлы\Renderer\SystemShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\InputManager.h">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Engine.h">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\GameObject.h">
+      <Filter>Исходные файлы\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_GUI.h">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_QualitySettings.h">
+      <Filter>Исходные файлы\API\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Physics.h">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_LayerMask.h">
+      <Filter>Исходные файлы\API\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_MeshRenderer.h">
+      <Filter>Исходные файлы\API\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_Mesh.h">
+      <Filter>Исходные файлы\API\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_SubMesh.h">
+      <Filter>Исходные файлы\API\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="OcclusionCulling\CullingThreadpool.h">
+      <Filter>Исходные файлы\OcclusionCulling</Filter>
+    </ClInclude>
+    <ClInclude Include="OcclusionCulling\FrameRecorder.h">
+      <Filter>Исходные файлы\OcclusionCulling</Filter>
+    </ClInclude>
+    <ClInclude Include="OcclusionCulling\MaskedOcclusionCulling.h">
+      <Filter>Исходные файлы\OcclusionCulling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bgfx\bgfx\3rdparty\meshoptimizer\src\meshoptimizer.h">
+      <Filter>Исходные файлы\MeshOptimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\BatchedGeometry.h">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\VertexBuffer.h">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Scene\SBatchedGeometry.h">
+      <Filter>Исходные файлы\Serialization\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Serializers\BinarySerializer.h">
+      <Filter>Исходные файлы\Serialization\Serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Serializers\Serializer.h">
+      <Filter>Исходные файлы\Serialization\Serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\VideoClip.h">
+      <Filter>Исходные файлы\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_VideoClip.h">
+      <Filter>Исходные файлы\API\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_VideoPlayer.h">
+      <Filter>Исходные файлы\API\Components\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_AudioClip.h">
+      <Filter>Исходные файлы\API\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SVideoPlayer.h">
+      <Filter>Исходные файлы\Serialization\Components\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\VideoPlayer.h">
+      <Filter>Исходные файлы\Components\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\wave.h">
+      <Filter>Исходные файлы\Classes\Thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\CSGBrush.h">
+      <Filter>Исходные файлы\Components\CSG</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\CSGGeometry.h">
+      <Filter>Исходные файлы\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Scene\SCSGGeometry.h">
+      <Filter>Исходные файлы\Serialization\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SCSGBrush.h">
+      <Filter>Исходные файлы\Serialization\Components\CSG</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\TextInput.h">
+      <Filter>Исходные файлы\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\STextInput.h">
+      <Filter>Исходные файлы\Serialization\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_TextInput.h">
+      <Filter>Исходные файлы\API\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\CSGModel.h">
+      <Filter>Исходные файлы\Components\CSG</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SCSGModel.h">
+      <Filter>Исходные файлы\Serialization\Components\CSG</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_HingeJoint.h">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_ConeTwistJoint.h">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_FixedJoint.h">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_FreeJoint.h">
+      <Filter>Исходные файлы\API\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\DecalRenderer.h">
+      <Filter>Исходные файлы\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Components\SDecalRenderer.h">
+      <Filter>Исходные файлы\Serialization\Components\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="API\API_ParticleSystem.h">
+      <Filter>Исходные файлы\API\Components\Rendering</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Bgfx\bgfx\3rdparty\dear-imgui\widgets\color_picker.inl">
+      <Filter>Исходные файлы\UI\ImGui\widgets</Filter>
+    </None>
+    <None Include="..\Bgfx\bgfx\3rdparty\dear-imgui\widgets\color_wheel.inl">
+      <Filter>Исходные файлы\UI\ImGui\widgets</Filter>
+    </None>
+    <None Include="..\Bgfx\bgfx\3rdparty\dear-imgui\widgets\file_list.inl">
+      <Filter>Исходные файлы\UI\ImGui\widgets</Filter>
+    </None>
+    <None Include="..\Bgfx\bgfx\3rdparty\dear-imgui\widgets\markdown.inl">
+      <Filter>Исходные файлы\UI\ImGui\widgets</Filter>
+    </None>
+    <None Include="..\Bgfx\bgfx\3rdparty\dear-imgui\widgets\memory_editor.inl">
+      <Filter>Исходные файлы\UI\ImGui\widgets</Filter>
+    </None>
+    <None Include="..\Bgfx\bgfx\3rdparty\dear-imgui\widgets\range_slider.inl">
+      <Filter>Исходные файлы\UI\ImGui\widgets</Filter>
+    </None>
+    <None Include="..\Bgfx\bgfx\3rdparty\dear-imgui\imgui_user.inl">
+      <Filter>Исходные файлы\UI\ImGui\main</Filter>
+    </None>
+    <None Include="glm\detail\func_common.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\func_common_simd.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\func_exponential.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\func_exponential_simd.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\func_geometric.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\func_geometric_simd.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\func_integer.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\func_integer_simd.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\func_matrix.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\func_matrix_simd.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\func_packing.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\func_packing_simd.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\func_trigonometric.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\func_trigonometric_simd.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\func_vector_relational.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\func_vector_relational_simd.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\type_half.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\type_mat2x2.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\type_mat2x3.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\type_mat2x4.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\type_mat3x2.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\type_mat3x3.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\type_mat3x4.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\type_mat4x2.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\type_mat4x3.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\type_mat4x4.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\type_mat4x4_simd.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\type_quat.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\type_quat_simd.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\type_vec1.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\type_vec2.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\type_vec3.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\type_vec4.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\detail\type_vec4_simd.inl">
+      <Filter>Исходные файлы\Math\glm\detail</Filter>
+    </None>
+    <None Include="glm\gtc\bitfield.inl">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </None>
+    <None Include="glm\gtc\color_space.inl">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </None>
+    <None Include="glm\gtc\constants.inl">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </None>
+    <None Include="glm\gtc\epsilon.inl">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </None>
+    <None Include="glm\gtc\integer.inl">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </None>
+    <None Include="glm\gtc\matrix_access.inl">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </None>
+    <None Include="glm\gtc\matrix_inverse.inl">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </None>
+    <None Include="glm\gtc\matrix_transform.inl">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </None>
+    <None Include="glm\gtc\noise.inl">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </None>
+    <None Include="glm\gtc\packing.inl">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </None>
+    <None Include="glm\gtc\quaternion.inl">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </None>
+    <None Include="glm\gtc\quaternion_simd.inl">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </None>
+    <None Include="glm\gtc\random.inl">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </None>
+    <None Include="glm\gtc\reciprocal.inl">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </None>
+    <None Include="glm\gtc\round.inl">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </None>
+    <None Include="glm\gtc\type_precision.inl">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </None>
+    <None Include="glm\gtc\type_ptr.inl">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </None>
+    <None Include="glm\gtc\ulp.inl">
+      <Filter>Исходные файлы\Math\glm\gtc</Filter>
+    </None>
+    <None Include="glm\ext\matrix_clip_space.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\matrix_common.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\matrix_projection.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\matrix_relational.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\matrix_transform.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\quaternion_common.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\quaternion_common_simd.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\quaternion_exponential.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\quaternion_geometric.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\quaternion_relational.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\quaternion_transform.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\quaternion_trigonometric.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\scalar_common.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\scalar_constants.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\scalar_integer.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\scalar_relational.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\scalar_ulp.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\vector_common.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\vector_integer.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\vector_relational.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\ext\vector_ulp.inl">
+      <Filter>Исходные файлы\Math\glm\ext</Filter>
+    </None>
+    <None Include="glm\gtx\associated_min_max.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\bit.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\closest_point.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\color_encoding.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\color_space.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\color_space_YCoCg.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\common.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\compatibility.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\component_wise.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\dual_quaternion.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\easing.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\euler_angles.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\extend.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\extended_min_max.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\exterior_product.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\fast_exponential.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\fast_square_root.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\fast_trigonometry.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\float_notmalize.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\functions.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\gradient_paint.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\handed_coordinate_space.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\hash.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\integer.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\intersect.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\io.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\log_base.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\matrix_cross_product.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\matrix_decompose.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\matrix_factorisation.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\matrix_interpolation.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\matrix_major_storage.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\matrix_operation.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\matrix_query.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\matrix_transform_2d.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\mixed_product.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\norm.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\normal.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\normalize_dot.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\number_precision.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\optimum_pow.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\orthonormalize.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\perpendicular.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\polar_coordinates.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\projection.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\quaternion.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\raw_data.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\rotate_normalized_axis.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\rotate_vector.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\scalar_relational.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\spline.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\std_based_type.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\string_cast.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\texture.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\transform.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\transform2.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\type_aligned.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\type_trait.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\vector_angle.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\vector_query.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="glm\gtx\wrap.inl">
+      <Filter>Исходные файлы\Math\glm\gtx</Filter>
+    </None>
+    <None Include="cpp.hint" />
+    <None Include="OcclusionCulling\MaskedOcclusionCullingCommon.inl">
+      <Filter>Исходные файлы\OcclusionCulling</Filter>
+    </None>
+    <None Include="OcclusionCulling\CompilerSpecific.inl">
+      <Filter>Исходные файлы\OcclusionCulling</Filter>
+    </None>
+  </ItemGroup>
+</Project>
